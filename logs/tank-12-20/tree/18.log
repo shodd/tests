@@ -1,0 +1,56 @@
+timebound = 18, jump depth = 256, max expirations of random clocks = [{r1: 2}, {r2: 4}], combine absorbing locations in unrolling = 158, integration bound(s) = 18, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 1000000 runs after 1000000 training runs with parameters:
+learning rate                 0.1
+discount factor               0.99
+exploration rate              0.1
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           0.25
+adaptive compartments         5
+
+
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-08-27 23:08:36.191] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-08-27 23:08:36.193] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-08-27 23:08:36.193] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-08-27 23:08:36.193] [info] 1 Model creation: 2
+[2025-08-28 00:05:43.995] [info] 2.2 Reachability Analysis: 3427801
+[2025-08-28 00:05:44.157] [info] 2.3 Augment Reach Tree: 162
+[2025-08-28 00:05:44.326] [info] 2.4 Creating Unified Datastructure from Reach Tree: 107
+[2025-08-28 00:07:06.659] [info] 2.5 Simulating on full Reach Tree: 82333
+[2025-08-28 00:11:30.622] [info] 2.6.0 Labeling Reach Tree Nodes: 263957
+[2025-08-28 00:11:30.627] [info] 2.6.1 Removing Unfulfilling Subtrees: 4
+[2025-08-28 00:11:30.627] [info] 2.6 Pre-checking and Reduction: 263961
+[2025-08-28 00:11:30.629] [info] node count before and after reduction 182043 182043
+[2025-08-28 00:12:52.822] [info] 2.7 Simulating on reduced Reach Tree: 82193
+[2025-08-28 00:12:55.369] [info] Analysis finished; the goal is not reachable.
+[2025-08-28 00:12:55.369] [info] Probability: 0.0
+[2025-08-28 00:12:55.369] [info] 2 Analysis: 3859175
+[2025-08-28 00:12:55.369] [info] 0 Computation Time Complete: 3859178
+[2025-08-28 00:12:55.369] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 3859178
+1 Model creation: 2
+2 Analysis: 3859175
+2.2 Reachability Analysis: 3427801
+2.3 Augment Reach Tree: 162
+2.4 Creating Unified Datastructure from Reach Tree: 107
+2.5 Simulating on full Reach Tree: 82333
+2.6 Pre-checking and Reduction: 263961
+2.6.0 Labeling Reach Tree Nodes: 263957
+2.6.1 Removing Unfulfilling Subtrees: 4
+2.7 Simulating on reduced Reach Tree: 82193
+

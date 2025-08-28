@@ -1,0 +1,12 @@
+training_time, simulation_time, prob, low, high, scheduler_variant, success_path_count, failure_path_count
+3411, 2344, 0.939126, 0.9389644504928197, 0.9392869903904387, 0, 643, 1186
+3433, 2370, 0.939249, 0.9390876028749388, 0.9394098378517092, 1, 647, 1179
+3406, 2508, 0.939, 0.938838294587577, 0.9391611464561118, 2, 639, 1172
+3430, 2578, 0.939592, 0.9394310288008183, 0.9397524114891028, 3, 668, 1183
+3459, 2559, 0.939207, 0.9390455508210034, 0.9393678899591213, 4, 649, 1164
+# timestamp 27.08.2025 21:20:05 (1756322405), datastructure reach_tree_full
+# timebound 14, expirations {"r1": 2, "r2": 4}
+# alpha 0.1, gamma 0.99
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.25
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 1000000, simulation runs 1000000
