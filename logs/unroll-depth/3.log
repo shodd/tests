@@ -33,3 +33,24 @@ adaptive compartments         5
 [2025-08-28 10:51:36.138] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
 [2025-08-28 10:51:36.138] [info] 2.6 Pre-checking and Reduction: 2615
 [2025-08-28 10:51:36.138] [info] node count before and after reduction 3683 2966
+[2025-08-28 10:57:18.808] [info] 2.7 Simulating on reduced Reach Tree: 342670
+[2025-08-28 10:57:18.973] [info] Analysis finished; the goal is not reachable.
+[2025-08-28 10:57:18.973] [info] Probability: 0.0
+[2025-08-28 10:57:18.974] [info] 2 Analysis: 855749
+[2025-08-28 10:57:18.974] [info] 0 Computation Time Complete: 855753
+[2025-08-28 10:57:18.974] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 855753
+1 Model creation: 3
+2 Analysis: 855749
+2.2 Reachability Analysis: 166523
+2.3 Augment Reach Tree: 4
+2.4 Creating Unified Datastructure from Reach Tree: 1
+2.5 Simulating on full Reach Tree: 343766
+2.6 Pre-checking and Reduction: 2615
+2.6.0 Labeling Reach Tree Nodes: 2615
+2.6.1 Removing Unfulfilling Subtrees: 0
+2.7 Simulating on reduced Reach Tree: 342670
+

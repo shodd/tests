@@ -150,7 +150,7 @@ fi
 
 # === unroll-depth ===
 if should_run "unroll-depth"; then
-  TEST_NAME="unroll-depth"
+  TEST_NAME="unroll-depth-sac"
 
   mkdir -p "logs/$TEST_NAME"
   mkdir -p "saved-results/$TEST_NAME"
@@ -169,11 +169,11 @@ if should_run "unroll-depth"; then
       --q-learning-gamma 0.99 
       --q-learning-uniform-granularity 0.25 
       --expirations [r1,$unroll_depth] [r2,$unroll_depth] 
-      --simulate 2 
+      --simulate 1 
       --scheduler-goals MAX 
       --scheduler-histories ML
       --scheduler-scopes P
-      --unroll-type D"
+      --unroll-type V"
     ./realyst $ARGS > "logs/$TEST_NAME/$unroll_depth.log"
 
     mkdir -p "saved-results/$TEST_NAME/$unroll_depth"
