@@ -77,6 +77,39 @@ if should_run "q-learning"; then
   done
 fi
 
+# === SAC ===
+if should_run "sac"; then
+  TEST_NAME="sac"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p "saved-results/$TEST_NAME"
+
+  echo "tank with SAC"
+  ARGS="
+    -t 10 
+    -l info 
+    -b WATERTANK 
+    -m A 
+    --simulation-runs 1000000
+    --simulation-training-runs 1000000 
+    -d 256 
+    --q-learning-alpha 0.1 
+    --q-learning-gamma 0.99 
+    --q-learning-uniform-granularity 0.25 
+    --expirations [r1,0] [r2,0] 
+    --simulate 1 
+    --scheduler-goals MAX 
+    --scheduler-histories ML
+    --scheduler-scopes P
+    --unroll-type V"
+  ./realyst $ARGS > "logs/$TEST_NAME/sac.log"
+
+  for file in results/*; do
+    [ -e "$file" ] || continue
+    mv "$file" "saved-results/$TEST_NAME/"
+  done
+fi
+
 # === tank-7-11 ===
 if should_run "tank-7-11"; then
   TEST_NAME="tank-7-11"
