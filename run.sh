@@ -148,7 +148,7 @@ if should_run "unroll-type"; then
   done
 fi
 
-# === unroll-type ===
+# === unroll-depth ===
 if should_run "unroll-depth"; then
   TEST_NAME="unroll-depth"
 
