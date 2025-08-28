@@ -1,0 +1,12 @@
+training_time, simulation_time, prob, low, high, scheduler_variant, success_path_count, failure_path_count
+6162, 4626, 0.882832, 0.8826148266346558, 0.8830486859250624, 0, 670, 4158
+6263, 4650, 0.882661, 0.8824436895286238, 0.8828778232488202, 1, 678, 4178
+5911, 4660, 0.882568, 0.8823506150243069, 0.8827848978715495, 2, 681, 4191
+5854, 4544, 0.881657, 0.881438887506689, 0.8818746265490981, 3, 670, 4124
+5934, 4706, 0.882702, 0.8824847223885073, 0.8829187903367335, 4, 678, 4154
+# timestamp 28.08.2025 09:59:11 (1756367951), datastructure sac
+# timebound 14, expirations {"r1": 10, "r2": 10}
+# alpha 0.1, gamma 0.99
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.25
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000, simulation runs 1000000

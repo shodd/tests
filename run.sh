@@ -148,6 +148,42 @@ if should_run "unroll-type"; then
   done
 fi
 
+# === unroll-type ===
+if should_run "unroll-depth"; then
+  TEST_NAME="unroll-depth"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p "saved-results/$TEST_NAME"
+
+  for unroll_depth in 1 2 3 4 5; do
+    echo "tank with unroll_depth=$unroll_depth"
+    ARGS="
+      -t 10 
+      -l info 
+      -b WATERTANK 
+      -m A 
+      --simulation-runs 1000000
+      --simulation-training-runs 1000000 
+      -d 256 
+      --q-learning-alpha 0.1 
+      --q-learning-gamma 0.99 
+      --q-learning-uniform-granularity 0.25 
+      --expirations [r1,$unroll_depth] [r2,$unroll_depth] 
+      --simulate 2 
+      --scheduler-goals MAX 
+      --scheduler-histories ML
+      --scheduler-scopes P
+      --unroll-type D"
+    ./realyst $ARGS > "logs/$TEST_NAME/$unroll_depth.log"
+
+    mkdir -p "saved-results/$TEST_NAME/$unroll_depth"
+    for file in results/*; do
+      [ -e "$file" ] || continue
+      mv "$file" "saved-results/$TEST_NAME/$unroll_depth/"
+    done
+  done
+fi
+
 # === tank-12-20 ===
 if should_run "tank-12-20"; then
   TEST_NAME="tank-12-20"
@@ -194,3 +230,5 @@ if should_run "tank-12-20"; then
   run_tank_12_20_variant "sac"  "[r1,0] [r2,0]" 1
   run_tank_12_20_variant "tree" "[r1,2] [r2,4]" 2
 fi
+
+

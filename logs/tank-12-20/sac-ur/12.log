@@ -1,0 +1,43 @@
+timebound = 12, jump depth = 256, max expirations of random clocks = [{r1: 2}, {r2: 4}], combine absorbing locations in unrolling = 171, integration bound(s) = 12, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 1000000 runs after 1000000 training runs with parameters:
+learning rate                 0.1
+discount factor               0.99
+exploration rate              0.1
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           0.25
+adaptive compartments         5
+
+
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-08-28 08:56:51.981] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-08-28 08:56:51.983] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-08-28 08:56:51.983] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-08-28 08:56:51.983] [info] 1 Model creation: 2
+[2025-08-28 08:56:51.984] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-08-28 08:57:41.099] [info] 2.1 Simulating on SAC: 49114
+[2025-08-28 08:57:41.099] [info] Analysis finished; the goal is not reachable.
+[2025-08-28 08:57:41.099] [info] Probability: 0.0
+[2025-08-28 08:57:41.099] [info] 2 Analysis: 49115
+[2025-08-28 08:57:41.099] [info] 0 Computation Time Complete: 49118
+[2025-08-28 08:57:41.099] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 49118
+1 Model creation: 2
+2 Analysis: 49115
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 49114
+
