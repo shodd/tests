@@ -231,4 +231,11 @@ if should_run "tank-12-20"; then
   run_tank_12_20_variant "tree" "[r1,2] [r2,4]" 2
 fi
 
-
+if should_run "rename"; then
+  find . -depth -name '*MAXIMIZING*' -exec rename 's/MAXIMIZING/MAX/' '{}' +
+  find . -depth -name '*NONPROPHETIC*' -exec rename 's/NONPROPHETIC/NP/' '{}' +
+  find . -depth -name '*PROPHETIC*' -exec rename 's/PROPHETIC/SP/' '{}' +
+  find . -depth -name '*MEMORYLESS*' -exec rename 's/MEMORYLESS/ML/' '{}' +
+  find . -depth -name '*DISCRETE_HISTORY*' -exec rename 's/DISCRETE_HISTORY/DH/' '{}' +
+  find . -depth -name '*HISTORY_DEPENDENT*' -exec rename 's/HISTORY_DEPENDENT/HD/' '{}' +
+fi
