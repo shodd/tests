@@ -247,6 +247,20 @@ if should_run "unroll-type"; then
   mkdir -p "logs/$TEST_NAME"
   mkdir -p "saved-results/$TEST_NAME"
 
+  COMMON_ARGS="
+    -l info 
+    -b WATERTANK
+    -m A 
+    --q-learning-alpha 0.1 
+    --q-learning-gamma 1 
+    --q-learning-epsilon 0.15 
+    --q-learning-uniform-granularity 0.25 
+    --simulate 3 
+    --scheduler-goals MAX 
+    --scheduler-histories HD
+    --scheduler-scopes P
+  "
+
   for unroll_type in V K D; do
     echo "tank with unroll_type=$unroll_type"
     ARGS="
@@ -291,10 +305,10 @@ if should_run "unroll-depth"; then
       --q-learning-gamma 0.99 
       --q-learning-uniform-granularity 0.25 
       --expirations [r1,$unroll_depth] [r2,$unroll_depth] 
-      --simulate 1 
+      --simulate 3 
       --scheduler-goals MAX 
-      --scheduler-histories ML
-      --scheduler-scopes P
+      --scheduler-histories HD 
+      --scheduler-scopes P 
       --unroll-type V"
     ./realyst $ARGS > "logs/$TEST_NAME/$unroll_depth.log"
 
