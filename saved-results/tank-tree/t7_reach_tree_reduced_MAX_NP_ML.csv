@@ -1,0 +1,8 @@
+training_time, simulation_time, prob, low, high, runs, scheduler_variant, success_path_count, failure_path_count
+9, 1, 0, 0, 0, 1000, 0
+# timestamp 28.08.2025 20:39:43 (1756406383), datastructure reach_tree_reduced
+# timebound 7, expirations {"r1": 2, "r2": 4}
+# alpha 0.1, gamma 1
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.25
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 5000

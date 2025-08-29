@@ -1,9 +1,10 @@
 #!/bin/bash
 
+mkdir -p logs
 mkdir -p saved-results
 
-# Get the tests to run (convert ALL to wildcard match)
 RUN_TESTS=("$@")
+
 should_run() {
   local test="$1"
 
@@ -12,8 +13,26 @@ should_run() {
     return 1
   fi
 
-  [[ " ${RUN_TESTS[@]} " =~ " ALL " || " ${RUN_TESTS[@]} " =~ " $test " ]]
+  for t in "${RUN_TESTS[@]}"; do
+    case "$t" in
+      ALL|"$test")
+        return 0  # Run this test
+        ;;
+    esac
+  done
+
+  return 1  # Not found in list
 }
+
+save_results() {
+  mkdir -p "$1"
+  for file in results/*; do
+    [ -e "$file" ] || continue
+    mv "$file" "$1"
+  done
+}
+
+
 
 # === q-learning ===
 if should_run "q-learning"; then
@@ -78,70 +97,146 @@ if should_run "q-learning"; then
 fi
 
 # === SAC ===
-if should_run "sac"; then
-  TEST_NAME="sac"
+if should_run "tank-sac"; then
+  TEST_NAME="tank-sac"
+  RESULTS_DIR="saved-results/$TEST_NAME"
 
   mkdir -p "logs/$TEST_NAME"
-  mkdir -p "saved-results/$TEST_NAME"
+  mkdir -p $RESULTS_DIR
 
-  echo "tank with SAC"
-  ARGS="
-    -t 10 
+  COMMON_ARGS="
     -l info 
-    -b WATERTANK 
+    -b WATERTANK
     -m A 
-    --simulation-runs 1000000
-    --simulation-training-runs 1000000 
-    -d 256 
     --q-learning-alpha 0.1 
-    --q-learning-gamma 0.99 
+    --q-learning-gamma 1 
+    --q-learning-epsilon 0.15 
     --q-learning-uniform-granularity 0.25 
     --expirations [r1,0] [r2,0] 
     --simulate 1 
     --scheduler-goals MAX 
-    --scheduler-histories ML
-    --scheduler-scopes P
-    --unroll-type V"
-  ./realyst $ARGS > "logs/$TEST_NAME/sac.log"
+    --unroll-type V
+  "
 
-  for file in results/*; do
-    [ -e "$file" ] || continue
-    mv "$file" "saved-results/$TEST_NAME/"
+  for t in 7 8 9 10 11; do
+    FILE="logs/$TEST_NAME/$t.log"
+
+    ARGS="
+      $COMMON_ARGS 
+      --simulation-training-runs 5000 
+      --scheduler-histories DH ML 
+      --scheduler-scopes NP 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+    
+    ARGS="
+      $COMMON_ARGS 
+      --simulation-training-runs 20000 
+      --scheduler-histories ML 
+      --scheduler-scopes P 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+
+    ARGS="
+      $COMMON_ARGS 
+      --simulation-training-runs 1000000 
+      --scheduler-histories HD 
+      --scheduler-scopes P 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+  done
+
+  for t in 12 14 16 18 20; do
+    FILE="logs/$TEST_NAME/$t.log"
+
+    ARGS="
+      $COMMON_ARGS 
+      --simulation-training-runs 1000000 
+      --scheduler-histories ML HD
+      --scheduler-scopes P NP
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+
   done
 fi
 
-# === tank-7-11 ===
-if should_run "tank-7-11"; then
-  TEST_NAME="tank-7-11"
+# === Tree ===
+if should_run "tank-tree"; then
+  TEST_NAME="tank-tree"
+  RESULTS_DIR="saved-results/$TEST_NAME"
 
   mkdir -p "logs/$TEST_NAME"
-  mkdir -p "saved-results/$TEST_NAME"
+  mkdir -p $RESULTS_DIR
+
+  COMMON_ARGS="
+    -l info 
+    -b WATERTANK
+    -m A 
+    --q-learning-alpha 0.1 
+    --q-learning-gamma 1 
+    --q-learning-epsilon 0.15 
+    --q-learning-uniform-granularity 0.25 
+    --expirations [r1,2] [r2,4] 
+    --simulate 2 
+    --scheduler-goals MAX 
+    --unroll-type V
+  "
 
   for t in 7 8 9 10 11; do
-    echo "tank with t=$t"
-    ARGS="
-      -t $t 
-      -l info 
-      -b WATERTANK 
-      -m A 
-      --simulation-runs 1000000
-      --simulation-training-runs 1000000 
-      -d 256 
-      --q-learning-alpha 0.1 
-      --q-learning-gamma 0.99 
-      --q-learning-uniform-granularity 0.25 
-      --expirations [r1,2] [r2,4] 
-      --simulate 3 
-      --scheduler-goals MAX 
-      --scheduler-histories ML DH HD
-      --scheduler-scopes P NP
-      --unroll-type V"
-    ./realyst $ARGS > "logs/$TEST_NAME/$t.log"
+    FILE="logs/$TEST_NAME/$t.log"
 
-    for file in results/*; do
-      [ -e "$file" ] || continue
-      mv "$file" "saved-results/$TEST_NAME/"
-    done
+    ARGS="
+      $COMMON_ARGS 
+      --simulation-training-runs 5000 
+      --scheduler-histories DH ML 
+      --scheduler-scopes NP 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+    
+    ARGS="
+      $COMMON_ARGS 
+      --simulation-training-runs 20000 
+      --scheduler-histories ML 
+      --scheduler-scopes P 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+
+    ARGS="
+      $COMMON_ARGS 
+      --simulation-training-runs 1000000 
+      --scheduler-histories HD 
+      --scheduler-scopes P 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+  done
+
+  for t in 12 14 16 18 20; do
+    FILE="logs/$TEST_NAME/$t.log"
+
+    ARGS="
+      $COMMON_ARGS 
+      --simulation-training-runs 1000000 
+      --scheduler-histories ML HD
+      --scheduler-scopes P NP
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+
   done
 fi
 
@@ -159,8 +254,7 @@ if should_run "unroll-type"; then
       -l info 
       -b WATERTANK 
       -m A 
-      --simulation-runs 1000000
-      --simulation-training-runs 1000000 
+      --simulation-training-runs 1000000
       -d 256 
       --q-learning-alpha 0.1 
       --q-learning-gamma 0.99 
@@ -168,22 +262,18 @@ if should_run "unroll-type"; then
       --expirations [r1,2] [r2,4] 
       --simulate 3 
       --scheduler-goals MAX 
-      --scheduler-histories ML
+      --scheduler-histories HD
       --scheduler-scopes P
       --unroll-type $unroll_type"
     ./realyst $ARGS > "logs/$TEST_NAME/$unroll_type.log"
 
-    mkdir -p "saved-results/$TEST_NAME/$unroll_type"
-    for file in results/*; do
-      [ -e "$file" ] || continue
-      mv "$file" "saved-results/$TEST_NAME/$unroll_type/"
-    done
+    save_results "saved-results/$TEST_NAME/$unroll_type/"
   done
 fi
 
 # === unroll-depth ===
 if should_run "unroll-depth"; then
-  TEST_NAME="unroll-depth-sac"
+  TEST_NAME="unroll-depth"
 
   mkdir -p "logs/$TEST_NAME"
   mkdir -p "saved-results/$TEST_NAME"
@@ -195,7 +285,6 @@ if should_run "unroll-depth"; then
       -l info 
       -b WATERTANK 
       -m A 
-      --simulation-runs 1000000
       --simulation-training-runs 1000000 
       -d 256 
       --q-learning-alpha 0.1 
@@ -209,59 +298,8 @@ if should_run "unroll-depth"; then
       --unroll-type V"
     ./realyst $ARGS > "logs/$TEST_NAME/$unroll_depth.log"
 
-    mkdir -p "saved-results/$TEST_NAME/$unroll_depth"
-    for file in results/*; do
-      [ -e "$file" ] || continue
-      mv "$file" "saved-results/$TEST_NAME/$unroll_depth/"
-    done
+    save_results "saved-results/$TEST_NAME/$unroll_depth"
   done
-fi
-
-# === tank-12-20 ===
-if should_run "tank-12-20"; then
-  TEST_NAME="tank-12-20"
-
-  mkdir -p "logs/$TEST_NAME"
-  mkdir -p "saved-results/$TEST_NAME"
-
-  run_tank_12_20_variant() {
-    local mode="$1"
-    local expirations="$2"
-    local simulate="$3"
-
-    mkdir -p "logs/$TEST_NAME/$mode"
-    mkdir -p "saved-results/$TEST_NAME/$mode"
-
-    for t in 12 14 16 18 20; do
-      echo "tank with t=$t on $mode"
-      ARGS="
-        -t $t 
-        -l info 
-        -b WATERTANK 
-        -m A 
-        --simulation-runs 1000000
-        --simulation-training-runs 1000000 
-        -d 256 
-        --q-learning-alpha 0.1 
-        --q-learning-gamma 0.99 
-        --q-learning-uniform-granularity 0.25 
-        --expirations $expirations 
-        --simulate $simulate 
-        --scheduler-goals MAX 
-        --scheduler-histories ML 
-        --scheduler-scopes P NP
-        --unroll-type V"
-      ./realyst $ARGS > "logs/$TEST_NAME/$mode/$t.log"
-
-      for file in results/*; do
-        [ -e "$file" ] || continue
-        mv "$file" "saved-results/$TEST_NAME/$mode/"
-      done
-    done
-  }
-
-  run_tank_12_20_variant "sac"  "[r1,0] [r2,0]" 1
-  run_tank_12_20_variant "tree" "[r1,2] [r2,4]" 2
 fi
 
 if should_run "rename"; then
