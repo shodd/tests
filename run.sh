@@ -320,7 +320,8 @@ fi
 if should_run "time-variable"; then
   TEST_NAME="time-variable"
 
-  mkdir -p "logs/$TEST_NAME"
+  mkdir -p "logs/$TEST_NAME/with"
+  mkdir -p "logs/$TEST_NAME/without"
   mkdir -p "saved-results/$TEST_NAME"
 
 
@@ -342,10 +343,10 @@ if should_run "time-variable"; then
       -t $t
   "
 
-    ./realyst $COMMON_ARGS > "logs/$TEST_NAME/$t.log"
+    ./realyst $COMMON_ARGS > "logs/$TEST_NAME/with/$t.log"
     save_results "saved-results/$TEST_NAME/with/"
 
-    ./realyst $COMMON_ARGS --no-time-variable > "logs/$TEST_NAME/$t.log"
+    ./realyst $COMMON_ARGS --no-time-variable > "logs/$TEST_NAME/without/$t.log"
     save_results "saved-results/$TEST_NAME/without/"
   done
 fi
