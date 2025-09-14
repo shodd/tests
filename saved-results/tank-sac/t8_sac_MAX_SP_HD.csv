@@ -1,6 +1,6 @@
-training_time, simulation_time, prob, low, high, runs, scheduler_variant, success_path_count, failure_path_count
-3853, 51, 0.6055138477067693, 0.5955139525459587, 0.6155137428675799, 15851, 0
-# timestamp 28.08.2025 20:37:15 (1756406235), datastructure sac
+training_time, simulation_time, prob, low, high, runs
+3566, 47, 0.6058942319828348, 0.5958944429548986, 0.615894021010771, 15846
+# timestamp 14.09.2025 13:06:40 (1757848000), datastructure sac
 # timebound 8, expirations {"r1": 0, "r2": 0}
 # alpha 0.1, gamma 1
 # discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.25
