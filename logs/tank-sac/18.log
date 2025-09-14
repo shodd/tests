@@ -1,47 +1,47 @@
 timebound = 18, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 18, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
 simulating 0 runs after 1000000 training runs with parameters:
-learning rate                 0.1
+learning rate                 0.5
 discount factor               1
 exploration rate              0.15
 discretization method         UNIFORM_GRANULARITY
-uniform granularity           0.25
+uniform granularity           1
 adaptive compartments         5
 
 
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
-[2025-09-14 13:08:15.286] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
-[2025-09-14 13:08:15.286] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
-[2025-09-14 13:08:15.286] [info] 1 Model creation: 0
-[2025-09-14 13:08:15.286] [info] 2.0 Creating Unified Datastructure from SAC: 0
-[2025-09-14 13:08:20.278] [info] runs 2291 | prob 0.9642077695329551 | low 0.9542097723734384 | high 0.9742057666924717
-[2025-09-14 13:08:26.688] [info] runs 2450 | prob 0.9616326530612245 | low 0.9516361454268237 | high 0.9716291606956252
-[2025-09-14 13:08:30.421] [info] runs 2398 | prob 0.9624687239366139 | low 0.9524707673295313 | high 0.9724666805436964
-[2025-09-14 13:08:33.741] [info] runs 2537 | prob 0.9601891998423334 | low 0.9501900175322328 | high 0.9701883821524341
-[2025-09-14 13:08:33.822] [info] 2.1 Simulating on SAC: 18535
-[2025-09-14 13:08:33.822] [info] Analysis finished; the goal is not reachable.
-[2025-09-14 13:08:33.822] [info] Probability: 0.0
-[2025-09-14 13:08:33.822] [info] 2 Analysis: 18535
-[2025-09-14 13:08:33.822] [info] 0 Computation Time Complete: 18536
-[2025-09-14 13:08:33.822] [info] Counters and timers:
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-09-14 16:44:18.257] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-09-14 16:44:18.257] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-09-14 16:44:18.257] [info] 1 Model creation: 0
+[2025-09-14 16:44:18.257] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-14 16:44:21.862] [info] runs 2738 | prob 0.9569028487947406 | low 0.9469054424976376 | high 0.9669002550918436
+[2025-09-14 16:44:26.626] [info] runs 2318 | prob 0.9637618636755824 | low 0.9537628551502592 | high 0.9737608722009056
+[2025-09-14 16:44:29.674] [info] runs 3127 | prob 0.950431723696834 | low 0.9404330064203392 | high 0.9604304409733289
+[2025-09-14 16:44:33.002] [info] runs 2772 | prob 0.9563492063492064 | low 0.9463525774837673 | high 0.9663458352146455
+[2025-09-14 16:44:33.039] [info] 2.1 Simulating on SAC: 14781
+[2025-09-14 16:44:33.039] [info] Analysis finished; the goal is not reachable.
+[2025-09-14 16:44:33.039] [info] Probability: 0.0
+[2025-09-14 16:44:33.039] [info] 2 Analysis: 14782
+[2025-09-14 16:44:33.039] [info] 0 Computation Time Complete: 14782
+[2025-09-14 16:44:33.039] [info] Counters and timers:
 Counters:
 
 Timers:
-0 Computation Time Complete: 18536
+0 Computation Time Complete: 14782
 1 Model creation: 0
-2 Analysis: 18535
+2 Analysis: 14782
 2.0 Creating Unified Datastructure from SAC: 0
-2.1 Simulating on SAC: 18535
+2.1 Simulating on SAC: 14781
 
