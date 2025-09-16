@@ -58,7 +58,7 @@ if should_run "q-learning"; then
       echo "tank with $param=$value"
 
       # Default values
-      alpha=0.1
+      alpha=0.5
       gamma=0.99
       granularity=0.25
 
@@ -74,16 +74,14 @@ if should_run "q-learning"; then
         -l info 
         -b WATERTANK 
         -m A 
-        --simulation-runs 1000000
         --simulation-training-runs 1000000 
-        -d 256 
         --q-learning-alpha $alpha
         --q-learning-gamma $gamma 
         --q-learning-uniform-granularity $granularity 
         --expirations [r1,0] [r2,0] 
         --simulate 1 
         --scheduler-goals MAX  
-        --scheduler-histories ML 
+        --scheduler-histories DH 
         --scheduler-scopes P 
         --unroll-type V"
       
@@ -109,9 +107,7 @@ if should_run "tank-sac"; then
     -b WATERTANK
     -m A 
     --q-learning-alpha 0.5  
-    --q-learning-gamma 1 
-    --q-learning-epsilon 0.15 
-    --q-learning-uniform-granularity 1 
+    --q-learning-gamma 0.95  
     --expirations [r1,0] [r2,0] 
     --simulate 1 
     --scheduler-goals MAX 
@@ -123,6 +119,7 @@ if should_run "tank-sac"; then
 
     ARGS="
       $COMMON_ARGS 
+      --q-learning-uniform-granularity 1 
       --simulation-training-runs 5000 
       --scheduler-histories DH ML 
       --scheduler-scopes NP 
@@ -133,6 +130,7 @@ if should_run "tank-sac"; then
     
     ARGS="
       $COMMON_ARGS 
+      --q-learning-uniform-granularity 0.5  
       --simulation-training-runs 20000 
       --scheduler-histories ML 
       --scheduler-scopes P 
@@ -143,6 +141,7 @@ if should_run "tank-sac"; then
 
     ARGS="
       $COMMON_ARGS 
+      --q-learning-uniform-granularity 0.5  
       --simulation-training-runs 1000000 
       --scheduler-histories HD 
       --scheduler-scopes P 
@@ -157,6 +156,7 @@ if should_run "tank-sac"; then
 
     ARGS="
       $COMMON_ARGS 
+      --q-learning-uniform-granularity 0.5 
       --simulation-training-runs 1000000 
       --scheduler-histories ML HD
       --scheduler-scopes P NP
@@ -180,11 +180,9 @@ if should_run "tank-tree"; then
     -l info 
     -b WATERTANK
     -m A 
-    --q-learning-alpha 0.1 
-    --q-learning-gamma 1 
-    --q-learning-epsilon 0.15 
-    --q-learning-uniform-granularity 0.25 
-    --expirations [r1,2] [r2,4] 
+    --q-learning-alpha 0.5 
+    --q-learning-gamma 0.95  
+    --expirations [r1,3] [r2,5] 
     --simulate 2 
     --scheduler-goals MAX 
     --unroll-type V
@@ -195,7 +193,8 @@ if should_run "tank-tree"; then
 
     ARGS="
       $COMMON_ARGS 
-      --simulation-training-runs 1000000 
+      --q-learning-uniform-granularity 1
+      --simulation-training-runs 5000 
       --scheduler-histories DH ML 
       --scheduler-scopes NP 
       -t $t 
@@ -205,7 +204,8 @@ if should_run "tank-tree"; then
     
     ARGS="
       $COMMON_ARGS 
-      --simulation-training-runs 1000000 
+      --q-learning-uniform-granularity 0.5 
+      --simulation-training-runs 20000 
       --scheduler-histories ML 
       --scheduler-scopes P 
       -t $t 
@@ -215,6 +215,7 @@ if should_run "tank-tree"; then
 
     ARGS="
       $COMMON_ARGS 
+      --q-learning-uniform-granularity 0.5 
       --simulation-training-runs 1000000 
       --scheduler-histories HD 
       --scheduler-scopes P 
@@ -229,6 +230,7 @@ if should_run "tank-tree"; then
 
     ARGS="
       $COMMON_ARGS 
+      --q-learning-uniform-granularity 0.5 
       --simulation-training-runs 1000000 
       --scheduler-histories ML HD
       --scheduler-scopes P NP
@@ -247,20 +249,6 @@ if should_run "unroll-type"; then
   mkdir -p "logs/$TEST_NAME"
   mkdir -p "saved-results/$TEST_NAME"
 
-  COMMON_ARGS="
-    -l info 
-    -b WATERTANK
-    -m A 
-    --q-learning-alpha 0.1 
-    --q-learning-gamma 1 
-    --q-learning-epsilon 0.15 
-    --q-learning-uniform-granularity 0.25 
-    --simulate 3 
-    --scheduler-goals MAX 
-    --scheduler-histories HD
-    --scheduler-scopes P
-  "
-
   for unroll_type in V K D; do
     echo "tank with unroll_type=$unroll_type"
     ARGS="
@@ -269,10 +257,9 @@ if should_run "unroll-type"; then
       -b WATERTANK 
       -m A 
       --simulation-training-runs 1000000
-      -d 256 
-      --q-learning-alpha 0.1 
-      --q-learning-gamma 0.99 
-      --q-learning-uniform-granularity 0.25 
+      --q-learning-alpha 0.5 
+      --q-learning-gamma 0.95 
+      --q-learning-uniform-granularity 0.5 
       --expirations [r1,2] [r2,4] 
       --simulate 3 
       --scheduler-goals MAX 
@@ -300,10 +287,9 @@ if should_run "unroll-depth"; then
       -b WATERTANK 
       -m A 
       --simulation-training-runs 1000000 
-      -d 256 
-      --q-learning-alpha 0.1 
-      --q-learning-gamma 0.99 
-      --q-learning-uniform-granularity 0.25 
+      --q-learning-alpha 0.5 
+      --q-learning-gamma 0.95 
+      --q-learning-uniform-granularity 0.5 
       --expirations [r1,$unroll_depth] [r2,$unroll_depth] 
       --simulate 3 
       --scheduler-goals MAX 
@@ -333,8 +319,10 @@ if should_run "time-variable"; then
       -b WATERTANK
       -m A
       --simulation-training-runs 1000000
+      --q-learning-alpha 0.5 
+      --q-learning-gamma 0.95 
       --q-learning-uniform-granularity 0.25
-      --expirations [r1,0] [r2,0] [r,1]
+      --expirations [r1,0] [r2,0] 
       --simulate 1
       --scheduler-goals MAX
       --scheduler-histories ML
@@ -358,7 +346,7 @@ if should_run "intersection"; then
   mkdir -p "saved-results/$TEST_NAME"
 
 
-  for method in R M F; do
+  for method in R F; do
     echo "tank intersection method=$method"
 
     COMMON_ARGS=" 
@@ -366,8 +354,10 @@ if should_run "intersection"; then
       -b WATERTANK
       -m A
       --simulation-training-runs 1000000
+      --q-learning-alpha 0.5 
+      --q-learning-gamma 0.95 
       --q-learning-uniform-granularity 0.25
-      --expirations [r1,0] [r2,0] [r,1]
+      --expirations [r1,0] [r2,0] 
       --simulate 1
       --scheduler-goals MAX
       --scheduler-histories ML
@@ -396,10 +386,9 @@ if should_run "sim-execs"; then
     -l info 
     -b WATERTANK
     -m A 
-    --q-learning-alpha 0.1 
-    --q-learning-gamma 1 
-    --q-learning-epsilon 0.15 
-    --q-learning-uniform-granularity 0.25 
+    --q-learning-alpha 0.5 
+    --q-learning-gamma 0.95 
+    --q-learning-uniform-granularity 0.5 
     --expirations [r1,0] [r2,0] 
     --simulate 1 
     --scheduler-goals MAX 
