@@ -1,0 +1,332 @@
+timebound = 18, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 18, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.5
+discount factor               0.95
+exploration rate              0.15
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           0.25
+adaptive compartments         5
+
+
+[2025-09-16 12:52:50.775] [debug] using cli max expirations 0 for random clock r1
+[2025-09-16 12:52:50.775] [debug] using cli max expirations 0 for random clock r2
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-09-16 12:52:50.775] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-09-16 12:52:50.775] [debug] Clock index for the created transition is: 4
+[2025-09-16 12:52:50.775] [debug] Clock index for the created transition is: 4
+[2025-09-16 12:52:50.775] [debug] Clock index for the created transition is: 4
+[2025-09-16 12:52:50.775] [debug] Clock index for the created transition is: 4
+[2025-09-16 12:52:50.775] [debug] Clock index for the created transition is: 5
+[2025-09-16 12:52:50.775] [debug] Clock index for the created transition is: 5
+[2025-09-16 12:52:50.775] [debug] Clock index for the created transition is: 5
+[2025-09-16 12:52:50.775] [debug] Clock index for the created transition is: 5
+[2025-09-16 12:52:50.775] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-09-16 12:52:50.775] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-09-16 12:52:50.776] [debug] Underlying Hybrid Automaton: initial states (1): 
+all_off:  - x0 ≤ 0
+x0 ≤ 0
+ - x1 ≤ -4
+x1 ≤ 4
+ - x2 ≤ 0
+x2 ≤ 0
+ - 1·x3 ≤ 0
+1·x3 ≤ 0
+
+locations (9): 
+all_off @0x556ae3433b60 {
+Flow.: 
+t: [1, 1], x: [4, 4], c1: [0, 0], c2: [0, 0], 
+Inv.:
+x1 ≤ 16
+ - x0 ≤ 0
+x0 ≤ 18
+Transitions: 
+{ @0x556ae343ae70 all_off (@0x556ae3433b60) -->*v1_on (@0x556ae3435a30)
+Guard:
+ - x1 ≤ -16
+
+Reset:
+Identity
+ }
+{ @0x556ae343b1c0 all_off (@0x556ae3433b60) -->*v2_on (@0x556ae3436470)
+Guard:
+ - x1 ≤ -16
+
+Reset:
+Identity
+ }
+
+}
+v1_on @0x556ae3435a30 {
+Flow.: 
+t: [1, 1], x: [-2, -2], c1: [1, 1], c2: [0, 0], 
+Inv.:
+x2 ≤ 2
+ - x0 ≤ 0
+x0 ≤ 18
+Transitions: 
+{ @0x556ae343b4c0 v1_on (@0x556ae3435a30) --> v1_block (@0x556ae3436e90)
+Guard:
+x1 ≤ 16
+ - x2 ≤ -2
+
+Reset:
+Identity
+]0, 0[, ]0, 0[, [0, 0], 
+ }
+{ @0x556ae343d5d0 v1_on (@0x556ae3435a30) --> v1_block_v2_on (@0x556ae3438360)
+Guard:
+ - x1 ≤ -16
+ - x2 ≤ -2
+
+Reset:
+Identity
+]0, 0[, ]0, 0[, [0, 0], 
+ }
+
+}
+v2_on @0x556ae3436470 {
+Flow.: 
+t: [1, 1], x: [0, 0], c1: [0, 0], c2: [1, 1], 
+Inv.:
+1·x3 ≤ 1
+ - x0 ≤ 0
+x0 ≤ 18
+Transitions: 
+{ @0x556ae343c3c0 v2_on (@0x556ae3436470) --> v2_block (@0x556ae34378d0)
+Guard:
+x1 ≤ 16
+ - 1·x3 ≤ -1
+
+Reset:
+Identity
+]0, 0[, ]0, 0[, ]0, 0[, [0, 0], 
+ }
+{ @0x556ae343ddc0 v2_on (@0x556ae3436470) --> v2_block_v1_on (@0x556ae3438e10)
+Guard:
+ - x1 ≤ -16
+ - 1·x3 ≤ -1
+
+Reset:
+Identity
+]0, 0[, ]0, 0[, ]0, 0[, [0, 0], 
+ }
+
+}
+v1_block @0x556ae3436e90 {
+Flow.: 
+t: [1, 1], x: [4, 4], c1: [0, 0], c2: [0, 0], 
+Inv.:
+x1 ≤ 16
+ - x0 ≤ 0
+x0 ≤ 18
+Transitions: 
+{ @0x556ae343f040 v1_block (@0x556ae3436e90) --> v1_block_v2_on (@0x556ae3438360)
+Guard:
+ - x1 ≤ -16
+
+Reset:
+Identity
+ }
+{ @0x556ae34431a0 v1_block (@0x556ae3436e90) --> all_off (@0x556ae3433b60)
+Guard:
+
+Reset:
+Identity
+ }
+
+}
+v2_block @0x556ae34378d0 {
+Flow.: 
+t: [1, 1], x: [4, 4], c1: [0, 0], c2: [0, 0], 
+Inv.:
+x1 ≤ 16
+ - x0 ≤ 0
+x0 ≤ 18
+Transitions: 
+{ @0x556ae343f430 v2_block (@0x556ae34378d0) --> v2_block_v1_on (@0x556ae3438e10)
+Guard:
+ - x1 ≤ -16
+
+Reset:
+Identity
+ }
+{ @0x556ae34438e0 v2_block (@0x556ae34378d0) --> all_off (@0x556ae3433b60)
+Guard:
+
+Reset:
+Identity
+ }
+
+}
+v1_block_v2_on @0x556ae3438360 {
+Flow.: 
+t: [1, 1], x: [0, 0], c1: [0, 0], c2: [1, 1], 
+Inv.:
+1·x3 ≤ 1
+ - x0 ≤ 0
+x0 ≤ 18
+Transitions: 
+{ @0x556ae343f7c0 v1_block_v2_on (@0x556ae3438360) --> block_safe (@0x556ae34398c0)
+Guard:
+x1 ≤ 16
+ - 1·x3 ≤ -1
+
+Reset:
+Identity
+]0, 0[, ]0, 0[, ]0, 0[, [0, 0], 
+ }
+{ @0x556ae3441310 v1_block_v2_on (@0x556ae3438360) --> block_unsafe (@0x556ae343a3d0)
+Guard:
+ - x1 ≤ -16
+ - 1·x3 ≤ -1
+
+Reset:
+Identity
+]0, 0[, ]0, 0[, ]0, 0[, [0, 0], 
+ }
+{ @0x556ae3443340 v1_block_v2_on (@0x556ae3438360) --> v2_on (@0x556ae3436470)
+Guard:
+
+Reset:
+Identity
+ }
+
+}
+v2_block_v1_on @0x556ae3438e10 {
+Flow.: 
+t: [1, 1], x: [-2, -2], c1: [1, 1], c2: [0, 0], 
+Inv.:
+x2 ≤ 2
+ - x0 ≤ 0
+x0 ≤ 18
+Transitions: 
+{ @0x556ae3440b00 v2_block_v1_on (@0x556ae3438e10) --> block_safe (@0x556ae34398c0)
+Guard:
+x1 ≤ 16
+ - x2 ≤ -2
+
+Reset:
+Identity
+]0, 0[, ]0, 0[, [0, 0], 
+ }
+{ @0x556ae3442590 v2_block_v1_on (@0x556ae3438e10) --> block_unsafe (@0x556ae343a3d0)
+Guard:
+ - x1 ≤ -16
+ - x2 ≤ -2
+
+Reset:
+Identity
+]0, 0[, ]0, 0[, [0, 0], 
+ }
+{ @0x556ae3443ac0 v2_block_v1_on (@0x556ae3438e10) --> v1_on (@0x556ae3435a30)
+Guard:
+
+Reset:
+Identity
+ }
+
+}
+block_safe @0x556ae34398c0 {
+Flow.: 
+t: [1, 1], x: [4, 4], c1: [0, 0], c2: [0, 0], 
+Inv.:
+x1 ≤ 16
+ - x0 ≤ 0
+x0 ≤ 18
+Transitions: 
+{ @0x556ae3442d80 block_safe (@0x556ae34398c0) --> block_unsafe (@0x556ae343a3d0)
+Guard:
+ - x1 ≤ -16
+
+Reset:
+Identity
+ }
+{ @0x556ae3443520 block_safe (@0x556ae34398c0) --> v2_block (@0x556ae34378d0)
+Guard:
+
+Reset:
+Identity
+ }
+{ @0x556ae3443ca0 block_safe (@0x556ae34398c0) --> v1_block (@0x556ae3436e90)
+Guard:
+
+Reset:
+Identity
+ }
+
+}
+block_unsafe @0x556ae343a3d0 {
+Flow.: 
+t: [1, 1], x: [4, 4], c1: [0, 0], c2: [0, 0], 
+Inv.:
+ - x0 ≤ 0
+x0 ≤ 18
+Transitions: 
+{ @0x556ae3443700 block_unsafe (@0x556ae343a3d0) --> v2_block_v1_on (@0x556ae3438e10)
+Guard:
+
+Reset:
+Identity
+ }
+{ @0x556ae3443eb0 block_unsafe (@0x556ae343a3d0) --> v1_block_v2_on (@0x556ae3438360)
+Guard:
+
+Reset:
+Identity
+ }
+
+}
+local bad states (0): 
+
+[2025-09-16 12:52:50.776] [debug] Stochasticity Cache:
+[2025-09-16 12:52:50.776] [debug] v1_block -> all_off is stochastic transition with random event r4(STOCHASTIC) (index 4)
+[2025-09-16 12:52:50.776] [debug] v1_block_v2_on -> v2_on is stochastic transition with random event r4(STOCHASTIC) (index 4)
+[2025-09-16 12:52:50.776] [debug] block_safe -> v2_block is stochastic transition with random event r4(STOCHASTIC) (index 4)
+[2025-09-16 12:52:50.776] [debug] block_unsafe -> v2_block_v1_on is stochastic transition with random event r4(STOCHASTIC) (index 4)
+[2025-09-16 12:52:50.776] [debug] v2_block -> all_off is stochastic transition with random event r5(STOCHASTIC) (index 5)
+[2025-09-16 12:52:50.776] [debug] v2_block_v1_on -> v1_on is stochastic transition with random event r5(STOCHASTIC) (index 5)
+[2025-09-16 12:52:50.776] [debug] block_safe -> v1_block is stochastic transition with random event r5(STOCHASTIC) (index 5)
+[2025-09-16 12:52:50.776] [debug] block_unsafe -> v1_block_v2_on is stochastic transition with random event r5(STOCHASTIC) (index 5)
+[2025-09-16 12:52:50.776] [debug] Specification: ( goal location: block_unsafe, constraints:  - x1 ≤ -18
+ )
+[2025-09-16 12:52:50.776] [info] 1 Model creation: 0
+[2025-09-16 12:52:50.776] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-16 12:52:55.551] [info] runs 2090 | prob 0.9674641148325359 | low 0.9574670741028837 | high 0.9774611555621882
+[2025-09-16 12:52:55.713] [debug] RESULT:
+training_time, simulation_time, prob, low, high, runs
+4766, 8, 0.9674641148325359, 0.9574670741028837, 0.9774611555621882, 2090
+# timestamp 16.09.2025 12:52:50 (1758019970), datastructure sac
+# timebound 18, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.25
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2025-09-16 12:52:55.973] [info] 2.1 Simulating on SAC: 5197
+[2025-09-16 12:52:55.973] [info] Analysis finished; the goal is not reachable.
+[2025-09-16 12:52:55.973] [info] Probability: 0.0
+[2025-09-16 12:52:55.973] [info] 2 Analysis: 5197
+[2025-09-16 12:52:55.973] [info] 0 Computation Time Complete: 5198
+[2025-09-16 12:52:55.973] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 5198
+1 Model creation: 0
+2 Analysis: 5197
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 5197
+
