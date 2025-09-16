@@ -1,0 +1,127 @@
+timebound = 10, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 10, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 5000 training runs with parameters:
+learning rate                 0.5
+discount factor               0.95
+exploration rate              0.15
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           1
+adaptive compartments         5
+
+
+
+ )
+[2025-09-15 11:33:01.347] [info] 1 Model creation: 0
+[2025-09-15 11:33:01.347] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-15 11:33:01.393] [info] runs 15211 | prob 0.6441391098547105 | low 0.6341391803068589 | high 0.654139039402562
+training_time, simulation_time, prob, low, high, runs
+13, 32, 0.6441391098547105, 0.6341391803068589, 0.654139039402562, 15211
+# timestamp 15.09.2025 11:33:01 (1757928781), datastructure sac
+# timebound 10, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: DISCRETE_HISTORY
+# training runs 5000
+
+[2025-09-15 11:33:01.433] [info] runs 15242 | prob 0.6425665923107203 | low 0.6325670177723001 | high 0.6525661668491406
+training_time, simulation_time, prob, low, high, runs
+11, 29, 0.6425665923107203, 0.6325670177723001, 0.6525661668491406, 15242
+# timestamp 15.09.2025 11:33:01 (1757928781), datastructure sac
+# timebound 10, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 5000
+
+[2025-09-15 11:33:01.433] [info] 2.1 Simulating on SAC: 86
+[2025-09-15 11:33:01.433] [info] Analysis finished; the goal is not reachable.
+[2025-09-15 11:33:01.433] [info] Probability: 0.0
+[2025-09-15 11:33:01.433] [info] 2 Analysis: 86
+[2025-09-15 11:33:01.433] [info] 0 Computation Time Complete: 87
+[2025-09-15 11:33:01.433] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 87
+1 Model creation: 0
+2 Analysis: 86
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 86
+
+timebound = 10, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 10, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 20000 training runs with parameters:
+learning rate                 0.5
+discount factor               0.95
+exploration rate              0.15
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           1
+adaptive compartments         5
+
+
+
+ )
+[2025-09-15 11:33:01.442] [info] 1 Model creation: 0
+[2025-09-15 11:33:01.442] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-15 11:33:01.532] [info] runs 15179 | prob 0.6458264707820014 | low 0.635826695314258 | high 0.6558262462497448
+training_time, simulation_time, prob, low, high, runs
+57, 32, 0.6458264707820014, 0.635826695314258, 0.6558262462497448, 15179
+# timestamp 15.09.2025 11:33:01 (1757928781), datastructure sac
+# timebound 10, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 20000
+
+[2025-09-15 11:33:01.532] [info] 2.1 Simulating on SAC: 89
+[2025-09-15 11:33:01.532] [info] Analysis finished; the goal is not reachable.
+[2025-09-15 11:33:01.532] [info] Probability: 0.0
+[2025-09-15 11:33:01.532] [info] 2 Analysis: 89
+[2025-09-15 11:33:01.532] [info] 0 Computation Time Complete: 90
+[2025-09-15 11:33:01.532] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 90
+1 Model creation: 0
+2 Analysis: 89
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 89
+
+timebound = 10, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 10, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.5
+discount factor               0.95
+exploration rate              0.15
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           1
+adaptive compartments         5
+
+
+
+ )
+[2025-09-15 11:33:01.540] [info] 1 Model creation: 0
+[2025-09-15 11:33:01.540] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-15 11:33:04.743] [info] runs 15219 | prob 0.6437348051777384 | low 0.6337349665006409 | high 0.6537346438548359
+training_time, simulation_time, prob, low, high, runs
+3168, 34, 0.6437348051777384, 0.6337349665006409, 0.6537346438548359, 15219
+# timestamp 15.09.2025 11:33:01 (1757928781), datastructure sac
+# timebound 10, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-15 11:33:04.753] [info] 2.1 Simulating on SAC: 3212
+[2025-09-15 11:33:04.753] [info] Analysis finished; the goal is not reachable.
+[2025-09-15 11:33:04.753] [info] Probability: 0.0
+[2025-09-15 11:33:04.753] [info] 2 Analysis: 3212
+[2025-09-15 11:33:04.753] [info] 0 Computation Time Complete: 3212
+[2025-09-15 11:33:04.753] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 3212
+1 Model creation: 0
+2 Analysis: 3212
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 3212
+

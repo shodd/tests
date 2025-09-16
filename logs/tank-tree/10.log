@@ -1,0 +1,191 @@
+timebound = 10, jump depth = 100, max expirations of random clocks = [{r1: 3}, {r2: 5}], combine absorbing locations in unrolling = 255, integration bound(s) = 10, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 5000 training runs with parameters:
+learning rate                 0.5
+discount factor               0.95
+exploration rate              0.15
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2025-09-15 11:40:45.811] [info] 2.4 Creating Unified Datastructure from Reach Tree: 4
+[2025-09-15 11:40:45.861] [info] runs 15325 | prob 0.6381076672104404 | low 0.6281080749994499 | high 0.648107259421431
+training_time, simulation_time, prob, low, high, runs
+14, 35, 0.6381076672104404, 0.6281080749994499, 0.648107259421431, 15325
+# timestamp 15.09.2025 11:37:54 (1757929074), datastructure reach_tree_full
+# timebound 10, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: DISCRETE_HISTORY
+# training runs 5000
+
+[2025-09-15 11:40:45.908] [info] runs 16304 | prob 0.5656280667320903 | low 0.5556281788939044 | high 0.5756279545702763
+training_time, simulation_time, prob, low, high, runs
+12, 34, 0.5656280667320903, 0.5556281788939044, 0.5756279545702763, 16304
+# timestamp 15.09.2025 11:37:54 (1757929074), datastructure reach_tree_full
+# timebound 10, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 5000
+
+[2025-09-15 11:40:45.908] [info] 2.5 Simulating on full Reach Tree: 97
+[2025-09-15 11:40:49.639] [info] 2.6.0 Labeling Reach Tree Nodes: 3730
+[2025-09-15 11:40:49.639] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
+[2025-09-15 11:40:49.639] [info] 2.6 Pre-checking and Reduction: 3730
+[2025-09-15 11:40:49.639] [info] node count before and after reduction 8264 6939
+[2025-09-15 11:40:49.693] [info] runs 15070 | prob 0.6513603185136032 | low 0.6413605881587927 | high 0.6613600488684137
+training_time, simulation_time, prob, low, high, runs
+14, 38, 0.6513603185136032, 0.6413605881587927, 0.6613600488684137, 15070
+# timestamp 15.09.2025 11:37:54 (1757929074), datastructure reach_tree_reduced
+# timebound 10, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: DISCRETE_HISTORY
+# training runs 5000
+
+[2025-09-15 11:40:49.742] [info] runs 15236 | prob 0.6428196377001838 | low 0.6328196669137893 | high 0.6528196084865783
+training_time, simulation_time, prob, low, high, runs
+12, 36, 0.6428196377001838, 0.6328196669137893, 0.6528196084865783, 15236
+# timestamp 15.09.2025 11:37:54 (1757929074), datastructure reach_tree_reduced
+# timebound 10, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 5000
+
+[2025-09-15 11:40:49.742] [info] 2.7 Simulating on reduced Reach Tree: 103
+[2025-09-15 11:40:49.831] [info] Analysis finished; the goal is not reachable.
+[2025-09-15 11:40:49.831] [info] Probability: 0.0
+[2025-09-15 11:40:49.831] [info] 2 Analysis: 175468
+[2025-09-15 11:40:49.831] [info] 0 Computation Time Complete: 175473
+[2025-09-15 11:40:49.831] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 175473
+1 Model creation: 5
+2 Analysis: 175468
+2.2 Reachability Analysis: 171322
+2.3 Augment Reach Tree: 9
+2.4 Creating Unified Datastructure from Reach Tree: 4
+2.5 Simulating on full Reach Tree: 97
+2.6 Pre-checking and Reduction: 3730
+2.6.0 Labeling Reach Tree Nodes: 3730
+2.6.1 Removing Unfulfilling Subtrees: 0
+2.7 Simulating on reduced Reach Tree: 103
+
+timebound = 10, jump depth = 100, max expirations of random clocks = [{r1: 3}, {r2: 5}], combine absorbing locations in unrolling = 255, integration bound(s) = 10, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 20000 training runs with parameters:
+learning rate                 0.5
+discount factor               0.95
+exploration rate              0.15
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2025-09-15 11:43:41.650] [info] 2.4 Creating Unified Datastructure from Reach Tree: 4
+[2025-09-15 11:43:41.761] [info] runs 15236 | prob 0.6428852717248622 | low 0.6328857093026408 | high 0.6528848341470836
+training_time, simulation_time, prob, low, high, runs
+71, 39, 0.6428852717248622, 0.6328857093026408, 0.6528848341470836, 15236
+# timestamp 15.09.2025 11:40:49 (1757929249), datastructure reach_tree_full
+# timebound 10, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 20000
+
+[2025-09-15 11:43:41.765] [info] 2.5 Simulating on full Reach Tree: 114
+[2025-09-15 11:43:45.473] [info] 2.6.0 Labeling Reach Tree Nodes: 3707
+[2025-09-15 11:43:45.473] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
+[2025-09-15 11:43:45.473] [info] 2.6 Pre-checking and Reduction: 3708
+[2025-09-15 11:43:45.473] [info] node count before and after reduction 8264 6939
+[2025-09-15 11:43:45.580] [info] runs 15000 | prob 0.6548 | low 0.6448002312217367 | high 0.6647997687782634
+training_time, simulation_time, prob, low, high, runs
+69, 38, 0.6548, 0.6448002312217367, 0.6647997687782634, 15000
+# timestamp 15.09.2025 11:40:49 (1757929249), datastructure reach_tree_reduced
+# timebound 10, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 20000
+
+[2025-09-15 11:43:45.583] [info] 2.7 Simulating on reduced Reach Tree: 110
+[2025-09-15 11:43:45.675] [info] Analysis finished; the goal is not reachable.
+[2025-09-15 11:43:45.675] [info] Probability: 0.0
+[2025-09-15 11:43:45.675] [info] 2 Analysis: 175791
+[2025-09-15 11:43:45.675] [info] 0 Computation Time Complete: 175796
+[2025-09-15 11:43:45.675] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 175796
+1 Model creation: 5
+2 Analysis: 175791
+2.2 Reachability Analysis: 171642
+2.3 Augment Reach Tree: 8
+2.4 Creating Unified Datastructure from Reach Tree: 4
+2.5 Simulating on full Reach Tree: 114
+2.6 Pre-checking and Reduction: 3708
+2.6.0 Labeling Reach Tree Nodes: 3707
+2.6.1 Removing Unfulfilling Subtrees: 0
+2.7 Simulating on reduced Reach Tree: 110
+
+timebound = 10, jump depth = 100, max expirations of random clocks = [{r1: 3}, {r2: 5}], combine absorbing locations in unrolling = 255, integration bound(s) = 10, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.5
+discount factor               0.95
+exploration rate              0.15
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2025-09-15 11:46:36.755] [info] 2.4 Creating Unified Datastructure from Reach Tree: 4
+[2025-09-15 11:46:40.957] [info] runs 15029 | prob 0.6534034200545612 | low 0.6434037964137196 | high 0.6634030436954028
+training_time, simulation_time, prob, low, high, runs
+4158, 43, 0.6534034200545612, 0.6434037964137196, 0.6634030436954028, 15029
+# timestamp 15.09.2025 11:43:45 (1757929425), datastructure reach_tree_full
+# timebound 10, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-15 11:46:41.087] [info] 2.5 Simulating on full Reach Tree: 4331
+[2025-09-15 11:46:42.243] [info] 2.6.0 Labeling Reach Tree Nodes: 1156
+[2025-09-15 11:46:42.243] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
+[2025-09-15 11:46:42.276] [info] 2.6 Pre-checking and Reduction: 1189
+[2025-09-15 11:46:42.276] [info] node count before and after reduction 8264 6939
+[2025-09-15 11:46:46.427] [info] runs 15082 | prob 0.6507757591831322 | low 0.6407761214847361 | high 0.6607753968815284
+training_time, simulation_time, prob, low, high, runs
+4107, 42, 0.6507757591831322, 0.6407761214847361, 0.6607753968815284, 15082
+# timestamp 15.09.2025 11:43:45 (1757929425), datastructure reach_tree_reduced
+# timebound 10, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-15 11:46:46.533] [info] 2.7 Simulating on reduced Reach Tree: 4256
+[2025-09-15 11:46:46.614] [info] Analysis finished; the goal is not reachable.
+[2025-09-15 11:46:46.614] [info] Probability: 0.0
+[2025-09-15 11:46:46.614] [info] 2 Analysis: 180888
+[2025-09-15 11:46:46.614] [info] 0 Computation Time Complete: 180894
+[2025-09-15 11:46:46.614] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 180894
+1 Model creation: 5
+2 Analysis: 180888
+2.2 Reachability Analysis: 170904
+2.3 Augment Reach Tree: 8
+2.4 Creating Unified Datastructure from Reach Tree: 4
+2.5 Simulating on full Reach Tree: 4331
+2.6 Pre-checking and Reduction: 1189
+2.6.0 Labeling Reach Tree Nodes: 1156
+2.6.1 Removing Unfulfilling Subtrees: 0
+2.7 Simulating on reduced Reach Tree: 4256
+

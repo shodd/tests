@@ -1,0 +1,157 @@
+timebound = 12, jump depth = 100, max expirations of random clocks = [{r1: 3}, {r2: 5}], combine absorbing locations in unrolling = 255, integration bound(s) = 12, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.5
+discount factor               0.95
+exploration rate              0.15
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2025-09-15 12:39:12.856] [info] 2.4 Creating Unified Datastructure from Reach Tree: 40
+[2025-09-15 12:39:16.892] [info] runs 8539 | prob 0.8483428972947652 | low 0.8383438311017901 | high 0.8583419634877403
+training_time, simulation_time, prob, low, high, runs
+4010, 25, 0.8483428972947652, 0.8383438311017901, 0.8583419634877403, 8539
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_full
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2025-09-15 12:39:22.194] [info] runs 8330 | prob 0.8528211284513806 | low 0.8428217025141731 | high 0.8628205543885881
+training_time, simulation_time, prob, low, high, runs
+5237, 30, 0.8528211284513806, 0.8428217025141731, 0.8628205543885881, 8330
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_full
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: DISCRETE_HISTORY
+# training runs 1000000
+
+[2025-09-15 12:39:27.822] [info] runs 8902 | prob 0.8403729498988991 | low 0.8303731492983986 | high 0.8503727504993996
+training_time, simulation_time, prob, low, high, runs
+5285, 34, 0.8403729498988991, 0.8303731492983986, 0.8503727504993996, 8902
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_full
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-15 12:39:31.079] [info] runs 9217 | prob 0.8333514158619941 | low 0.8233521994503634 | high 0.8433506322736248
+training_time, simulation_time, prob, low, high, runs
+2897, 21, 0.8333514158619941, 0.8233521994503634, 0.8433506322736248, 9217
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_full
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2025-09-15 12:39:34.442] [info] runs 10683 | prob 0.7983712440325751 | low 0.7883717523663636 | high 0.8083707356987866
+training_time, simulation_time, prob, low, high, runs
+3331, 32, 0.7983712440325751, 0.7883717523663636, 0.8083707356987866, 10683
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_full
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: DISCRETE_HISTORY
+# training runs 1000000
+
+[2025-09-15 12:39:37.920] [info] runs 10922 | prob 0.7922541659036807 | low 0.7822543224739016 | high 0.8022540093334598
+training_time, simulation_time, prob, low, high, runs
+3445, 29, 0.7922541659036807, 0.7822543224739016, 0.8022540093334598, 10922
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_full
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-15 12:39:37.921] [info] 2.5 Simulating on full Reach Tree: 25065
+[2025-09-15 12:39:53.582] [info] 2.6.0 Labeling Reach Tree Nodes: 15660
+[2025-09-15 12:39:53.584] [info] 2.6.1 Removing Unfulfilling Subtrees: 1
+[2025-09-15 12:39:53.584] [info] 2.6 Pre-checking and Reduction: 15661
+[2025-09-15 12:39:53.585] [info] node count before and after reduction 67861 55137
+[2025-09-15 12:39:57.664] [info] runs 8434 | prob 0.8506046952810055 | low 0.8406055835236612 | high 0.8606038070383497
+training_time, simulation_time, prob, low, high, runs
+4052, 25, 0.8506046952810055, 0.8406055835236612, 0.8606038070383497, 8434
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_reduced
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2025-09-15 12:40:03.002] [info] runs 8709 | prob 0.8446434722700654 | low 0.8346443200127441 | high 0.8546426245273867
+training_time, simulation_time, prob, low, high, runs
+5274, 34, 0.8446434722700654, 0.8346443200127441, 0.8546426245273867, 8709
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_reduced
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: DISCRETE_HISTORY
+# training runs 1000000
+
+[2025-09-15 12:40:08.740] [info] runs 8379 | prob 0.8517722878625135 | low 0.841772835417097 | high 0.8617717403079299
+training_time, simulation_time, prob, low, high, runs
+5389, 31, 0.8517722878625135, 0.841772835417097, 0.8617717403079299, 8379
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_reduced
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-15 12:40:12.152] [info] runs 9267 | prob 0.8322002805654473 | low 0.8222006070370977 | high 0.8421999540937968
+training_time, simulation_time, prob, low, high, runs
+3053, 22, 0.8322002805654473, 0.8222006070370977, 0.8421999540937968, 9267
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_reduced
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2025-09-15 12:40:15.582] [info] runs 11102 | prob 0.7876058367861647 | low 0.7776065045355504 | high 0.797605169036779
+training_time, simulation_time, prob, low, high, runs
+3399, 29, 0.7876058367861647, 0.7776065045355504, 0.797605169036779, 11102
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_reduced
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: DISCRETE_HISTORY
+# training runs 1000000
+
+[2025-09-15 12:40:19.102] [info] runs 10761 | prob 0.7963943871387418 | low 0.7863948819212683 | high 0.8063938923562153
+training_time, simulation_time, prob, low, high, runs
+3485, 32, 0.7963943871387418, 0.7863948819212683, 0.8063938923562153, 10761
+# timestamp 15.09.2025 12:16:02 (1757931362), datastructure reach_tree_reduced
+# timebound 12, expirations {"r1": 3, "r2": 5}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-15 12:40:19.104] [info] 2.7 Simulating on reduced Reach Tree: 25518
+[2025-09-15 12:40:19.885] [info] Analysis finished; the goal is not reachable.
+[2025-09-15 12:40:19.885] [info] Probability: 0.0
+[2025-09-15 12:40:19.885] [info] 2 Analysis: 1457209
+[2025-09-15 12:40:19.885] [info] 0 Computation Time Complete: 1457214
+[2025-09-15 12:40:19.885] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 1457214
+1 Model creation: 5
+2 Analysis: 1457209
+2.2 Reachability Analysis: 1389116
+2.3 Augment Reach Tree: 72
+2.4 Creating Unified Datastructure from Reach Tree: 40
+2.5 Simulating on full Reach Tree: 25065
+2.6 Pre-checking and Reduction: 15661
+2.6.0 Labeling Reach Tree Nodes: 15660
+2.6.1 Removing Unfulfilling Subtrees: 1
+2.7 Simulating on reduced Reach Tree: 25518
+

@@ -1,0 +1,67 @@
+timebound = 20, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 20, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.5
+discount factor               0.95
+exploration rate              0.15
+discretization method         UNIFORM_GRANULARITY
+uniform granularity           1
+adaptive compartments         5
+
+
+[2025-09-15 11:34:05.540] [info] 1 Model creation: 0
+[2025-09-15 11:34:05.540] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-15 11:34:09.079] [info] runs 1198 | prob 0.9816360601001669 | low 0.9716435261404355 | high 0.9916285940598983
+training_time, simulation_time, prob, low, high, runs
+3535, 3, 0.9816360601001669, 0.9716435261404355, 0.9916285940598983, 1198
+# timestamp 15.09.2025 11:34:05 (1757928845), datastructure sac
+# timebound 20, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2025-09-15 11:34:14.353] [info] runs 1000 | prob 0.989 | low 0.9805034944180563 | high 0.9974965055819437
+training_time, simulation_time, prob, low, high, runs
+5267, 3, 0.989, 0.9805034944180563, 0.9974965055819437, 1000
+# timestamp 15.09.2025 11:34:05 (1757928845), datastructure sac
+# timebound 20, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-15 11:34:17.702] [info] runs 1507 | prob 0.9767750497677505 | low 0.966780484523591 | high 0.9867696150119101
+training_time, simulation_time, prob, low, high, runs
+2701, 3, 0.9767750497677505, 0.966780484523591, 0.9867696150119101, 1507
+# timestamp 15.09.2025 11:34:05 (1757928845), datastructure sac
+# timebound 20, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2025-09-15 11:34:21.353] [info] runs 1687 | prob 0.973918197984588 | low 0.9639223796461394 | high 0.9839140163230367
+training_time, simulation_time, prob, low, high, runs
+3645, 4, 0.973918197984588, 0.9639223796461394, 0.9839140163230367, 1687
+# timestamp 15.09.2025 11:34:05 (1757928845), datastructure sac
+# timebound 20, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-15 11:34:21.515] [info] 2.1 Simulating on SAC: 15974
+[2025-09-15 11:34:21.515] [info] Analysis finished; the goal is not reachable.
+[2025-09-15 11:34:21.515] [info] Probability: 0.0
+[2025-09-15 11:34:21.515] [info] 2 Analysis: 15974
+[2025-09-15 11:34:21.515] [info] 0 Computation Time Complete: 15975
+[2025-09-15 11:34:21.515] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 15975
+1 Model creation: 0
+2 Analysis: 15974
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 15974
+
