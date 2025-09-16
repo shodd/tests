@@ -1,8 +1,0 @@
-training_time, simulation_time, prob, low, high, runs, scheduler_variant, success_path_count, failure_path_count
-5026, 69, 0.6499105901053049, 0.639910865034037, 0.6599103151765728, 15099, 0
-# timestamp 29.08.2025 11:41:34 (1756460494), datastructure reach_tree_reduced
-# timebound 10, expirations {"r1": 5, "r2": 5}
-# alpha 0.1, gamma 0.99
-# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.25
-# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
-# training runs 1000000
