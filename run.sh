@@ -184,7 +184,9 @@ if should_run "tank-tree"; then
     --expirations [r1,3] [r2,5] 
     --simulate 2 
     --scheduler-goals MAX 
-    --unroll-type V
+    --unroll-type V 
+    --q-learning-uniform-granularity 0.5 
+    --simulation-executions 10
   "
 
   for t in 7 8 9 10 11; do
@@ -192,7 +194,6 @@ if should_run "tank-tree"; then
 
     ARGS="
       $COMMON_ARGS 
-      --q-learning-uniform-granularity 1
       --simulation-training-runs 5000 
       --scheduler-histories DH ML 
       --scheduler-scopes NP 
@@ -203,7 +204,6 @@ if should_run "tank-tree"; then
     
     ARGS="
       $COMMON_ARGS 
-      --q-learning-uniform-granularity 0.5 
       --simulation-training-runs 20000 
       --scheduler-histories ML 
       --scheduler-scopes P 
@@ -214,7 +214,6 @@ if should_run "tank-tree"; then
 
     ARGS="
       $COMMON_ARGS 
-      --q-learning-uniform-granularity 0.5 
       --simulation-training-runs 1000000 
       --scheduler-histories HD 
       --scheduler-scopes P 
@@ -223,13 +222,12 @@ if should_run "tank-tree"; then
     ./realyst $ARGS >> $FILE
     save_results $RESULTS_DIR
   done
-
+  
   for t in 12 14 16 18 20; do
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
       $COMMON_ARGS 
-      --q-learning-uniform-granularity 0.5 
       --simulation-training-runs 1000000 
       --scheduler-histories ML HD
       --scheduler-scopes P NP
