@@ -1,8 +1,0 @@
-training_time, simulation_time, prob, low, high, runs
-11, 29, 0.5296394870554076, 0.5196397457203195, 0.5396392283904958, 16532
-# timestamp 15.09.2025 11:34:36 (1757928876), datastructure reach_tree_full
-# timebound 8, expirations {"r1": 3, "r2": 5}
-# alpha 0.5, gamma 0.95
-# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.5
-# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: DISCRETE_HISTORY
-# training runs 5000

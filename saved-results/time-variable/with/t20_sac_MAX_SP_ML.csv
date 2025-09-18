@@ -1,0 +1,8 @@
+training_time, simulation_time, prob, low, high, runs
+4928, 4, 0.986, 0.976429197948761, 0.9955708020512389, 1000
+# timestamp 16.09.2025 12:52:59 (1758019979), datastructure sac
+# timebound 20, expirations {"r1": 0, "r2": 0}
+# alpha 0.5, gamma 0.95
+# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 0.25
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 1000000

@@ -106,12 +106,15 @@ if should_run "tank-sac"; then
     -l info 
     -b WATERTANK
     -m A 
-    --q-learning-alpha 0.5  
-    --q-learning-gamma 0.95  
+    --q-learning-alpha 0.25  
+    --q-learning-gamma 0.99   
     --expirations [r1,0] [r2,0] 
     --simulate 1 
     --scheduler-goals MAX 
     --unroll-type V
+    --q-learning-adaptive-granularity 1 
+    --q-learning-uniform-granularity 0.5 
+    --simulation-executions 10
   "
 
   for t in 7 8 9 10 11; do
@@ -119,7 +122,6 @@ if should_run "tank-sac"; then
 
     ARGS="
       $COMMON_ARGS 
-      --q-learning-uniform-granularity 1 
       --simulation-training-runs 5000 
       --scheduler-histories DH ML 
       --scheduler-scopes NP 
@@ -130,7 +132,6 @@ if should_run "tank-sac"; then
     
     ARGS="
       $COMMON_ARGS 
-      --q-learning-uniform-granularity 0.5  
       --simulation-training-runs 20000 
       --scheduler-histories ML 
       --scheduler-scopes P 
@@ -141,7 +142,6 @@ if should_run "tank-sac"; then
 
     ARGS="
       $COMMON_ARGS 
-      --q-learning-uniform-granularity 0.5  
       --simulation-training-runs 1000000 
       --scheduler-histories HD 
       --scheduler-scopes P 
@@ -156,9 +156,8 @@ if should_run "tank-sac"; then
 
     ARGS="
       $COMMON_ARGS 
-      --q-learning-uniform-granularity 0.5 
       --simulation-training-runs 1000000 
-      --scheduler-histories ML HD
+      --scheduler-histories ML
       --scheduler-scopes P NP
       -t $t 
     "
