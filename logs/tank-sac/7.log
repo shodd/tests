@@ -1,31 +1,30 @@
-timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 45, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
 simulating 0 runs after 5000 training runs with parameters:
-learning rate                 0.25
-discount factor               0.99
+learning rate                 0.1
+discount factor               1
 exploration rate              0.15
-discretization method         UNIFORM_GRANULARITY
-uniform granularity           0.5
-adaptive compartments         1
+uniform granularity           1
+adaptive compartments         5
 
 
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
-[2025-09-17 22:19:35.335] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
-[2025-09-17 22:19:35.335] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
-[2025-09-17 22:19:35.335] [info] 1 Model creation: 0
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-09-21 00:10:13.732] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-09-21 00:10:13.732] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-09-21 00:10:13.732] [info] 1 Model creation: 0
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -34,7 +33,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x1 below(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -43,7 +42,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x2 below(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -52,7 +51,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x3 below(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -61,7 +60,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x1 below(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -70,7 +69,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x1 below(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -79,7 +78,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x3 below(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -88,7 +87,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x2 below(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -97,7 +96,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x1 below(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -105,21 +104,21 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -127,7 +126,7 @@ rectangular: 1
 0 0 -1 0 <= -2
 x1 below(16), x2 above(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -135,7 +134,7 @@ rectangular: 1
 0 0 -1 0 <= -2
 x1 above(16), x2 above(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -143,7 +142,7 @@ rectangular: 1
 0 0 0 -1 <= -1
 x1 below(16), x3 above(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -151,33 +150,33 @@ rectangular: 1
 0 0 0 -1 <= -1
 x1 above(16), x3 above(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -185,7 +184,7 @@ rectangular: 1
 0 0 0 -1 <= -1
 x1 below(16), x3 above(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -193,13 +192,13 @@ rectangular: 1
 0 0 0 -1 <= -1
 x1 above(16), x3 above(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -207,7 +206,7 @@ rectangular: 1
 0 0 -1 0 <= -2
 x1 below(16), x2 above(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -215,44 +214,44 @@ rectangular: 1
 0 0 -1 0 <= -2
 x1 above(16), x2 above(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -266,54 +265,99 @@ rectangular: 1
 0 0 0 1 <= 0
 x0 point(-0), x1 point(4), x2 point(-0), x3 point(-0), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 
+[2025-09-21 00:10:13.732] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -18
 x1 above(18), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.335] [info] 2.0 Creating Unified Datastructure from SAC: 0
-[2025-09-17 22:19:35.347] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.359] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.370] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.382] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.394] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.406] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.418] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.430] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.441] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.453] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.453] [info] RESULT:
+[2025-09-21 00:10:13.732] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-21 00:10:13.744] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.756] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.768] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.779] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.791] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.803] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.814] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.826] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.838] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.850] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.861] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.873] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.885] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.897] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.908] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.920] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.932] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.944] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.955] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.967] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.979] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:13.991] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.002] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.014] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.026] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.026] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
 10, 1, 0, 0, 0, 1000
 10, 1, 0, 0, 0, 1000
 10, 1, 0, 0, 0, 1000
 10, 1, 0, 0, 0, 1000
 10, 1, 0, 0, 0, 1000
-10, 2, 0, 0, 0, 1000
 10, 1, 0, 0, 0, 1000
 10, 1, 0, 0, 0, 1000
 10, 1, 0, 0, 0, 1000
 10, 1, 0, 0, 0, 1000
-# timestamp 17.09.2025 22:19:35 (1758140375), datastructure sac
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+10, 1, 0, 0, 0, 1000
+# timestamp 21.09.2025 00:10:13 (1758406213), datastructure sac
 # timebound 7, expirations {"r1": 0, "r2": 0}
-# alpha 0.25, gamma 0.99
-# discretization method UNIFORM_GRANULARITY, adaptive compartments 1, uniform granularity 0.5
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 1
 # scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: DISCRETE_HISTORY
 # training runs 5000
 
-[2025-09-17 22:19:35.464] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.475] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.486] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.496] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.507] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.518] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.529] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.540] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.551] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.561] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.561] [info] RESULT:
+[2025-09-21 00:10:14.037] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.048] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.059] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.070] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.081] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.092] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.103] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.113] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.124] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.135] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.146] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.157] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.168] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.179] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.190] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.201] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.212] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.223] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.234] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.245] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.256] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.267] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.278] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.289] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.300] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.300] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
 9, 1, 0, 0, 0, 1000
 9, 1, 0, 0, 0, 1000
@@ -325,339 +369,34 @@ training_time, simulation_time, prob, low, high, runs
 9, 1, 0, 0, 0, 1000
 9, 1, 0, 0, 0, 1000
 9, 1, 0, 0, 0, 1000
-# timestamp 17.09.2025 22:19:35 (1758140375), datastructure sac
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+9, 1, 0, 0, 0, 1000
+# timestamp 21.09.2025 00:10:13 (1758406213), datastructure sac
 # timebound 7, expirations {"r1": 0, "r2": 0}
-# alpha 0.25, gamma 0.99
-# discretization method UNIFORM_GRANULARITY, adaptive compartments 1, uniform granularity 0.5
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 1
 # scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
 # training runs 5000
 
-[2025-09-17 22:19:35.561] [info] 2.1 Simulating on SAC: 226
-[2025-09-17 22:19:35.561] [info] Analysis finished; the goal is not reachable.
-[2025-09-17 22:19:35.561] [info] Probability: 0.0
-[2025-09-17 22:19:35.561] [info] 2 Analysis: 226
-[2025-09-17 22:19:35.561] [info] 0 Computation Time Complete: 226
-[2025-09-17 22:19:35.561] [info] Counters and timers:
-Counters:
-
-Timers:
-0 Computation Time Complete: 226
-1 Model creation: 0
-2 Analysis: 226
-2.0 Creating Unified Datastructure from SAC: 0
-2.1 Simulating on SAC: 226
-
-timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
-simulating 0 runs after 20000 training runs with parameters:
-learning rate                 0.25
-discount factor               0.99
-exploration rate              0.15
-discretization method         UNIFORM_GRANULARITY
-uniform granularity           0.5
-adaptive compartments         1
-
-
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
-[2025-09-17 22:19:35.572] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
-[2025-09-17 22:19:35.572] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
-[2025-09-17 22:19:35.572] [info] 1 Model creation: 0
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 1 0 0 <= 16
--1 0 0 0 <= 0
-1 0 0 0 <= 7
-x0 range(-0, 7), x1 below(16), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 0 1 0 <= 2
--1 0 0 0 <= 0
-1 0 0 0 <= 7
-x0 range(-0, 7), x2 below(2), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 0 0 1 <= 1
--1 0 0 0 <= 0
-1 0 0 0 <= 7
-x0 range(-0, 7), x3 below(1), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 1 0 0 <= 16
--1 0 0 0 <= 0
-1 0 0 0 <= 7
-x0 range(-0, 7), x1 below(16), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 1 0 0 <= 16
--1 0 0 0 <= 0
-1 0 0 0 <= 7
-x0 range(-0, 7), x1 below(16), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 0 0 1 <= 1
--1 0 0 0 <= 0
-1 0 0 0 <= 7
-x0 range(-0, 7), x3 below(1), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 0 1 0 <= 2
--1 0 0 0 <= 0
-1 0 0 0 <= 7
-x0 range(-0, 7), x2 below(2), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 1 0 0 <= 16
--1 0 0 0 <= 0
-1 0 0 0 <= 7
-x0 range(-0, 7), x1 below(16), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
--1 0 0 0 <= 0
-1 0 0 0 <= 7
-x0 range(-0, 7), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -16
-x1 above(16), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -16
-x1 above(16), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 1 0 0 <= 16
-0 0 -1 0 <= -2
-x1 below(16), x2 above(2), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -16
-0 0 -1 0 <= -2
-x1 above(16), x2 above(2), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 1 0 0 <= 16
-0 0 0 -1 <= -1
-x1 below(16), x3 above(1), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -16
-0 0 0 -1 <= -1
-x1 above(16), x3 above(1), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -16
-x1 above(16), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -16
-x1 above(16), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 1 0 0 <= 16
-0 0 0 -1 <= -1
-x1 below(16), x3 above(1), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -16
-0 0 0 -1 <= -1
-x1 above(16), x3 above(1), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 1 0 0 <= 16
-0 0 -1 0 <= -2
-x1 below(16), x2 above(2), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -16
-0 0 -1 0 <= -2
-x1 above(16), x2 above(2), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -16
-x1 above(16), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
--1 0 0 0 <= 0
-1 0 0 0 <= 0
-0 -1 0 0 <= -4
-0 1 0 0 <= 4
-0 0 -1 0 <= 0
-0 0 1 0 <= 0
-0 0 0 -1 <= 0
-0 0 0 1 <= 0
-x0 point(-0), x1 point(4), x2 point(-0), x3 point(-0), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 
-
-========== ConditionRepresentations ==========
-rectangular: 1
-0 -1 0 0 <= -18
-x1 above(18), 
-========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:35.572] [info] 2.0 Creating Unified Datastructure from SAC: 0
-[2025-09-17 22:19:35.630] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.686] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.742] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.798] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.855] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.912] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:35.970] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:36.026] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:36.083] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:36.139] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:36.139] [info] RESULT:
-training_time, simulation_time, prob, low, high, runs
-55, 2, 0, 0, 0, 1000
-52, 2, 0, 0, 0, 1000
-53, 2, 0, 0, 0, 1000
-53, 2, 0, 0, 0, 1000
-53, 2, 0, 0, 0, 1000
-53, 2, 0, 0, 0, 1000
-54, 2, 0, 0, 0, 1000
-52, 2, 0, 0, 0, 1000
-53, 2, 0, 0, 0, 1000
-52, 2, 0, 0, 0, 1000
-# timestamp 17.09.2025 22:19:35 (1758140375), datastructure sac
-# timebound 7, expirations {"r1": 0, "r2": 0}
-# alpha 0.25, gamma 0.99
-# discretization method UNIFORM_GRANULARITY, adaptive compartments 1, uniform granularity 0.5
-# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
-# training runs 20000
-
-[2025-09-17 22:19:36.139] [info] 2.1 Simulating on SAC: 567
-[2025-09-17 22:19:36.139] [info] Analysis finished; the goal is not reachable.
-[2025-09-17 22:19:36.139] [info] Probability: 0.0
-[2025-09-17 22:19:36.139] [info] 2 Analysis: 567
-[2025-09-17 22:19:36.139] [info] 0 Computation Time Complete: 567
-[2025-09-17 22:19:36.139] [info] Counters and timers:
+[2025-09-21 00:10:14.300] [info] 2.1 Simulating on SAC: 567
+[2025-09-21 00:10:14.300] [info] Analysis finished; the goal is not reachable.
+[2025-09-21 00:10:14.300] [info] Probability: 0.0
+[2025-09-21 00:10:14.300] [info] 2 Analysis: 567
+[2025-09-21 00:10:14.300] [info] 0 Computation Time Complete: 567
+[2025-09-21 00:10:14.300] [info] Counters and timers:
 Counters:
 
 Timers:
@@ -667,34 +406,33 @@ Timers:
 2.0 Creating Unified Datastructure from SAC: 0
 2.1 Simulating on SAC: 567
 
-timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
-simulating 0 runs after 1000000 training runs with parameters:
-learning rate                 0.25
-discount factor               0.99
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 170, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 20000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
 exploration rate              0.15
-discretization method         UNIFORM_GRANULARITY
-uniform granularity           0.5
-adaptive compartments         1
+uniform granularity           1
+adaptive compartments         5
 
 
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
-[2025-09-17 22:19:36.149] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
-[2025-09-17 22:19:36.149] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
-[2025-09-17 22:19:36.149] [info] 1 Model creation: 0
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-09-21 00:10:14.310] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-09-21 00:10:14.310] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-09-21 00:10:14.311] [info] 1 Model creation: 0
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -703,7 +441,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x1 below(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -712,7 +450,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x2 below(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -721,7 +459,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x3 below(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -730,7 +468,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x1 below(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -739,7 +477,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x1 below(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -748,7 +486,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x3 below(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -757,7 +495,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x2 below(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -766,7 +504,7 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), x1 below(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -774,21 +512,21 @@ rectangular: 1
 1 0 0 0 <= 7
 x0 range(-0, 7), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -796,7 +534,7 @@ rectangular: 1
 0 0 -1 0 <= -2
 x1 below(16), x2 above(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -804,7 +542,7 @@ rectangular: 1
 0 0 -1 0 <= -2
 x1 above(16), x2 above(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -812,7 +550,7 @@ rectangular: 1
 0 0 0 -1 <= -1
 x1 below(16), x3 above(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -820,33 +558,33 @@ rectangular: 1
 0 0 0 -1 <= -1
 x1 above(16), x3 above(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -854,7 +592,7 @@ rectangular: 1
 0 0 0 -1 <= -1
 x1 below(16), x3 above(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -862,13 +600,13 @@ rectangular: 1
 0 0 0 -1 <= -1
 x1 above(16), x3 above(1), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -876,7 +614,7 @@ rectangular: 1
 0 0 -1 0 <= -2
 x1 below(16), x2 above(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -884,44 +622,44 @@ rectangular: 1
 0 0 -1 0 <= -2
 x1 above(16), x2 above(2), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -16
 x1 above(16), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
@@ -935,55 +673,434 @@ rectangular: 1
 0 0 0 1 <= 0
 x0 point(-0), x1 point(4), x2 point(-0), x3 point(-0), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 
+[2025-09-21 00:10:14.311] [info] 
 
 ========== ConditionRepresentations ==========
 rectangular: 1
 0 -1 0 0 <= -18
 x1 above(18), 
 ========== +++++++++++++++++++ ==========
-[2025-09-17 22:19:36.149] [info] 2.0 Creating Unified Datastructure from SAC: 0
-[2025-09-17 22:19:38.817] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:41.507] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:44.184] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:46.840] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:49.507] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:52.172] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:54.831] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:19:57.495] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:20:00.167] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:20:02.803] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-17 22:20:02.807] [info] RESULT:
+[2025-09-21 00:10:14.311] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-21 00:10:14.362] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.414] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.466] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.517] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.569] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.621] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.674] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.726] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.778] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.831] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.883] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.935] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:14.987] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.040] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.092] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.144] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.197] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.249] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.301] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.354] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.405] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.457] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.510] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.562] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.614] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:15.614] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
-2666, 1, 0, 0, 0, 1000
-2685, 1, 0, 0, 0, 1000
-2671, 1, 0, 0, 0, 1000
-2650, 1, 0, 0, 0, 1000
-2661, 1, 0, 0, 0, 1000
-2659, 1, 0, 0, 0, 1000
-2653, 1, 0, 0, 0, 1000
-2658, 1, 0, 0, 0, 1000
-2665, 1, 0, 0, 0, 1000
-2630, 2, 0, 0, 0, 1000
-# timestamp 17.09.2025 22:19:36 (1758140376), datastructure sac
+49, 1, 0, 0, 0, 1000
+49, 1, 0, 0, 0, 1000
+49, 1, 0, 0, 0, 1000
+49, 1, 0, 0, 0, 1000
+49, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+49, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 2, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+49, 1, 0, 0, 0, 1000
+49, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 1, 0, 0, 0, 1000
+50, 2, 0, 0, 0, 1000
+# timestamp 21.09.2025 00:10:14 (1758406214), datastructure sac
 # timebound 7, expirations {"r1": 0, "r2": 0}
-# alpha 0.25, gamma 0.99
-# discretization method UNIFORM_GRANULARITY, adaptive compartments 1, uniform granularity 0.5
-# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
-# training runs 1000000
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 20000
 
-[2025-09-17 22:20:02.807] [info] 2.1 Simulating on SAC: 26657
-[2025-09-17 22:20:02.807] [info] Analysis finished; the goal is not reachable.
-[2025-09-17 22:20:02.807] [info] Probability: 0.0
-[2025-09-17 22:20:02.807] [info] 2 Analysis: 26658
-[2025-09-17 22:20:02.807] [info] 0 Computation Time Complete: 26658
-[2025-09-17 22:20:02.807] [info] Counters and timers:
+[2025-09-21 00:10:15.614] [info] 2.1 Simulating on SAC: 1303
+[2025-09-21 00:10:15.614] [info] Analysis finished; the goal is not reachable.
+[2025-09-21 00:10:15.614] [info] Probability: 0.0
+[2025-09-21 00:10:15.614] [info] 2 Analysis: 1303
+[2025-09-21 00:10:15.614] [info] 0 Computation Time Complete: 1303
+[2025-09-21 00:10:15.614] [info] Counters and timers:
 Counters:
 
 Timers:
-0 Computation Time Complete: 26658
+0 Computation Time Complete: 1303
 1 Model creation: 0
-2 Analysis: 26658
+2 Analysis: 1303
 2.0 Creating Unified Datastructure from SAC: 0
-2.1 Simulating on SAC: 26657
+2.1 Simulating on SAC: 1303
+
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 164, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           1
+adaptive compartments         5
+
+
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-09-21 00:10:15.623] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-09-21 00:10:15.623] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-09-21 00:10:15.623] [info] 1 Model creation: 0
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 7
+x0 range(-0, 7), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 7
+x0 range(-0, 7), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 7
+x0 range(-0, 7), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 7
+x0 range(-0, 7), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 7
+x0 range(-0, 7), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 7
+x0 range(-0, 7), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 7
+x0 range(-0, 7), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 7
+x0 range(-0, 7), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 7
+x0 range(-0, 7), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.623] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.624] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.624] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 0
+0 -1 0 0 <= -4
+0 1 0 0 <= 4
+0 0 -1 0 <= 0
+0 0 1 0 <= 0
+0 0 0 -1 <= 0
+0 0 0 1 <= 0
+x0 point(-0), x1 point(4), x2 point(-0), x3 point(-0), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.624] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:15.624] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-21 00:10:18.253] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:20.922] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:23.590] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:26.272] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:28.937] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:31.630] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:34.312] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:36.993] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:39.666] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:42.353] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:45.025] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:47.700] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:50.375] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:53.054] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:55.730] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:10:58.409] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:01.068] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:03.747] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:06.426] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:09.099] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:11.766] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:14.459] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:17.134] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:19.824] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:22.494] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-09-21 00:11:22.494] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+2627, 1, 0, 0, 0, 1000
+2667, 1, 0, 0, 0, 1000
+2665, 1, 0, 0, 0, 1000
+2679, 2, 0, 0, 0, 1000
+2663, 1, 0, 0, 0, 1000
+2689, 1, 0, 0, 0, 1000
+2679, 2, 0, 0, 0, 1000
+2678, 1, 0, 0, 0, 1000
+2671, 2, 0, 0, 0, 1000
+2684, 2, 0, 0, 0, 1000
+2669, 1, 0, 0, 0, 1000
+2672, 1, 0, 0, 0, 1000
+2673, 1, 0, 0, 0, 1000
+2676, 1, 0, 0, 0, 1000
+2674, 1, 0, 0, 0, 1000
+2676, 1, 0, 0, 0, 1000
+2656, 1, 0, 0, 0, 1000
+2676, 2, 0, 0, 0, 1000
+2676, 1, 0, 0, 0, 1000
+2670, 2, 0, 0, 0, 1000
+2664, 1, 0, 0, 0, 1000
+2691, 2, 0, 0, 0, 1000
+2672, 2, 0, 0, 0, 1000
+2687, 2, 0, 0, 0, 1000
+2667, 1, 0, 0, 0, 1000
+# timestamp 21.09.2025 00:10:15 (1758406215), datastructure sac
+# timebound 7, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-09-21 00:11:22.527] [info] 2.1 Simulating on SAC: 66903
+[2025-09-21 00:11:22.527] [info] Analysis finished; the goal is not reachable.
+[2025-09-21 00:11:22.527] [info] Probability: 0.0
+[2025-09-21 00:11:22.527] [info] 2 Analysis: 66903
+[2025-09-21 00:11:22.527] [info] 0 Computation Time Complete: 66904
+[2025-09-21 00:11:22.527] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 66904
+1 Model creation: 0
+2 Analysis: 66903
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 66903
 

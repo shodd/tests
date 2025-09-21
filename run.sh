@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir -p logs
+mkdir -p results
 mkdir -p saved-results
 
 RUN_TESTS=("$@")
@@ -41,8 +42,8 @@ if should_run "q-learning"; then
   # Format: param_name|space-separated-values
   experiments=(
     "alpha|0.05 0.10 0.15 0.25 0.50 0.75"
-    "gamma|0.25 0.50 0.75 0.90 0.95 0.99"
-    "granularity|0.1 0.25 0.5 1.0 2.0 3.0"
+    "gamma|0.25 0.50 0.75 0.90 0.95 1.00"
+    "granularity|0.10 0.25 0.50 1.00 2.00 3.00"
   )
 
   for experiment in "${experiments[@]}"; do
@@ -58,9 +59,9 @@ if should_run "q-learning"; then
       echo "tank with $param=$value"
 
       # Default values
-      alpha=0.5
-      gamma=0.99
-      granularity=0.25
+      alpha=0.1
+      gamma=1
+      granularity=0.5
 
       # Override the one being tested
       case $param in
@@ -74,18 +75,20 @@ if should_run "q-learning"; then
         -l info 
         -b WATERTANK 
         -m A 
-        --simulation-training-runs 1000000 
+        --simulation-training-runs 5000 
         --q-learning-alpha $alpha
         --q-learning-gamma $gamma 
-        --q-learning-uniform-granularity $granularity 
+        --discretization-uniform-granularity $granularity 
         --expirations [r1,0] [r2,0] 
         --simulate 1 
         --scheduler-goals MAX  
-        --scheduler-histories DH 
-        --scheduler-scopes P 
-        --unroll-type V"
+        --scheduler-histories ML 
+        --scheduler-scopes NP 
+        --unroll-type V
+        --simulation-executions 25
+        "
       
-      ./realyst $ARGS > "logs/$logdir/$value.log"
+      ./realyst $ARGS >> "logs/$logdir/$value.log"
 
       file=$(ls results | head -n 1)
       extension="${file##*.}"
@@ -106,15 +109,14 @@ if should_run "tank-sac"; then
     -l info 
     -b WATERTANK
     -m A 
-    --q-learning-alpha 0.25  
-    --q-learning-gamma 0.99   
+    --q-learning-alpha 0.1  
+    --q-learning-gamma 1.0   
     --expirations [r1,0] [r2,0] 
     --simulate 1 
     --scheduler-goals MAX 
     --unroll-type V
-    --q-learning-adaptive-granularity 1 
-    --q-learning-uniform-granularity 0.5 
-    --simulation-executions 10
+    --discretization-uniform-granularity 1.0 
+    --simulation-executions 25
   "
 
   for t in 7 8 9 10 11; do
@@ -179,14 +181,14 @@ if should_run "tank-tree"; then
     -l info 
     -b WATERTANK
     -m A 
-    --q-learning-alpha 0.5 
-    --q-learning-gamma 0.95  
-    --expirations [r1,3] [r2,5] 
+    --q-learning-alpha 0.1 
+    --q-learning-gamma 1.0   
+    --expirations [r1,2] [r2,4] 
     --simulate 2 
     --scheduler-goals MAX 
     --unroll-type V 
-    --q-learning-uniform-granularity 0.5 
-    --simulation-executions 10
+    --discretization-uniform-granularity 1.0 
+    --simulation-executions 25
   "
 
   for t in 7 8 9 10 11; do
@@ -223,7 +225,7 @@ if should_run "tank-tree"; then
     save_results $RESULTS_DIR
   done
   
-  for t in 12 14 16 18 20; do
+  for t in 12 14; do
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
@@ -254,15 +256,17 @@ if should_run "unroll-type"; then
       -b WATERTANK 
       -m A 
       --simulation-training-runs 1000000
-      --q-learning-alpha 0.5 
-      --q-learning-gamma 0.95 
-      --q-learning-uniform-granularity 0.5 
-      --expirations [r1,2] [r2,4] 
-      --simulate 3 
-      --scheduler-goals MAX 
+      --q-learning-alpha 0.1 
+      --q-learning-gamma 1.0 
+      --discretization-uniform-granularity 1.0
+      --expirations [r1,2] [r2,4]
+      --simulate 3
+      --scheduler-goals MAX
       --scheduler-histories HD
       --scheduler-scopes P
-      --unroll-type $unroll_type"
+      --unroll-type $unroll_type
+      --simulation-executions 25
+      "
     ./realyst $ARGS > "logs/$TEST_NAME/$unroll_type.log"
 
     save_results "saved-results/$TEST_NAME/$unroll_type/"
@@ -286,7 +290,7 @@ if should_run "unroll-depth"; then
       --simulation-training-runs 1000000 
       --q-learning-alpha 0.5 
       --q-learning-gamma 0.95 
-      --q-learning-uniform-granularity 0.5 
+      --discretization-uniform-granularity 0.5 
       --expirations [r1,$unroll_depth] [r2,$unroll_depth] 
       --simulate 3 
       --scheduler-goals MAX 
@@ -318,7 +322,7 @@ if should_run "time-variable"; then
       --simulation-training-runs 1000000
       --q-learning-alpha 0.5 
       --q-learning-gamma 0.95 
-      --q-learning-uniform-granularity 0.25
+      --discretization-uniform-granularity 0.25
       --expirations [r1,0] [r2,0] 
       --simulate 1
       --scheduler-goals MAX
@@ -353,7 +357,7 @@ if should_run "intersection"; then
       --simulation-training-runs 1000000
       --q-learning-alpha 0.5 
       --q-learning-gamma 0.95 
-      --q-learning-uniform-granularity 0.25
+      --discretization-uniform-granularity 0.25
       --expirations [r1,0] [r2,0] 
       --simulate 1
       --scheduler-goals MAX
@@ -385,7 +389,7 @@ if should_run "sim-execs"; then
     -m A 
     --q-learning-alpha 0.5 
     --q-learning-gamma 0.95 
-    --q-learning-uniform-granularity 0.5 
+    --discretization-uniform-granularity 0.5 
     --expirations [r1,0] [r2,0] 
     --simulate 1 
     --scheduler-goals MAX 

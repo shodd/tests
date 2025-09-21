@@ -1,39 +1,349 @@
-timebound = 10, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 255, integration bound(s) = 10, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
-simulating 0 runs after 1000000 training runs with parameters:
-learning rate                 0.5
-discount factor               0.95
+timebound = 10, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 197, integration bound(s) = 10, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 5000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
 exploration rate              0.15
-discretization method         UNIFORM_GRANULARITY
 uniform granularity           2
 adaptive compartments         5
 
 
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-09-21 00:10:11.266] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-09-21 00:10:11.266] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-09-21 00:10:11.266] [info] 1 Model creation: 0
+[2025-09-21 00:10:11.266] [info] 
 
- )
-[2025-09-15 11:32:47.879] [info] 1 Model creation: 0
-[2025-09-15 11:32:47.879] [info] 2.0 Creating Unified Datastructure from SAC: 0
-[2025-09-15 11:32:50.667] [info] runs 15376 | prob 0.6352757544224766 | low 0.6252760392217454 | high 0.6452754696232079
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 10
+x0 range(-0, 10), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 10
+x0 range(-0, 10), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 10
+x0 range(-0, 10), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 10
+x0 range(-0, 10), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 10
+x0 range(-0, 10), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 10
+x0 range(-0, 10), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 10
+x0 range(-0, 10), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 10
+x0 range(-0, 10), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 10
+x0 range(-0, 10), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 0
+0 -1 0 0 <= -4
+0 1 0 0 <= 4
+0 0 -1 0 <= 0
+0 0 1 0 <= 0
+0 0 0 -1 <= 0
+0 0 0 1 <= 0
+x0 point(-0), x1 point(4), x2 point(-0), x3 point(-0), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-21 00:10:11.266] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-09-21 00:10:11.319] [info] runs 15229 | prob 0.6432464377175127 | low 0.6332468287022245 | high 0.6532460467328008
+[2025-09-21 00:10:11.368] [info] runs 15255 | prob 0.6418223533267781 | low 0.6318224359583727 | high 0.6518222706951834
+[2025-09-21 00:10:11.416] [info] runs 15093 | prob 0.6502352083747432 | low 0.6402356376032532 | high 0.6602347791462333
+[2025-09-21 00:10:11.465] [info] runs 15156 | prob 0.6470044866719451 | low 0.6370046754994315 | high 0.6570042978444587
+[2025-09-21 00:10:11.514] [info] runs 16243 | prob 0.5723696361509574 | low 0.5623699746899163 | high 0.5823692976119984
+[2025-09-21 00:10:11.566] [info] runs 15145 | prob 0.6476064707824365 | low 0.6376069135097042 | high 0.6576060280551688
+[2025-09-21 00:10:11.618] [info] runs 15254 | prob 0.641864429002229 | low 0.6318644434820303 | high 0.6518644145224276
+[2025-09-21 00:10:11.669] [info] runs 15043 | prob 0.6526623678787475 | low 0.6426623946646219 | high 0.6626623410928731
+[2025-09-21 00:10:11.717] [info] runs 15349 | prob 0.6367841553195648 | low 0.6267845160646648 | high 0.6467837945744648
+[2025-09-21 00:10:11.764] [info] runs 15095 | prob 0.6500828088771117 | low 0.6400828945212391 | high 0.6600827232329842
+[2025-09-21 00:10:11.812] [info] runs 15055 | prob 0.6520757223513782 | low 0.6420757946187517 | high 0.6620756500840047
+[2025-09-21 00:10:11.861] [info] runs 15266 | prob 0.6412943796672343 | low 0.6312948162911118 | high 0.6512939430433569
+[2025-09-21 00:10:11.913] [info] runs 15236 | prob 0.6428196377001838 | low 0.6328196669137893 | high 0.6528196084865783
+[2025-09-21 00:10:11.964] [info] runs 15190 | prob 0.6452929558920343 | low 0.6352934085583352 | high 0.6552925032257334
+[2025-09-21 00:10:12.013] [info] runs 15241 | prob 0.6426087527065153 | low 0.6326091118678214 | high 0.6526083935452092
+[2025-09-21 00:10:12.063] [info] runs 15214 | prob 0.6440120941238333 | low 0.6340123523276033 | high 0.6540118359200633
+[2025-09-21 00:10:12.110] [info] runs 15239 | prob 0.6426930900977754 | low 0.6326933169691011 | high 0.6526928632264497
+[2025-09-21 00:10:12.159] [info] runs 15217 | prob 0.6438194124991785 | low 0.6338194471517266 | high 0.6538193778466305
+[2025-09-21 00:10:12.207] [info] runs 15267 | prob 0.6411868736490469 | low 0.6311869777596348 | high 0.651186769538459
+[2025-09-21 00:10:12.254] [info] runs 15159 | prob 0.6468764430371396 | low 0.6368767977349244 | high 0.6568760883393548
+[2025-09-21 00:10:12.302] [info] runs 15237 | prob 0.6427774496291921 | low 0.6327775446249969 | high 0.6527773546333874
+[2025-09-21 00:10:12.350] [info] runs 15331 | prob 0.6377274802687366 | low 0.6277275751687791 | high 0.6477273853686941
+[2025-09-21 00:10:12.397] [info] runs 15182 | prob 0.6456988539059413 | low 0.6356992533616367 | high 0.6556984544502459
+[2025-09-21 00:10:12.443] [info] runs 16267 | prob 0.5698038974611176 | low 0.5598041721825214 | high 0.5798036227397138
+[2025-09-21 00:10:12.491] [info] runs 15370 | prob 0.6355888093689005 | low 0.6255889728839374 | high 0.6455886458538636
+[2025-09-21 00:10:12.491] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
-2753, 34, 0.6352757544224766, 0.6252760392217454, 0.6452754696232079, 15376
-# timestamp 15.09.2025 11:32:47 (1757928767), datastructure sac
+13, 38, 0.6432464377175127, 0.6332468287022245, 0.6532460467328008, 15229
+13, 35, 0.6418223533267781, 0.6318224359583727, 0.6518222706951834, 15255
+13, 35, 0.6502352083747432, 0.6402356376032532, 0.6602347791462333, 15093
+13, 35, 0.6470044866719451, 0.6370046754994315, 0.6570042978444587, 15156
+13, 35, 0.5723696361509574, 0.5623699746899163, 0.5823692976119984, 16243
+13, 38, 0.6476064707824365, 0.6376069135097042, 0.6576060280551688, 15145
+13, 38, 0.641864429002229, 0.6318644434820303, 0.6518644145224276, 15254
+13, 37, 0.6526623678787475, 0.6426623946646219, 0.6626623410928731, 15043
+13, 34, 0.6367841553195648, 0.6267845160646648, 0.6467837945744648, 15349
+13, 33, 0.6500828088771117, 0.6400828945212391, 0.6600827232329842, 15095
+13, 34, 0.6520757223513782, 0.6420757946187517, 0.6620756500840047, 15055
+13, 35, 0.6412943796672343, 0.6312948162911118, 0.6512939430433569, 15266
+13, 38, 0.6428196377001838, 0.6328196669137893, 0.6528196084865783, 15236
+13, 38, 0.6452929558920343, 0.6352934085583352, 0.6552925032257334, 15190
+13, 35, 0.6426087527065153, 0.6326091118678214, 0.6526083935452092, 15241
+13, 35, 0.6440120941238333, 0.6340123523276033, 0.6540118359200633, 15214
+13, 33, 0.6426930900977754, 0.6326933169691011, 0.6526928632264497, 15239
+13, 35, 0.6438194124991785, 0.6338194471517266, 0.6538193778466305, 15217
+13, 34, 0.6411868736490469, 0.6311869777596348, 0.651186769538459, 15267
+13, 34, 0.6468764430371396, 0.6368767977349244, 0.6568760883393548, 15159
+13, 34, 0.6427774496291921, 0.6327775446249969, 0.6527773546333874, 15237
+13, 34, 0.6377274802687366, 0.6277275751687791, 0.6477273853686941, 15331
+13, 33, 0.6456988539059413, 0.6356992533616367, 0.6556984544502459, 15182
+13, 32, 0.5698038974611176, 0.5598041721825214, 0.5798036227397138, 16267
+13, 34, 0.6355888093689005, 0.6255889728839374, 0.6455886458538636, 15370
+# timestamp 21.09.2025 00:10:11 (1758406211), datastructure sac
 # timebound 10, expirations {"r1": 0, "r2": 0}
-# alpha 0.5, gamma 0.95
-# discretization method UNIFORM_GRANULARITY, adaptive compartments 5, uniform granularity 2
-# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
-# training runs 1000000
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 2
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 5000
 
-[2025-09-15 11:32:50.667] [info] 2.1 Simulating on SAC: 2788
-[2025-09-15 11:32:50.667] [info] Analysis finished; the goal is not reachable.
-[2025-09-15 11:32:50.667] [info] Probability: 0.0
-[2025-09-15 11:32:50.667] [info] 2 Analysis: 2788
-[2025-09-15 11:32:50.667] [info] 0 Computation Time Complete: 2789
-[2025-09-15 11:32:50.667] [info] Counters and timers:
+[2025-09-21 00:10:12.491] [info] 2.1 Simulating on SAC: 1224
+[2025-09-21 00:10:12.491] [info] Analysis finished; the goal is not reachable.
+[2025-09-21 00:10:12.491] [info] Probability: 0.0
+[2025-09-21 00:10:12.491] [info] 2 Analysis: 1224
+[2025-09-21 00:10:12.491] [info] 0 Computation Time Complete: 1225
+[2025-09-21 00:10:12.491] [info] Counters and timers:
 Counters:
 
 Timers:
-0 Computation Time Complete: 2789
+0 Computation Time Complete: 1225
 1 Model creation: 0
-2 Analysis: 2788
+2 Analysis: 1224
 2.0 Creating Unified Datastructure from SAC: 0
-2.1 Simulating on SAC: 2788
+2.1 Simulating on SAC: 1224
 
