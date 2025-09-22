@@ -116,6 +116,7 @@ if should_run "tank-sac"; then
     --scheduler-goals MAX 
     --unroll-type V
     --simulation-executions 25
+    --simulation-intersection-method R
   "
 
   for t in 7 8 9 10 11; do
@@ -193,7 +194,7 @@ if should_run "tank-tree"; then
     --simulation-executions 25
   "
 
-  for t in 7 8 9 10 11; do
+  for t in 7; do
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
@@ -230,7 +231,7 @@ if should_run "tank-tree"; then
     save_results $RESULTS_DIR
   done
   
-  for t in 12 14; do
+  for t in 16 18 20; do
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
