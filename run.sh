@@ -190,7 +190,6 @@ if should_run "tank-tree"; then
     --simulate 2 
     --scheduler-goals MAX 
     --unroll-type V 
-    --discretization-uniform-granularity 1.0 
     --simulation-executions 25
   "
 
@@ -199,6 +198,7 @@ if should_run "tank-tree"; then
 
     ARGS="
       $COMMON_ARGS 
+      --discretization-uniform-granularity 1.0 
       --simulation-training-runs 5000 
       --scheduler-histories DH ML 
       --scheduler-scopes NP 
@@ -209,6 +209,7 @@ if should_run "tank-tree"; then
     
     ARGS="
       $COMMON_ARGS 
+      --discretization-uniform-granularity 1.0 
       --simulation-training-runs 20000 
       --scheduler-histories ML 
       --scheduler-scopes P 
@@ -219,6 +220,7 @@ if should_run "tank-tree"; then
 
     ARGS="
       $COMMON_ARGS 
+      --discretization-uniform-granularity 0.5
       --simulation-training-runs 1000000 
       --scheduler-histories HD 
       --scheduler-scopes P 
@@ -233,8 +235,9 @@ if should_run "tank-tree"; then
 
     ARGS="
       $COMMON_ARGS 
+      --discretization-uniform-granularity 0.5
       --simulation-training-runs 1000000 
-      --scheduler-histories ML HD
+      --scheduler-histories ML 
       --scheduler-scopes P NP
       -t $t 
     "
