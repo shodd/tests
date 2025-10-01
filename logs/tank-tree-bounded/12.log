@@ -1,0 +1,3361 @@
+timebound = 12, jump depth = 100, max expirations of random clocks = [{r1: 2}, {r2: 4}], combine absorbing locations in unrolling = 113, integration bound(s) = 12, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-09-22 13:43:36.446] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-09-22 13:43:36.448] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-09-22 13:43:36.448] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-09-22 13:43:36.448] [info] 1 Model creation: 2
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.448] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 0 1 <= 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x3 below(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 0 1 0 <= 2
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x2 below(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), x1 below(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 12
+x0 range(-0, 12), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.449] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 0 -1 <= -1
+x1 below(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 0 -1 <= -1
+x1 above(16), x3 above(1), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 1 0 0 <= 16
+0 0 -1 0 <= -2
+x1 below(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+0 0 -1 0 <= -2
+x1 above(16), x2 above(2), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -16
+x1 above(16), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+-1 0 0 0 <= 0
+1 0 0 0 <= 0
+0 -1 0 0 <= -4
+0 1 0 0 <= 4
+0 0 -1 0 <= 0
+0 0 1 0 <= 0
+0 0 0 -1 <= 0
+0 0 0 1 <= 0
+x0 point(-0), x1 point(4), x2 point(-0), x3 point(-0), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:43:36.450] [info] 
+
+========== ConditionRepresentations ==========
+rectangular: 1
+0 -1 0 0 <= -18
+x1 above(18), 
+========== +++++++++++++++++++ ==========
+[2025-09-22 13:55:06.613] [info] 2.2 Reachability Analysis: 690162
+[2025-09-22 13:55:06.643] [info] 2.3 Augment Reach Tree: 30
+[2025-09-22 13:55:06.672] [info] 2.4 Creating Unified Datastructure from Reach Tree: 18
+[2025-09-22 13:55:06.672] [info] 2.5 Simulating on full Reach Tree: 0
+[2025-09-22 13:55:15.610] [info] 2.6.0 Labeling Reach Tree Nodes: 8938
+[2025-09-22 13:55:15.611] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
+[2025-09-22 13:55:15.611] [info] 2.6 Pre-checking and Reduction: 8938
+[2025-09-22 13:55:15.612] [info] node count before and after reduction 34002 24107
+[2025-09-22 13:55:19.718] [info] runs 7926 | prob 0.8613424173605854 | low 0.8513429111532376 | high 0.8713419235679332
+[2025-09-22 13:55:23.889] [info] runs 7916 | prob 0.8615462354724608 | low 0.8515465890330179 | high 0.8715458819119036
+[2025-09-22 13:55:28.033] [info] runs 8419 | prob 0.8509324147761017 | low 0.8409334567358445 | high 0.8609313728163589
+[2025-09-22 13:55:32.175] [info] runs 8069 | prob 0.8583467592018837 | low 0.848347204873592 | high 0.8683463135301754
+[2025-09-22 13:55:36.333] [info] runs 8215 | prob 0.8552647595861229 | low 0.8452652314421759 | high 0.8652642877300699
+[2025-09-22 13:55:40.450] [info] runs 8008 | prob 0.8596403596403597 | low 0.849641203538448 | high 0.8696395157422714
+[2025-09-22 13:55:44.573] [info] runs 8050 | prob 0.8587577639751552 | low 0.8487585572091008 | high 0.8687569707412097
+[2025-09-22 13:55:48.724] [info] runs 7701 | prob 0.8659914296844565 | low 0.8559915360413086 | high 0.8759913233276044
+[2025-09-22 13:55:52.869] [info] runs 8053 | prob 0.858686203899168 | low 0.8486867442252755 | high 0.8686856635730607
+[2025-09-22 13:55:57.020] [info] runs 7626 | prob 0.8675583530028849 | low 0.857559294889791 | high 0.8775574111159787
+[2025-09-22 13:56:01.155] [info] runs 7827 | prob 0.8634214897150888 | low 0.8534226224242066 | high 0.873420357005971
+[2025-09-22 13:56:05.312] [info] runs 8014 | prob 0.8594958822061393 | low 0.8494961673536771 | high 0.8694955970586015
+[2025-09-22 13:56:09.460] [info] runs 7906 | prob 0.8617505691879586 | low 0.8517508013060611 | high 0.871750337069856
+[2025-09-22 13:56:13.622] [info] runs 7813 | prob 0.8636887239216691 | low 0.8536891507411624 | high 0.8736882971021758
+[2025-09-22 13:56:17.781] [info] runs 8171 | prob 0.8561987516827806 | low 0.8461992841034913 | high 0.8661982192620699
+[2025-09-22 13:56:21.951] [info] runs 7995 | prob 0.8599124452782989 | low 0.8499132852456189 | high 0.8699116053109789
+[2025-09-22 13:56:26.091] [info] runs 8059 | prob 0.8585432435786078 | low 0.8485432846566523 | high 0.8685432025005633
+[2025-09-22 13:56:30.250] [info] runs 8079 | prob 0.8581507612328259 | low 0.8481516279940677 | high 0.868149894471584
+[2025-09-22 13:56:34.365] [info] runs 7746 | prob 0.8650916602117221 | low 0.8550926370609654 | high 0.8750906833624789
+[2025-09-22 13:56:38.530] [info] runs 8101 | prob 0.857671892358968 | low 0.8476722960178259 | high 0.8676714887001101
+[2025-09-22 13:56:42.671] [info] runs 7883 | prob 0.8622351896486109 | low 0.8522356014245267 | high 0.8722347778726951
+[2025-09-22 13:56:46.800] [info] runs 8123 | prob 0.8571956173827404 | low 0.8471956548909176 | high 0.8671955798745632
+[2025-09-22 13:56:50.969] [info] runs 7863 | prob 0.8626478443342236 | low 0.8526481613614472 | high 0.872647527307
+[2025-09-22 13:56:55.124] [info] runs 8209 | prob 0.8554026068948715 | low 0.8454033840509031 | high 0.8654018297388398
+[2025-09-22 13:56:59.262] [info] runs 7691 | prob 0.8662072552333897 | low 0.8562076779050724 | high 0.8762068325617071
+[2025-09-22 13:56:59.274] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+4082, 24, 0.8613424173605854, 0.8513429111532376, 0.8713419235679332, 7926
+4133, 23, 0.8615462354724608, 0.8515465890330179, 0.8715458819119036, 7916
+4106, 25, 0.8509324147761017, 0.8409334567358445, 0.8609313728163589, 8419
+4105, 24, 0.8583467592018837, 0.848347204873592, 0.8683463135301754, 8069
+4120, 25, 0.8552647595861229, 0.8452652314421759, 0.8652642877300699, 8215
+4080, 24, 0.8596403596403597, 0.849641203538448, 0.8696395157422714, 8008
+4085, 24, 0.8587577639751552, 0.8487585572091008, 0.8687569707412097, 8050
+4114, 23, 0.8659914296844565, 0.8559915360413086, 0.8759913233276044, 7701
+4108, 24, 0.858686203899168, 0.8486867442252755, 0.8686856635730607, 8053
+4115, 23, 0.8675583530028849, 0.857559294889791, 0.8775574111159787, 7626
+4098, 23, 0.8634214897150888, 0.8534226224242066, 0.873420357005971, 7827
+4120, 24, 0.8594958822061393, 0.8494961673536771, 0.8694955970586015, 8014
+4110, 23, 0.8617505691879586, 0.8517508013060611, 0.871750337069856, 7906
+4126, 23, 0.8636887239216691, 0.8536891507411624, 0.8736882971021758, 7813
+4120, 25, 0.8561987516827806, 0.8461992841034913, 0.8661982192620699, 8171
+4133, 24, 0.8599124452782989, 0.8499132852456189, 0.8699116053109789, 7995
+4102, 24, 0.8585432435786078, 0.8485432846566523, 0.8685432025005633, 8059
+4121, 24, 0.8581507612328259, 0.8481516279940677, 0.868149894471584, 8079
+4079, 23, 0.8650916602117221, 0.8550926370609654, 0.8750906833624789, 7746
+4127, 24, 0.857671892358968, 0.8476722960178259, 0.8676714887001101, 8101
+4105, 23, 0.8622351896486109, 0.8522356014245267, 0.8722347778726951, 7883
+4091, 24, 0.8571956173827404, 0.8471956548909176, 0.8671955798745632, 8123
+4131, 23, 0.8626478443342236, 0.8526481613614472, 0.872647527307, 7863
+4117, 24, 0.8554026068948715, 0.8454033840509031, 0.8654018297388398, 8209
+4102, 22, 0.8662072552333897, 0.8562076779050724, 0.8762068325617071, 7691
+# timestamp 22.09.2025 13:43:36 (1758541416), datastructure reach_tree_reduced
+# timebound 12, expirations {"r1": 2, "r2": 4}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2025-09-22 13:57:02.458] [info] runs 9139 | prob 0.8351023087865194 | low 0.8251029155061211 | high 0.8451017020669176
+[2025-09-22 13:57:05.643] [info] runs 9187 | prob 0.8340045716773702 | low 0.8240047724656139 | high 0.8440043708891265
+[2025-09-22 13:57:08.800] [info] runs 9349 | prob 0.8303561878275751 | low 0.8203570051292396 | high 0.8403553705259107
+[2025-09-22 13:57:11.956] [info] runs 9259 | prob 0.8323793066205853 | low 0.8223795766987511 | high 0.8423790365424196
+[2025-09-22 13:57:15.131] [info] runs 9002 | prob 0.8381470784270162 | low 0.8281471534052405 | high 0.8481470034487919
+[2025-09-22 13:57:18.331] [info] runs 9595 | prob 0.8247003647733194 | low 0.8147012404385923 | high 0.8346994891080466
+[2025-09-22 13:57:21.498] [info] runs 8823 | prob 0.8421171936982885 | low 0.8321173916049017 | high 0.8521169957916753
+[2025-09-22 13:57:24.679] [info] runs 9046 | prob 0.8371655980543887 | low 0.8271656824344154 | high 0.8471655136743621
+[2025-09-22 13:57:27.856] [info] runs 9171 | prob 0.8343692072838295 | low 0.8243695023297793 | high 0.8443689122378796
+[2025-09-22 13:57:31.046] [info] runs 8902 | prob 0.8403729498988991 | low 0.8303731492983986 | high 0.8503727504993996
+[2025-09-22 13:57:34.267] [info] runs 8803 | prob 0.8425536748835625 | low 0.8325537771052196 | high 0.8525535726619053
+[2025-09-22 13:57:37.456] [info] runs 10727 | prob 0.7972406078120631 | low 0.7872407939858511 | high 0.807240421638275
+[2025-09-22 13:57:40.631] [info] runs 8916 | prob 0.8400628084342755 | low 0.8300630055201902 | high 0.8500626113483608
+[2025-09-22 13:57:43.806] [info] runs 8994 | prob 0.8383366688903714 | low 0.8283370278561089 | high 0.8483363099246339
+[2025-09-22 13:57:47.006] [info] runs 9071 | prob 0.836622202623746 | low 0.8266226749532133 | high 0.8466217302942787
+[2025-09-22 13:57:50.155] [info] runs 9291 | prob 0.8316650522010548 | low 0.821665604827908 | high 0.8416644995742016
+[2025-09-22 13:57:53.362] [info] runs 10700 | prob 0.7979439252336449 | low 0.7879444752553808 | high 0.807943375211909
+[2025-09-22 13:57:56.544] [info] runs 9174 | prob 0.8343143666884674 | low 0.8243149704561648 | high 0.84431376292077
+[2025-09-22 13:57:59.737] [info] runs 9219 | prob 0.8332790975159996 | low 0.8232792305725691 | high 0.8432789644594301
+[2025-09-22 13:58:02.941] [info] runs 9079 | prob 0.8364357308073577 | low 0.8264360219012524 | high 0.8464354397134629
+[2025-09-22 13:58:06.150] [info] runs 9288 | prob 0.8317183462532299 | low 0.8217185469986418 | high 0.8417181455078181
+[2025-09-22 13:58:09.353] [info] runs 9090 | prob 0.8361936193619361 | low 0.8261940165730678 | high 0.8461932221508045
+[2025-09-22 13:58:12.541] [info] runs 8668 | prob 0.845523765574527 | low 0.8355242225335427 | high 0.8555233086155113
+[2025-09-22 13:58:15.715] [info] runs 9367 | prob 0.8299348777623572 | low 0.8199354479953221 | high 0.8399343075293922
+[2025-09-22 13:58:18.908] [info] runs 8930 | prob 0.8397536394176932 | low 0.8297538658965955 | high 0.8497534129387909
+[2025-09-22 13:58:18.908] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+3161, 21, 0.8351023087865194, 0.8251029155061211, 0.8451017020669176, 9139
+3162, 22, 0.8340045716773702, 0.8240047724656139, 0.8440043708891265, 9187
+3135, 22, 0.8303561878275751, 0.8203570051292396, 0.8403553705259107, 9349
+3131, 24, 0.8323793066205853, 0.8223795766987511, 0.8423790365424196, 9259
+3150, 23, 0.8381470784270162, 0.8281471534052405, 0.8481470034487919, 9002
+3177, 22, 0.8247003647733194, 0.8147012404385923, 0.8346994891080466, 9595
+3144, 23, 0.8421171936982885, 0.8321173916049017, 0.8521169957916753, 8823
+3155, 24, 0.8371655980543887, 0.8271656824344154, 0.8471655136743621, 9046
+3153, 24, 0.8343692072838295, 0.8243695023297793, 0.8443689122378796, 9171
+3165, 24, 0.8403729498988991, 0.8303731492983986, 0.8503727504993996, 8902
+3199, 21, 0.8425536748835625, 0.8325537771052196, 0.8525535726619053, 8803
+3158, 30, 0.7972406078120631, 0.7872407939858511, 0.807240421638275, 10727
+3150, 23, 0.8400628084342755, 0.8300630055201902, 0.8500626113483608, 8916
+3153, 21, 0.8383366688903714, 0.8283370278561089, 0.8483363099246339, 8994
+3178, 21, 0.836622202623746, 0.8266226749532133, 0.8466217302942787, 9071
+3126, 22, 0.8316650522010548, 0.821665604827908, 0.8416644995742016, 9291
+3176, 30, 0.7979439252336449, 0.7879444752553808, 0.807943375211909, 10700
+3157, 24, 0.8343143666884674, 0.8243149704561648, 0.84431376292077, 9174
+3170, 23, 0.8332790975159996, 0.8232792305725691, 0.8432789644594301, 9219
+3178, 24, 0.8364357308073577, 0.8264360219012524, 0.8464354397134629, 9079
+3186, 22, 0.8317183462532299, 0.8217185469986418, 0.8417181455078181, 9288
+3178, 24, 0.8361936193619361, 0.8261940165730678, 0.8461932221508045, 9090
+3164, 22, 0.845523765574527, 0.8355242225335427, 0.8555233086155113, 8668
+3151, 22, 0.8299348777623572, 0.8199354479953221, 0.8399343075293922, 9367
+3171, 21, 0.8397536394176932, 0.8297538658965955, 0.8497534129387909, 8930
+# timestamp 22.09.2025 13:43:36 (1758541416), datastructure reach_tree_reduced
+# timebound 12, expirations {"r1": 2, "r2": 4}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2025-09-22 13:58:18.908] [info] 2.7 Simulating on reduced Reach Tree: 183296
+[2025-09-22 13:58:19.263] [info] Analysis finished; the goal is not reachable.
+[2025-09-22 13:58:19.263] [info] Probability: 0.0
+[2025-09-22 13:58:19.263] [info] 2 Analysis: 882815
+[2025-09-22 13:58:19.263] [info] 0 Computation Time Complete: 882817
+[2025-09-22 13:58:19.263] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 882817
+1 Model creation: 2
+2 Analysis: 882815
+2.2 Reachability Analysis: 690162
+2.3 Augment Reach Tree: 30
+2.4 Creating Unified Datastructure from Reach Tree: 18
+2.5 Simulating on full Reach Tree: 0
+2.6 Pre-checking and Reduction: 8938
+2.6.0 Labeling Reach Tree Nodes: 8938
+2.6.1 Removing Unfulfilling Subtrees: 0
+2.7 Simulating on reduced Reach Tree: 183296
+

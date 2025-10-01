@@ -192,9 +192,10 @@ if should_run "tank-tree"; then
     --scheduler-goals MAX 
     --unroll-type V 
     --simulation-executions 25
+    --simulation-intersection-method R
   "
 
-  for t in 7; do
+  for t in 7 8 9 10 11; do
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
@@ -231,7 +232,83 @@ if should_run "tank-tree"; then
     save_results $RESULTS_DIR
   done
   
-  for t in 16 18 20; do
+  for t in 12 14 16 18 20; do
+    FILE="logs/$TEST_NAME/$t.log"
+
+    ARGS="
+      $COMMON_ARGS 
+      --discretization-uniform-granularity 0.5
+      --simulation-training-runs 1000000 
+      --scheduler-histories ML 
+      --scheduler-scopes P NP
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+
+  done
+fi
+
+# === Tree ===
+if should_run "tank-tree-unleashed"; then
+  TEST_NAME="tank-tree-unleashed"
+  RESULTS_DIR="saved-results/$TEST_NAME"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p $RESULTS_DIR
+
+  COMMON_ARGS="
+    -l info 
+    -b WATERTANK
+    -m A 
+    --q-learning-alpha 0.1 
+    --q-learning-gamma 1.0   
+    --expirations [r1,0] [r2,0] 
+    --simulate 2 
+    --scheduler-goals MAX 
+    --unroll-type V 
+    --simulation-executions 25
+    --simulation-intersection-method R
+  "
+
+  for t in 7 8 9 10 11; do
+    FILE="logs/$TEST_NAME/$t.log"
+
+    ARGS="
+      $COMMON_ARGS 
+      --discretization-uniform-granularity 1.0 
+      --simulation-training-runs 5000 
+      --scheduler-histories DH ML 
+      --scheduler-scopes NP 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+    
+    ARGS="
+      $COMMON_ARGS 
+      --discretization-uniform-granularity 1.0 
+      --simulation-training-runs 20000 
+      --scheduler-histories ML 
+      --scheduler-scopes P 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+
+    ARGS="
+      $COMMON_ARGS 
+      --discretization-uniform-granularity 0.5
+      --simulation-training-runs 1000000 
+      --scheduler-histories HD 
+      --scheduler-scopes P 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+  done
+  
+  for t in 12 14 16 18 20; do
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
@@ -255,7 +332,7 @@ if should_run "unroll-type"; then
   mkdir -p "logs/$TEST_NAME"
   mkdir -p "saved-results/$TEST_NAME"
 
-  for unroll_type in V K D; do
+  for unroll_type in V D; do
     echo "tank with unroll_type=$unroll_type"
     ARGS="
       -t 10 
@@ -265,7 +342,7 @@ if should_run "unroll-type"; then
       --simulation-training-runs 1000000
       --q-learning-alpha 0.1 
       --q-learning-gamma 1.0 
-      --discretization-uniform-granularity 1.0
+      --discretization-uniform-granularity 0.5
       --expirations [r1,2] [r2,4]
       --simulate 3
       --scheduler-goals MAX

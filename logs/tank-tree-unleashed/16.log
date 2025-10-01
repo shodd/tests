@@ -1,0 +1,26 @@
+timebound = 16, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 19, integration bound(s) = 16, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-09-23 05:57:05.339] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-09-23 05:57:05.339] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-09-23 05:57:05.339] [info] 1 Model creation: 0
