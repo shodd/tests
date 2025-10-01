@@ -1,4 +1,4 @@
-timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 106, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 140, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
 simulating 0 runs after 5000 training runs with parameters:
 learning rate                 0.1
 discount factor               1
@@ -7,57 +7,57 @@ uniform granularity           1
 adaptive compartments         5
 
 
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
-[2025-09-22 19:52:20.493] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
-[2025-09-22 19:52:20.493] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
-[2025-09-22 19:52:20.493] [info] 1 Model creation: 0
-[2025-09-22 19:52:23.466] [info] 2.2 Reachability Analysis: 2972
-[2025-09-22 19:52:23.466] [info] 2.3 Augment Reach Tree: 0
-[2025-09-22 19:52:23.466] [info] 2.4 Creating Unified Datastructure from Reach Tree: 0
-[2025-09-22 19:52:23.466] [info] 2.5 Simulating on full Reach Tree: 0
-[2025-09-22 19:52:23.487] [info] 2.6.0 Labeling Reach Tree Nodes: 21
-[2025-09-22 19:52:23.487] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
-[2025-09-22 19:52:23.487] [info] 2.6 Pre-checking and Reduction: 21
-[2025-09-22 19:52:23.487] [info] node count before and after reduction 150 124
-[2025-09-22 19:52:23.499] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.510] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.522] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.533] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.544] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.556] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.567] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.578] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.590] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.601] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.613] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.624] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.635] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.647] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.658] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.670] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.681] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.692] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.704] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.715] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.726] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.738] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.749] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.761] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.772] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.772] [info] RESULT:
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-10-01 18:47:56.171] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-10-01 18:47:56.171] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-10-01 18:47:56.171] [info] 1 Model creation: 0
+[2025-10-01 18:47:56.959] [info] 2.2 Reachability Analysis: 787
+[2025-10-01 18:47:56.959] [info] 2.3 Augment Reach Tree: 0
+[2025-10-01 18:47:56.959] [info] 2.4 Creating Unified Datastructure from Reach Tree: 0
+[2025-10-01 18:47:56.959] [info] 2.5 Simulating on full Reach Tree: 0
+[2025-10-01 18:47:56.973] [info] 2.6.0 Labeling Reach Tree Nodes: 14
+[2025-10-01 18:47:56.973] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
+[2025-10-01 18:47:56.973] [info] 2.6 Pre-checking and Reduction: 14
+[2025-10-01 18:47:56.973] [info] node count before and after reduction 44 37
+[2025-10-01 18:47:56.984] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:56.995] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.006] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.017] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.028] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.039] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.050] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.062] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.073] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.084] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.095] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.106] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.117] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.128] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.139] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.150] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.161] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.172] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.183] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.194] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.205] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.216] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.227] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.238] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.249] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.249] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
 9, 1, 0, 0, 0, 1000
 9, 1, 0, 0, 0, 1000
@@ -84,94 +84,94 @@ training_time, simulation_time, prob, low, high, runs
 9, 1, 0, 0, 0, 1000
 9, 1, 0, 0, 0, 1000
 9, 1, 0, 0, 0, 1000
-# timestamp 22.09.2025 19:52:20 (1758563540), datastructure reach_tree_reduced
+# timestamp 01.10.2025 18:47:56 (1759337276), datastructure reach_tree_reduced
 # timebound 7, expirations {"r1": 0, "r2": 0}
 # alpha 0.1, gamma 1
 # fixed points 5, uniform granularity 1
 # scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: DISCRETE_HISTORY
 # training runs 5000
 
-[2025-09-22 19:52:23.783] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.793] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.804] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.814] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.825] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.835] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.846] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.856] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.866] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.877] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.887] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.898] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.908] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.919] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.929] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.940] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.950] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.961] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.971] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.982] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:23.992] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:24.003] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:24.013] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:24.024] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:24.034] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:24.034] [info] RESULT:
+[2025-10-01 18:47:57.259] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.270] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.280] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.290] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.301] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.311] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.321] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.332] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.342] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.352] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.363] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.374] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.384] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.394] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.405] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.415] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.425] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.436] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.446] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.456] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.467] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.477] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.487] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.498] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.508] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:57.508] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
 8, 1, 0, 0, 0, 1000
 9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
 8, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
 8, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-9, 1, 0, 0, 0, 1000
-# timestamp 22.09.2025 19:52:20 (1758563540), datastructure reach_tree_reduced
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+8, 1, 0, 0, 0, 1000
+# timestamp 01.10.2025 18:47:56 (1759337276), datastructure reach_tree_reduced
 # timebound 7, expirations {"r1": 0, "r2": 0}
 # alpha 0.1, gamma 1
 # fixed points 5, uniform granularity 1
 # scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
 # training runs 5000
 
-[2025-09-22 19:52:24.070] [info] 2.7 Simulating on reduced Reach Tree: 583
-[2025-09-22 19:52:24.073] [info] Analysis finished; the goal is not reachable.
-[2025-09-22 19:52:24.073] [info] Probability: 0.0
-[2025-09-22 19:52:24.073] [info] 2 Analysis: 3579
-[2025-09-22 19:52:24.073] [info] 0 Computation Time Complete: 3579
-[2025-09-22 19:52:24.073] [info] Counters and timers:
+[2025-10-01 18:47:57.508] [info] 2.7 Simulating on reduced Reach Tree: 534
+[2025-10-01 18:47:57.517] [info] Analysis finished; the goal is not reachable.
+[2025-10-01 18:47:57.517] [info] Probability: 0.0
+[2025-10-01 18:47:57.517] [info] 2 Analysis: 1345
+[2025-10-01 18:47:57.517] [info] 0 Computation Time Complete: 1345
+[2025-10-01 18:47:57.517] [info] Counters and timers:
 Counters:
 
 Timers:
-0 Computation Time Complete: 3579
+0 Computation Time Complete: 1345
 1 Model creation: 0
-2 Analysis: 3579
-2.2 Reachability Analysis: 2972
+2 Analysis: 1345
+2.2 Reachability Analysis: 787
 2.3 Augment Reach Tree: 0
 2.4 Creating Unified Datastructure from Reach Tree: 0
 2.5 Simulating on full Reach Tree: 0
-2.6 Pre-checking and Reduction: 21
-2.6.0 Labeling Reach Tree Nodes: 21
+2.6 Pre-checking and Reduction: 14
+2.6.0 Labeling Reach Tree Nodes: 14
 2.6.1 Removing Unfulfilling Subtrees: 0
-2.7 Simulating on reduced Reach Tree: 583
+2.7 Simulating on reduced Reach Tree: 534
 
-timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 15, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 6, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
 simulating 0 runs after 20000 training runs with parameters:
 learning rate                 0.1
 discount factor               1
@@ -180,112 +180,112 @@ uniform granularity           1
 adaptive compartments         5
 
 
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
-[2025-09-22 19:52:24.114] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
-[2025-09-22 19:52:24.114] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
-[2025-09-22 19:52:24.114] [info] 1 Model creation: 0
-[2025-09-22 19:52:27.073] [info] 2.2 Reachability Analysis: 2958
-[2025-09-22 19:52:27.073] [info] 2.3 Augment Reach Tree: 0
-[2025-09-22 19:52:27.073] [info] 2.4 Creating Unified Datastructure from Reach Tree: 0
-[2025-09-22 19:52:27.073] [info] 2.5 Simulating on full Reach Tree: 0
-[2025-09-22 19:52:27.093] [info] 2.6.0 Labeling Reach Tree Nodes: 20
-[2025-09-22 19:52:27.093] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
-[2025-09-22 19:52:27.093] [info] 2.6 Pre-checking and Reduction: 20
-[2025-09-22 19:52:27.093] [info] node count before and after reduction 150 124
-[2025-09-22 19:52:27.141] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.188] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.236] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.284] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.331] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.379] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.427] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.475] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.522] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.570] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.617] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.665] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.712] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.760] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.807] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.855] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.903] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.951] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:27.998] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:28.046] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:28.094] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:28.142] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:28.189] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:28.238] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:28.286] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:28.286] [info] RESULT:
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-10-01 18:47:57.543] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-10-01 18:47:57.543] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-10-01 18:47:57.543] [info] 1 Model creation: 0
+[2025-10-01 18:47:58.327] [info] 2.2 Reachability Analysis: 784
+[2025-10-01 18:47:58.327] [info] 2.3 Augment Reach Tree: 0
+[2025-10-01 18:47:58.327] [info] 2.4 Creating Unified Datastructure from Reach Tree: 0
+[2025-10-01 18:47:58.327] [info] 2.5 Simulating on full Reach Tree: 0
+[2025-10-01 18:47:58.341] [info] 2.6.0 Labeling Reach Tree Nodes: 14
+[2025-10-01 18:47:58.341] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
+[2025-10-01 18:47:58.341] [info] 2.6 Pre-checking and Reduction: 14
+[2025-10-01 18:47:58.341] [info] node count before and after reduction 44 37
+[2025-10-01 18:47:58.388] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.436] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.482] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.529] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.577] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.623] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.670] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.718] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.765] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.812] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.859] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.906] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:58.953] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.000] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.047] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.094] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.141] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.189] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.236] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.283] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.330] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.377] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.424] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.471] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.518] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:47:59.518] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
-46, 1, 0, 0, 0, 1000
-45, 1, 0, 0, 0, 1000
-46, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
+44, 1, 0, 0, 0, 1000
+44, 1, 0, 0, 0, 1000
+45, 1, 0, 0, 0, 1000
+44, 1, 0, 0, 0, 1000
+44, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
-46, 1, 0, 0, 0, 1000
-45, 1, 0, 0, 0, 1000
-46, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
-46, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
 45, 1, 0, 0, 0, 1000
-46, 1, 0, 0, 0, 1000
-46, 1, 0, 0, 0, 1000
-# timestamp 22.09.2025 19:52:24 (1758563544), datastructure reach_tree_reduced
+45, 1, 0, 0, 0, 1000
+44, 1, 0, 0, 0, 1000
+45, 1, 0, 0, 0, 1000
+45, 1, 0, 0, 0, 1000
+# timestamp 01.10.2025 18:47:57 (1759337277), datastructure reach_tree_reduced
 # timebound 7, expirations {"r1": 0, "r2": 0}
 # alpha 0.1, gamma 1
 # fixed points 5, uniform granularity 1
 # scheduler goal: MAXIMIZING, scope: PROPHETIC, history: MEMORYLESS
 # training runs 20000
 
-[2025-09-22 19:52:28.286] [info] 2.7 Simulating on reduced Reach Tree: 1192
-[2025-09-22 19:52:28.290] [info] Analysis finished; the goal is not reachable.
-[2025-09-22 19:52:28.290] [info] Probability: 0.0
-[2025-09-22 19:52:28.290] [info] 2 Analysis: 4176
-[2025-09-22 19:52:28.290] [info] 0 Computation Time Complete: 4176
-[2025-09-22 19:52:28.290] [info] Counters and timers:
+[2025-10-01 18:47:59.518] [info] 2.7 Simulating on reduced Reach Tree: 1176
+[2025-10-01 18:47:59.526] [info] Analysis finished; the goal is not reachable.
+[2025-10-01 18:47:59.526] [info] Probability: 0.0
+[2025-10-01 18:47:59.526] [info] 2 Analysis: 1983
+[2025-10-01 18:47:59.526] [info] 0 Computation Time Complete: 1983
+[2025-10-01 18:47:59.526] [info] Counters and timers:
 Counters:
 
 Timers:
-0 Computation Time Complete: 4176
+0 Computation Time Complete: 1983
 1 Model creation: 0
-2 Analysis: 4176
-2.2 Reachability Analysis: 2958
+2 Analysis: 1983
+2.2 Reachability Analysis: 784
 2.3 Augment Reach Tree: 0
 2.4 Creating Unified Datastructure from Reach Tree: 0
 2.5 Simulating on full Reach Tree: 0
-2.6 Pre-checking and Reduction: 20
-2.6.0 Labeling Reach Tree Nodes: 20
+2.6 Pre-checking and Reduction: 14
+2.6.0 Labeling Reach Tree Nodes: 14
 2.6.1 Removing Unfulfilling Subtrees: 0
-2.7 Simulating on reduced Reach Tree: 1192
+2.7 Simulating on reduced Reach Tree: 1176
 
-timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 140, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 223, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
 simulating 0 runs after 1000000 training runs with parameters:
 learning rate                 0.1
 discount factor               1
@@ -294,108 +294,108 @@ uniform granularity           0.5
 adaptive compartments         5
 
 
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
-[2025-09-22 19:52:28.324] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
-[2025-09-22 19:52:28.324] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
-[2025-09-22 19:52:28.324] [info] 1 Model creation: 0
-[2025-09-22 19:52:31.274] [info] 2.2 Reachability Analysis: 2949
-[2025-09-22 19:52:31.274] [info] 2.3 Augment Reach Tree: 0
-[2025-09-22 19:52:31.275] [info] 2.4 Creating Unified Datastructure from Reach Tree: 0
-[2025-09-22 19:52:31.275] [info] 2.5 Simulating on full Reach Tree: 0
-[2025-09-22 19:52:31.295] [info] 2.6.0 Labeling Reach Tree Nodes: 20
-[2025-09-22 19:52:31.295] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
-[2025-09-22 19:52:31.295] [info] 2.6 Pre-checking and Reduction: 20
-[2025-09-22 19:52:31.295] [info] node count before and after reduction 150 124
-[2025-09-22 19:52:33.878] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:36.435] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:38.969] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:41.530] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:44.140] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:46.742] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:49.286] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:51.824] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:54.385] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:56.944] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:52:59.520] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:02.081] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:04.633] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:07.214] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:09.786] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:12.368] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:14.927] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:17.502] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:20.108] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:22.668] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:25.230] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:27.783] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:30.342] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:32.904] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:35.459] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-09-22 19:53:35.461] [info] RESULT:
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-10-01 18:47:59.556] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-10-01 18:47:59.556] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-10-01 18:47:59.556] [info] 1 Model creation: 0
+[2025-10-01 18:48:00.348] [info] 2.2 Reachability Analysis: 792
+[2025-10-01 18:48:00.348] [info] 2.3 Augment Reach Tree: 0
+[2025-10-01 18:48:00.348] [info] 2.4 Creating Unified Datastructure from Reach Tree: 0
+[2025-10-01 18:48:00.348] [info] 2.5 Simulating on full Reach Tree: 0
+[2025-10-01 18:48:00.363] [info] 2.6.0 Labeling Reach Tree Nodes: 14
+[2025-10-01 18:48:00.363] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
+[2025-10-01 18:48:00.363] [info] 2.6 Pre-checking and Reduction: 14
+[2025-10-01 18:48:00.363] [info] node count before and after reduction 44 37
+[2025-10-01 18:48:02.770] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:05.143] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:07.585] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:09.971] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:12.363] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:14.776] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:17.173] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:19.586] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:22.003] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:24.459] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:26.852] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:29.287] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:31.672] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:34.047] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:36.455] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:38.881] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:41.314] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:43.754] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:46.168] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:48.568] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:50.973] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:53.413] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:55.801] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:48:58.241] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:49:00.649] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-01 18:49:00.650] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
-2581, 1, 0, 0, 0, 1000
-2553, 1, 0, 0, 0, 1000
-2530, 1, 0, 0, 0, 1000
-2556, 1, 0, 0, 0, 1000
-2607, 1, 0, 0, 0, 1000
-2598, 1, 0, 0, 0, 1000
-2539, 1, 0, 0, 0, 1000
-2534, 1, 0, 0, 0, 1000
-2557, 1, 0, 0, 0, 1000
-2556, 1, 0, 0, 0, 1000
-2571, 1, 0, 0, 0, 1000
-2557, 1, 0, 0, 0, 1000
-2548, 1, 0, 0, 0, 1000
-2577, 1, 0, 0, 0, 1000
-2568, 1, 0, 0, 0, 1000
-2577, 1, 0, 0, 0, 1000
-2555, 1, 0, 0, 0, 1000
-2571, 1, 0, 0, 0, 1000
-2602, 1, 0, 0, 0, 1000
-2556, 1, 0, 0, 0, 1000
-2558, 1, 0, 0, 0, 1000
-2549, 1, 0, 0, 0, 1000
-2555, 1, 0, 0, 0, 1000
-2558, 1, 0, 0, 0, 1000
-2551, 1, 0, 0, 0, 1000
-# timestamp 22.09.2025 19:52:28 (1758563548), datastructure reach_tree_reduced
+2405, 1, 0, 0, 0, 1000
+2369, 1, 0, 0, 0, 1000
+2439, 1, 0, 0, 0, 1000
+2383, 1, 0, 0, 0, 1000
+2389, 1, 0, 0, 0, 1000
+2409, 1, 0, 0, 0, 1000
+2393, 1, 0, 0, 0, 1000
+2410, 1, 0, 0, 0, 1000
+2414, 1, 0, 0, 0, 1000
+2452, 1, 0, 0, 0, 1000
+2390, 1, 0, 0, 0, 1000
+2432, 1, 0, 0, 0, 1000
+2381, 1, 0, 0, 0, 1000
+2372, 1, 0, 0, 0, 1000
+2405, 1, 0, 0, 0, 1000
+2422, 1, 0, 0, 0, 1000
+2430, 1, 0, 0, 0, 1000
+2437, 1, 0, 0, 0, 1000
+2411, 1, 0, 0, 0, 1000
+2396, 1, 0, 0, 0, 1000
+2402, 1, 0, 0, 0, 1000
+2437, 1, 0, 0, 0, 1000
+2385, 1, 0, 0, 0, 1000
+2437, 1, 0, 0, 0, 1000
+2404, 1, 0, 0, 0, 1000
+# timestamp 01.10.2025 18:47:59 (1759337279), datastructure reach_tree_reduced
 # timebound 7, expirations {"r1": 0, "r2": 0}
 # alpha 0.1, gamma 1
 # fixed points 5, uniform granularity 0.5
 # scheduler goal: MAXIMIZING, scope: PROPHETIC, history: HISTORY_DEPENDENT
 # training runs 1000000
 
-[2025-09-22 19:53:35.461] [info] 2.7 Simulating on reduced Reach Tree: 64165
-[2025-09-22 19:53:35.463] [info] Analysis finished; the goal is not reachable.
-[2025-09-22 19:53:35.463] [info] Probability: 0.0
-[2025-09-22 19:53:35.463] [info] 2 Analysis: 67138
-[2025-09-22 19:53:35.463] [info] 0 Computation Time Complete: 67138
-[2025-09-22 19:53:35.463] [info] Counters and timers:
+[2025-10-01 18:49:00.650] [info] 2.7 Simulating on reduced Reach Tree: 60286
+[2025-10-01 18:49:00.663] [info] Analysis finished; the goal is not reachable.
+[2025-10-01 18:49:00.663] [info] Probability: 0.0
+[2025-10-01 18:49:00.663] [info] 2 Analysis: 61106
+[2025-10-01 18:49:00.663] [info] 0 Computation Time Complete: 61107
+[2025-10-01 18:49:00.663] [info] Counters and timers:
 Counters:
 
 Timers:
-0 Computation Time Complete: 67138
+0 Computation Time Complete: 61107
 1 Model creation: 0
-2 Analysis: 67138
-2.2 Reachability Analysis: 2949
+2 Analysis: 61106
+2.2 Reachability Analysis: 792
 2.3 Augment Reach Tree: 0
 2.4 Creating Unified Datastructure from Reach Tree: 0
 2.5 Simulating on full Reach Tree: 0
-2.6 Pre-checking and Reduction: 20
-2.6.0 Labeling Reach Tree Nodes: 20
+2.6 Pre-checking and Reduction: 14
+2.6.0 Labeling Reach Tree Nodes: 14
 2.6.1 Removing Unfulfilling Subtrees: 0
-2.7 Simulating on reduced Reach Tree: 64165
+2.7 Simulating on reduced Reach Tree: 60286
 

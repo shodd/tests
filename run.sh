@@ -332,24 +332,32 @@ if should_run "unroll-type"; then
   mkdir -p "logs/$TEST_NAME"
   mkdir -p "saved-results/$TEST_NAME"
 
+  COMMON_ARGS="
+    -t 10 
+    -l info 
+    -b WATERTANK 
+    -m A 
+    --simulation-training-runs 1 
+    --q-learning-alpha 0.1 
+    --q-learning-gamma 1.0 
+    --discretization-uniform-granularity 0.5 
+    --simulate 2 
+    --scheduler-goals MAX 
+    --scheduler-histories HD 
+    --scheduler-scopes P 
+    --simulation-executions 1
+  "
+
   for unroll_type in V D; do
     echo "tank with unroll_type=$unroll_type"
+    EXP="--expirations [r1,0] [r2,0]"
+    if [ "$unroll_type" = "D" ]; then
+      EXP="--expirations [r1,5] [r2,5]"
+    fi
     ARGS="
-      -t 10 
-      -l info 
-      -b WATERTANK 
-      -m A 
-      --simulation-training-runs 1000000
-      --q-learning-alpha 0.1 
-      --q-learning-gamma 1.0 
-      --discretization-uniform-granularity 0.5
-      --expirations [r1,2] [r2,4]
-      --simulate 3
-      --scheduler-goals MAX
-      --scheduler-histories HD
-      --scheduler-scopes P
+      $COMMON_ARGS 
+      $EXP 
       --unroll-type $unroll_type
-      --simulation-executions 25
       "
     ./realyst $ARGS > "logs/$TEST_NAME/$unroll_type.log"
 
