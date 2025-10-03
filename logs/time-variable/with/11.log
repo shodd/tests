@@ -1,0 +1,53 @@
+timebound = 11, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 40, integration bound(s) = 11, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-10-03 11:06:46.809] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-10-03 11:06:46.809] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-10-03 11:06:46.809] [info] 1 Model creation: 0
+[2025-10-03 11:06:46.809] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-10-03 11:06:51.143] [info] runs 11457 | prob 0.7781269093130837 | low 0.7681271870950946 | high 0.7881266315310728
+[2025-10-03 11:06:51.245] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+4294, 38, 0.7781269093130837, 0.7681271870950946, 0.7881266315310728, 11457
+# timestamp 03.10.2025 11:06:46 (1759482406), datastructure SAC
+# timebound 11, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000000
+
+[2025-10-03 11:06:51.245] [info] 2.1 Simulating on SAC: 4435
+[2025-10-03 11:06:51.245] [info] Analysis finished; the goal is not reachable.
+[2025-10-03 11:06:51.245] [info] Probability: 0.0
+[2025-10-03 11:06:51.245] [info] 2 Analysis: 4436
+[2025-10-03 11:06:51.245] [info] 0 Computation Time Complete: 4436
+[2025-10-03 11:06:51.245] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 4436
+1 Model creation: 0
+2 Analysis: 4436
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 4435
+

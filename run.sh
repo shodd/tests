@@ -120,6 +120,7 @@ if should_run "tank-sac"; then
   "
 
   for t in 7 8 9 10 11; do
+    echo "tank sac with t=$t"
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
@@ -157,6 +158,7 @@ if should_run "tank-sac"; then
   done
 
   for t in 12 14 16 18 20; do
+    echo "tank sac with t=$t"
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
@@ -187,82 +189,6 @@ if should_run "tank-tree"; then
     -m A 
     --q-learning-alpha 0.1 
     --q-learning-gamma 1.0   
-    --expirations [r1,2] [r2,4] 
-    --simulate 2 
-    --scheduler-goals MAX 
-    --unroll-type V 
-    --simulation-executions 25
-    --simulation-intersection-method R
-  "
-
-  for t in 7 8 9 10 11; do
-    FILE="logs/$TEST_NAME/$t.log"
-
-    ARGS="
-      $COMMON_ARGS 
-      --discretization-uniform-granularity 1.0 
-      --simulation-training-runs 5000 
-      --scheduler-histories DH ML 
-      --scheduler-scopes NP 
-      -t $t 
-    "
-    ./realyst $ARGS >> $FILE
-    save_results $RESULTS_DIR
-    
-    ARGS="
-      $COMMON_ARGS 
-      --discretization-uniform-granularity 1.0 
-      --simulation-training-runs 20000 
-      --scheduler-histories ML 
-      --scheduler-scopes P 
-      -t $t 
-    "
-    ./realyst $ARGS >> $FILE
-    save_results $RESULTS_DIR
-
-    ARGS="
-      $COMMON_ARGS 
-      --discretization-uniform-granularity 0.5
-      --simulation-training-runs 1000000 
-      --scheduler-histories HD 
-      --scheduler-scopes P 
-      -t $t 
-    "
-    ./realyst $ARGS >> $FILE
-    save_results $RESULTS_DIR
-  done
-  
-  for t in 12 14 16 18 20; do
-    FILE="logs/$TEST_NAME/$t.log"
-
-    ARGS="
-      $COMMON_ARGS 
-      --discretization-uniform-granularity 0.5
-      --simulation-training-runs 1000000 
-      --scheduler-histories ML 
-      --scheduler-scopes P NP
-      -t $t 
-    "
-    ./realyst $ARGS >> $FILE
-    save_results $RESULTS_DIR
-
-  done
-fi
-
-# === Tree ===
-if should_run "tank-tree-unleashed"; then
-  TEST_NAME="tank-tree-unleashed"
-  RESULTS_DIR="saved-results/$TEST_NAME"
-
-  mkdir -p "logs/$TEST_NAME"
-  mkdir -p $RESULTS_DIR
-
-  COMMON_ARGS="
-    -l info 
-    -b WATERTANK
-    -m A 
-    --q-learning-alpha 0.1 
-    --q-learning-gamma 1.0   
     --expirations [r1,0] [r2,0] 
     --simulate 2 
     --scheduler-goals MAX 
@@ -272,6 +198,7 @@ if should_run "tank-tree-unleashed"; then
   "
 
   for t in 7 8 9 10 11; do
+    echo "tank tree with t=$t"
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
@@ -309,6 +236,8 @@ if should_run "tank-tree-unleashed"; then
   done
   
   for t in 12 14 16 18 20; do
+    echo "tank tree with t=$t"
+
     FILE="logs/$TEST_NAME/$t.log"
 
     ARGS="
@@ -325,70 +254,30 @@ if should_run "tank-tree-unleashed"; then
   done
 fi
 
-# === unroll-type ===
-if should_run "unroll-type"; then
-  TEST_NAME="unroll-type"
-
-  mkdir -p "logs/$TEST_NAME"
-  mkdir -p "saved-results/$TEST_NAME"
-
-  COMMON_ARGS="
-    -t 10 
-    -l info 
-    -b WATERTANK 
-    -m A 
-    --simulation-training-runs 1 
-    --q-learning-alpha 0.1 
-    --q-learning-gamma 1.0 
-    --discretization-uniform-granularity 0.5 
-    --simulate 2 
-    --scheduler-goals MAX 
-    --scheduler-histories HD 
-    --scheduler-scopes P 
-    --simulation-executions 1
-  "
-
-  for unroll_type in V D; do
-    echo "tank with unroll_type=$unroll_type"
-    EXP="--expirations [r1,0] [r2,0]"
-    if [ "$unroll_type" = "D" ]; then
-      EXP="--expirations [r1,5] [r2,5]"
-    fi
-    ARGS="
-      $COMMON_ARGS 
-      $EXP 
-      --unroll-type $unroll_type
-      "
-    ./realyst $ARGS > "logs/$TEST_NAME/$unroll_type.log"
-
-    save_results "saved-results/$TEST_NAME/$unroll_type/"
-  done
-fi
-
 # === unroll-depth ===
-if should_run "unroll-depth"; then
-  TEST_NAME="unroll-depth"
+if should_run "jump-bound"; then
+  TEST_NAME="jump-bound"
 
   mkdir -p "logs/$TEST_NAME"
   mkdir -p "saved-results/$TEST_NAME"
 
-  for unroll_depth in 1 2 3 4 5; do
-    echo "tank with unroll_depth=$unroll_depth"
+  for unroll_depth in 0 1 2 3 4 5; do
+    echo "test $TEST_NAME with jmp=$unroll_depth"
     ARGS="
-      -t 10 
+      -t 6  
       -l info 
       -b WATERTANK 
       -m A 
-      --simulation-training-runs 1000000 
-      --q-learning-alpha 0.5 
-      --q-learning-gamma 0.95 
+      --simulation-training-runs 1  
+      --q-learning-alpha 0.1 
+      --q-learning-gamma 1 
       --discretization-uniform-granularity 0.5 
       --expirations [r1,$unroll_depth] [r2,$unroll_depth] 
-      --simulate 3 
+      --simulate 2 
       --scheduler-goals MAX 
       --scheduler-histories HD 
       --scheduler-scopes P 
-      --unroll-type V"
+      --unroll-type $((unroll_depth > 0 ? D : V))"
     ./realyst $ARGS > "logs/$TEST_NAME/$unroll_depth.log"
 
     save_results "saved-results/$TEST_NAME/$unroll_depth"
@@ -408,17 +297,17 @@ if should_run "time-variable"; then
     echo "tank with time-variable at t=$t"
 
     COMMON_ARGS=" 
-      -l trace
+      -l info
       -b WATERTANK
       -m A
       --simulation-training-runs 1000000
-      --q-learning-alpha 0.5 
-      --q-learning-gamma 0.95 
-      --discretization-uniform-granularity 0.25
+      --q-learning-alpha 0.1 
+      --q-learning-gamma 1 
+      --discretization-uniform-granularity 0.5
       --expirations [r1,0] [r2,0] 
       --simulate 1
       --scheduler-goals MAX
-      --scheduler-histories ML
+      --scheduler-histories HD
       --scheduler-scopes P
       --unroll-type V
       -t $t
@@ -443,12 +332,12 @@ if should_run "intersection"; then
     echo "tank intersection method=$method"
 
     COMMON_ARGS=" 
-      -l trace
+      -l info
       -b WATERTANK
       -m A
       --simulation-training-runs 1000000
-      --q-learning-alpha 0.5 
-      --q-learning-gamma 0.95 
+      --q-learning-alpha 0.1 
+      --q-learning-gamma 1  
       --discretization-uniform-granularity 0.25
       --expirations [r1,0] [r2,0] 
       --simulate 1
@@ -458,50 +347,11 @@ if should_run "intersection"; then
       --unroll-type V
       -t 20
       --simulation-intersection-method $method
-      --no-time-variable
-  "
+      "
 
     ./realyst $COMMON_ARGS > "logs/$TEST_NAME/$method.log"
     save_results "saved-results/$TEST_NAME/$method/"
 
-  done
-fi
-
-
-if should_run "sim-execs"; then
-  TEST_NAME="sim-execs"
-  RESULTS_DIR="saved-results/$TEST_NAME"
-
-  mkdir -p "logs/$TEST_NAME"
-  mkdir -p $RESULTS_DIR
-
-  COMMON_ARGS="
-    -l info 
-    -b WATERTANK
-    -m A 
-    --q-learning-alpha 0.5 
-    --q-learning-gamma 0.95 
-    --discretization-uniform-granularity 0.5 
-    --expirations [r1,0] [r2,0] 
-    --simulate 1 
-    --scheduler-goals MAX 
-    --unroll-type V
-    -t 10 
-    --simulation-executions 10
-    --scheduler-histories DH 
-    --scheduler-scopes NP 
-  "
-
-  for exp in 3 4 5 6; do
-    FILE="logs/$TEST_NAME/$exp.log"
-
-    exp_val=$((10 ** exp))
-    ARGS="
-      $COMMON_ARGS 
-      --simulation-training-runs $exp_val 
-    "
-    ./realyst $ARGS >> $FILE
-    save_results $RESULTS_DIR/$exp
   done
 fi
 
