@@ -34,58 +34,58 @@ adaptive compartments         5
 [2025-10-02 23:14:23.535] [info] node count before and after reduction 44 0
 [2025-10-02 23:14:23.535] [info] reach tree compilation time in ms 789
 [2025-10-02 23:14:23.535] [info] reach tree node counts: full 44, reduced 0, goal 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
-[2025-10-02 23:14:23.535] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
+[2025-10-02 23:14:23.535] [info] runs 0 | prob 0 | low 0 | high 0
 [2025-10-02 23:14:23.535] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
-0, 0, 0, 0, 0, 1000
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
 # timestamp 02.10.2025 23:14:22 (1759439662), datastructure TREE
 # timebound 7, expirations {"r1": 0, "r2": 0}
 # alpha 0.1, gamma 1
