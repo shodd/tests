@@ -97,6 +97,45 @@ if should_run "q-learning"; then
   done
 fi
 
+# === q-learning prophetic ===
+if should_run "granularity-prophetic"; then
+  TEST_NAME="granularity-prophetic"
+  BASE_DIR="saved-results/$TEST_NAME"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p $BASE_DIR
+
+  for granularity in {0.1,0.5,1.0}; do
+    for episodes in {1000,10000,100000,1000000,10000000}; do
+      echo "tank prophetic with granularity=$granularity and episodes=$episodes"
+
+      ARGS="
+        -t 8   
+        -l info 
+        -b WATERTANK 
+        -m A 
+        --simulation-training-runs $episodes 
+        --q-learning-alpha 0.1 
+        --q-learning-gamma 1 
+        --discretization-uniform-granularity $granularity 
+        --expirations [r1,0] [r2,0] 
+        --simulate 1 
+        --scheduler-goals MAX  
+        --scheduler-histories HD 
+        --scheduler-scopes P 
+        --unroll-type V
+        --simulation-executions 1
+        --simulation-intersection-method R
+        --simulation-util-plot-first-decision-in-watertank
+      "
+      ./realyst $ARGS >> "logs/$TEST_NAME/g${granularity}_e${episodes}.log"
+      file=$(ls results | head -n 1)
+      extension="${file##*.}"
+      mv "results/$file" "$BASE_DIR/g${granularity}_e${episodes}.$extension"
+    done
+  done
+fi
+
 # === SAC ===
 if should_run "tank-sac"; then
   TEST_NAME="tank-sac"
@@ -172,6 +211,41 @@ if should_run "tank-sac"; then
     ./realyst $ARGS >> $FILE
     save_results $RESULTS_DIR
 
+  done
+fi
+
+if should_run "tank-sac-full-power"; then
+  TEST_NAME="tank-sac-full-power"
+  RESULTS_DIR="saved-results/$TEST_NAME"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p $RESULTS_DIR
+
+  for t in 7 8 9 10 11 12 14 16 18 20; do
+    echo "tank sac full power with t=$t"
+    FILE="logs/$TEST_NAME/$t.log"
+
+    ARGS="
+      -l info 
+      -b WATERTANK
+      -m A 
+      --q-learning-alpha 0.1  
+      --q-learning-gamma 1.0   
+      --expirations [r1,0] [r2,0] 
+      --simulate 1 
+      --scheduler-goals MAX 
+      --unroll-type V
+      --simulation-executions 25
+      --simulation-intersection-method R 
+      --discretization-uniform-granularity 0.5 
+      --simulation-training-runs 10000000
+      --scheduler-histories HD
+      --scheduler-scopes P 
+      -t $t 
+    "
+
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
   done
 fi
 

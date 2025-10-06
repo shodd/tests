@@ -1,0 +1,201 @@
+timebound = 8, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 191, integration bound(s) = 8, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 10000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-10-04 19:08:02.766] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-10-04 19:08:02.766] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-10-04 19:08:02.766] [info] 1 Model creation: 0
+[2025-10-04 19:08:02.766] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-10-04 19:08:02.798] [critical] 
+\begin{tikzpicture}[scale=0.5]
+	\draw[draw=none,fill=red] (0,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,7) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,8) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,10) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,7) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,8) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,10) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,0) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,7) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,8) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,11) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,0) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,0) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (5,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,7) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (5,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (5,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (5,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,8) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,10) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,7) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,8) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (10,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (10,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (10,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (10,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,10) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,7) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,10) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,11) rectangle ++(1,1);
+\end{tikzpicture}
+
+[2025-10-04 19:08:02.834] [info] runs 15879 | prob 0.6035014799420618 | low 0.5935016125845666 | high 0.6135013472995571
+[2025-10-04 19:08:02.835] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+30, 34, 0.6035014799420618, 0.5935016125845666, 0.6135013472995571, 15879
+# timestamp 04.10.2025 19:08:02 (1759597682), datastructure SAC
+# timebound 8, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT
+# training runs 10000
+
+[2025-10-04 19:08:02.835] [info] 2.1 Simulating on SAC: 68
+[2025-10-04 19:08:02.835] [info] Analysis finished; the goal is not reachable.
+[2025-10-04 19:08:02.835] [info] Probability: 0.0
+[2025-10-04 19:08:02.835] [info] 2 Analysis: 68
+[2025-10-04 19:08:02.835] [info] 0 Computation Time Complete: 69
+[2025-10-04 19:08:02.835] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 69
+1 Model creation: 0
+2 Analysis: 68
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 68
+

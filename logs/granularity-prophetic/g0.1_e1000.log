@@ -1,0 +1,999 @@
+timebound = 8, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 237, integration bound(s) = 8, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.1
+adaptive compartments         5
+
+
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-10-04 19:07:07.083] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-10-04 19:07:07.083] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-10-04 19:07:07.083] [info] 1 Model creation: 0
+[2025-10-04 19:07:07.083] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [info] yellow because of -0.001
+[2025-10-04 19:07:07.090] [critical] 
+\begin{tikzpicture}[scale=0.1]
+	\draw[draw=none,fill=red] (0,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,12) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,18) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,22) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,23) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (0,28) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,29) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,30) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,34) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,35) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,40) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (0,48) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,51) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,12) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,15) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,18) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,22) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,25) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,29) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,32) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,34) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,44) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,55) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,10) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (2,11) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,19) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,20) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,33) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,35) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,36) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,39) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,57) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,59) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,0) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,19) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,21) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (3,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,32) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,40) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,42) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,45) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (3,55) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,0) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,28) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,37) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,40) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,41) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,49) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (4,51) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (4,52) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (4,55) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (5,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (5,17) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,29) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (5,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (5,40) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (5,46) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (5,57) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,22) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,25) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,27) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,30) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,32) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,44) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,49) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (6,53) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (6,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,10) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (7,12) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,14) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,23) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,34) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,41) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,46) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,48) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (7,50) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (7,59) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,13) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,14) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,17) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (8,22) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,41) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,42) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,44) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,48) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,51) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,52) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (8,54) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (8,57) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,23) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,25) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,27) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (9,28) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,37) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,45) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,48) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (9,52) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (9,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (10,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,15) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (10,19) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (10,24) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (10,29) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,38) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (10,42) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,43) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,51) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (10,52) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (10,54) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (10,59) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,4) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (11,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,21) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (11,24) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,25) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (11,57) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (11,59) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (12,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (12,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (12,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (12,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (12,21) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (12,23) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (12,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (12,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (12,44) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (12,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (12,54) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (12,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (12,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,0) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (13,12) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (13,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,23) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (13,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,32) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,42) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,45) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,49) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,54) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (13,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (13,59) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (14,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (14,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (14,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (14,6) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (14,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (14,15) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (14,23) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (14,26) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (14,28) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (14,38) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (14,49) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (14,52) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (14,58) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (14,59) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (15,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,8) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (15,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (15,13) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,16) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (15,22) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,23) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (15,24) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,27) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,30) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (15,36) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (15,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,45) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (15,47) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (15,48) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (15,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,54) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (15,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (15,56) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (16,0) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (16,4) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (16,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (16,8) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (16,10) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (16,14) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (16,23) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (16,28) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (16,29) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (16,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (16,38) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (16,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (16,46) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (16,48) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (16,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (16,56) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (16,57) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (17,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (17,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (17,25) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (17,33) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (17,42) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (17,44) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (17,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (17,59) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (18,4) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (18,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (18,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (18,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (18,13) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (18,14) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (18,18) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (18,22) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (18,30) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (18,39) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (18,41) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (18,49) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (18,50) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (18,52) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (19,12) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (19,14) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (19,15) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (19,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (19,21) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (19,22) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (19,25) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (19,30) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (19,34) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (19,39) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (19,41) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,3) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (20,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (20,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,15) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,19) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (20,20) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,22) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (20,28) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (20,33) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (20,35) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (20,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,40) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,46) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (20,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (20,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (21,0) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (21,14) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (21,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (21,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (21,28) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (21,30) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (21,31) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (21,32) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (21,40) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (21,46) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (22,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (22,13) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (22,14) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (22,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (22,19) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (22,21) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (22,23) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (22,33) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (22,39) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (22,41) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (22,44) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (22,45) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (22,46) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (22,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (22,48) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (22,52) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (22,53) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (22,54) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (22,55) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (23,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (23,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (23,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (23,12) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (23,23) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (23,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (23,32) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (23,41) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (23,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (23,55) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (23,57) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (24,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (24,8) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (24,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (24,14) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (24,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (24,22) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (24,24) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (24,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (24,32) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (24,34) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (24,37) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (24,40) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (24,58) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (25,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (25,9) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (25,16) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (25,19) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (25,23) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (25,29) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (25,37) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (25,38) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (25,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (25,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (25,55) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (25,56) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (26,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (26,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (26,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (26,16) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (26,30) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (26,46) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (26,47) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (26,57) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (26,58) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (27,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (27,13) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (27,15) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (27,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (27,17) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (27,29) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (27,32) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (27,33) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (27,37) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (27,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (27,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (27,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (27,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (27,59) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (28,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (28,10) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (28,17) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (28,22) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (28,23) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (28,31) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (28,34) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (28,37) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (28,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (28,40) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (28,43) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (28,53) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (28,55) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (29,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (29,4) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (29,18) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (29,19) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (29,21) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (29,26) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (29,27) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (29,29) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (29,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (29,49) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (29,50) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (29,58) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (30,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (30,7) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (30,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (30,11) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (30,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (30,18) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (30,23) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (30,27) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (30,30) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (30,35) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (30,37) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (30,43) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (30,53) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (30,54) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (30,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (30,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,1) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (31,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,13) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (31,15) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,19) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,20) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (31,21) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (31,34) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (31,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,42) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,46) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,49) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,50) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (31,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (32,2) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (32,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (32,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (32,17) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (32,21) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (32,27) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (32,30) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (32,31) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (32,34) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (32,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (32,40) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (32,46) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (32,51) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (33,0) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (33,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,12) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,16) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,17) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (33,20) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (33,23) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (33,24) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,33) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (33,39) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,46) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,52) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (33,56) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (33,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (33,59) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (34,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (34,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (34,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (34,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (34,12) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (34,21) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (34,22) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (34,24) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (34,33) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (34,44) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (34,57) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (35,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (35,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (35,19) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (35,20) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (35,23) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (35,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (35,27) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (35,35) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (35,42) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (35,45) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (35,51) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (35,52) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (35,53) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (35,59) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (36,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (36,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (36,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (36,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (36,12) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (36,18) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (36,30) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (36,36) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (36,37) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (36,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (36,43) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (36,44) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (36,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (36,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (36,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (37,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (37,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (37,14) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (37,16) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (37,18) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (37,23) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (37,24) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (37,29) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (37,32) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (37,33) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (37,40) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (37,42) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (37,45) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (37,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (37,52) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (37,53) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (37,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (37,59) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (38,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (38,5) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,7) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (38,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,13) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,14) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (38,15) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (38,16) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (38,18) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,23) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,25) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (38,29) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,31) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (38,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,37) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (38,50) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (38,57) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,11) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (39,15) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,19) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,21) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,23) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (39,27) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,29) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,37) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,39) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (39,40) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (39,41) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (39,45) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (39,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,0) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (40,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (40,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,13) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,14) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,22) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (40,23) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (40,28) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (40,29) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,30) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,33) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,34) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,42) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (40,49) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (40,55) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (40,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,5) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (41,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,14) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,15) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,19) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,24) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,28) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,29) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,30) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,32) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,33) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,36) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,37) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,40) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,48) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,50) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (41,52) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (41,56) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (42,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,9) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (42,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,15) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,16) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (42,24) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,41) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,50) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,54) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,57) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (42,58) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (43,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (43,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (43,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (43,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (43,15) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (43,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (43,24) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (43,26) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (43,29) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (43,30) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (43,31) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (43,42) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (43,46) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (43,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,4) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (44,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,12) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (44,20) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,29) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (44,31) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,35) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (44,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,37) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (44,40) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (44,41) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,44) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,45) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,46) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (44,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (44,50) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (44,52) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (44,57) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,6) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (45,14) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,30) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,33) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (45,39) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,44) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,45) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (45,57) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (45,59) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (46,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (46,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (46,18) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (46,20) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (46,22) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (46,24) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (46,32) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (46,43) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (46,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (46,59) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (47,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (47,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (47,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (47,8) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (47,18) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (47,25) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (47,27) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (47,33) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (47,35) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (47,38) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (47,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (47,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (47,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (47,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,20) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,32) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,33) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,37) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (48,39) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,41) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (48,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,44) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,52) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,53) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (48,54) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (48,56) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (48,57) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,19) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (49,27) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,28) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,41) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,42) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,46) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (49,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,52) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (49,53) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (49,55) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (50,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (50,3) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (50,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (50,6) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (50,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (50,11) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (50,12) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (50,20) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (50,28) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (50,29) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (50,40) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (50,47) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (50,54) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (50,56) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (51,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (51,9) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (51,18) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (51,28) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (51,31) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (51,34) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (51,35) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (51,36) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (51,43) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (51,49) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (51,54) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (51,59) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (52,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (52,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (52,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (52,14) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (52,16) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (52,18) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (52,25) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (52,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (52,27) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (52,30) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (52,39) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (52,45) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (52,52) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (52,55) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (53,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,13) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,18) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,24) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,25) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,29) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,35) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (53,37) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,39) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (53,40) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (53,46) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (53,47) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,49) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (53,51) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (53,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (53,59) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (54,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (54,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (54,10) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (54,20) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (54,21) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (54,27) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (54,31) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (54,32) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (54,34) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (54,36) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (54,42) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (54,44) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (54,48) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (54,49) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (54,53) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (54,56) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (55,1) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (55,4) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (55,10) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (55,22) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (55,24) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (55,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (55,27) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (55,28) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (55,33) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (55,37) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (55,43) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (55,49) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (55,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (55,56) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (56,7) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (56,9) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (56,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (56,25) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (56,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (56,30) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (56,31) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (56,36) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (56,42) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (56,51) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (57,6) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (57,24) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (57,29) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (57,34) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (57,39) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (57,40) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (57,50) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (57,55) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (57,59) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (58,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (58,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,7) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,17) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,26) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,27) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,28) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,29) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (58,30) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (58,32) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,33) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,36) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (58,37) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (58,45) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,46) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (58,51) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (58,53) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (59,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (59,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (59,8) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (59,11) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (59,18) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (59,20) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (59,33) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (59,42) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (59,45) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (59,47) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (59,53) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (59,59) rectangle ++(1,1);
+\end{tikzpicture}
+
+[2025-10-04 19:07:07.141] [info] runs 16588 | prob 0.5050036170725826 | low 0.4950036837912391 | high 0.5150035503539261
+[2025-10-04 19:07:07.147] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+4, 50, 0.5050036170725826, 0.4950036837912391, 0.5150035503539261, 16588
+# timestamp 04.10.2025 19:07:07 (1759597627), datastructure SAC
+# timebound 8, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.1
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT
+# training runs 1000
+
+[2025-10-04 19:07:07.154] [info] 2.1 Simulating on SAC: 70
+[2025-10-04 19:07:07.154] [info] Analysis finished; the goal is not reachable.
+[2025-10-04 19:07:07.154] [info] Probability: 0.0
+[2025-10-04 19:07:07.154] [info] 2 Analysis: 70
+[2025-10-04 19:07:07.154] [info] 0 Computation Time Complete: 70
+[2025-10-04 19:07:07.154] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 70
+1 Model creation: 0
+2 Analysis: 70
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 70
+

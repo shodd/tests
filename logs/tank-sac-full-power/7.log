@@ -1,0 +1,101 @@
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 213, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 10000000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-10-03 12:58:09.584] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-10-03 12:58:09.585] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-10-03 12:58:09.585] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-10-03 12:58:09.585] [info] 1 Model creation: 0
+[2025-10-03 12:58:09.585] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-10-03 12:58:34.098] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 12:58:58.686] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 12:59:23.335] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 12:59:47.957] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:00:12.506] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:00:37.172] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:01:01.768] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:01:26.469] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:01:51.029] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:02:15.680] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:02:40.379] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:03:05.135] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:03:29.738] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:03:54.360] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:04:19.005] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:04:43.704] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:05:08.338] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:05:32.888] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:05:57.490] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:06:22.048] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:06:46.752] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:07:11.498] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:07:36.129] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:08:00.802] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:08:25.473] [info] runs 1000 | prob 0 | low 0 | high 0
+[2025-10-03 13:08:25.475] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+24511, 1, 0, 0, 0, 1000
+24583, 1, 0, 0, 0, 1000
+24645, 1, 0, 0, 0, 1000
+24619, 1, 0, 0, 0, 1000
+24545, 1, 0, 0, 0, 1000
+24662, 1, 0, 0, 0, 1000
+24592, 1, 0, 0, 0, 1000
+24696, 1, 0, 0, 0, 1000
+24556, 1, 0, 0, 0, 1000
+24647, 1, 0, 0, 0, 1000
+24696, 1, 0, 0, 0, 1000
+24752, 1, 0, 0, 0, 1000
+24599, 1, 0, 0, 0, 1000
+24618, 1, 0, 0, 0, 1000
+24641, 1, 0, 0, 0, 1000
+24694, 1, 0, 0, 0, 1000
+24630, 1, 0, 0, 0, 1000
+24546, 1, 0, 0, 0, 1000
+24598, 1, 0, 0, 0, 1000
+24554, 1, 0, 0, 0, 1000
+24700, 1, 0, 0, 0, 1000
+24742, 1, 0, 0, 0, 1000
+24627, 1, 0, 0, 0, 1000
+24670, 1, 0, 0, 0, 1000
+24667, 1, 0, 0, 0, 1000
+# timestamp 03.10.2025 12:58:09 (1759489089), datastructure SAC
+# timebound 7, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT
+# training runs 10000000
+
+[2025-10-03 13:08:25.475] [info] 2.1 Simulating on SAC: 615889
+[2025-10-03 13:08:25.475] [info] Analysis finished; the goal is not reachable.
+[2025-10-03 13:08:25.475] [info] Probability: 0.0
+[2025-10-03 13:08:25.475] [info] 2 Analysis: 615890
+[2025-10-03 13:08:25.475] [info] 0 Computation Time Complete: 615890
+[2025-10-03 13:08:25.475] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 615890
+1 Model creation: 0
+2 Analysis: 615890
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 615889
+
