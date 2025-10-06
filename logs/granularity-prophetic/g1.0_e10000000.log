@@ -1,0 +1,101 @@
+timebound = 8, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 49, integration bound(s) = 8, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 10000000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           1
+adaptive compartments         5
+
+
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2025-10-04 19:08:35.659] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2025-10-04 19:08:35.659] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2025-10-04 19:08:35.659] [info] 1 Model creation: 0
+[2025-10-04 19:08:35.659] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2025-10-04 19:09:01.183] [info] yellow because of 0.9499999999999977
+[2025-10-04 19:09:01.183] [info] yellow because of -0.09999999999999967
+[2025-10-04 19:09:01.183] [info] yellow because of 0.9499999999999977
+[2025-10-04 19:09:01.183] [info] yellow because of 0.9499999999999977
+[2025-10-04 19:09:01.183] [info] yellow because of -0.09999999999999967
+[2025-10-04 19:09:01.183] [info] yellow because of 0.9499999999999977
+[2025-10-04 19:09:01.183] [info] yellow because of 0.9499999999999977
+[2025-10-04 19:09:01.183] [info] yellow because of 0.9499999999999977
+[2025-10-04 19:09:01.183] [critical] 
+\begin{tikzpicture}[scale=1]
+	\draw[draw=none,fill=red] (0,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (0,3) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (0,4) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (0,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (1,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (1,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (2,2) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,3) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,4) rectangle ++(1,1);
+	\draw[draw=none,fill=blue] (2,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (3,3) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (3,4) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (3,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (4,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (4,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (4,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (4,3) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (4,4) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (4,5) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,0) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,1) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,2) rectangle ++(1,1);
+	\draw[draw=none,fill=red] (5,3) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (5,4) rectangle ++(1,1);
+	\draw[draw=none,fill=yellow] (5,5) rectangle ++(1,1);
+\end{tikzpicture}
+
+[2025-10-04 19:09:01.215] [info] runs 15917 | prob 0.6007413457309795 | low 0.5907416639110152 | high 0.6107410275509437
+[2025-10-04 19:09:01.215] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+25523, 31, 0.6007413457309795, 0.5907416639110152, 0.6107410275509437, 15917
+# timestamp 04.10.2025 19:08:35 (1759597715), datastructure SAC
+# timebound 8, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 1
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT
+# training runs 10000000
+
+[2025-10-04 19:09:01.216] [info] 2.1 Simulating on SAC: 25556
+[2025-10-04 19:09:01.216] [info] Analysis finished; the goal is not reachable.
+[2025-10-04 19:09:01.216] [info] Probability: 0.0
+[2025-10-04 19:09:01.216] [info] 2 Analysis: 25556
+[2025-10-04 19:09:01.216] [info] 0 Computation Time Complete: 25556
+[2025-10-04 19:09:01.216] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 25556
+1 Model creation: 0
+2 Analysis: 25556
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 25556
+
