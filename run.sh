@@ -214,6 +214,67 @@ if should_run "tank-sac"; then
   done
 fi
 
+if should_run "tank-sac-init"; then
+  TEST_NAME="tank-sac-init"
+  RESULTS_DIR="saved-results/$TEST_NAME"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p $RESULTS_DIR
+
+  COMMON_ARGS="
+    -l info 
+    -b WATERTANK
+    -m D  
+    --q-learning-alpha 0.1  
+    --q-learning-gamma 1.0   
+    --expirations [r1,0] [r2,0] 
+    --simulate 1 
+    --scheduler-goals MAX 
+    --unroll-type V
+    --simulation-executions 25
+    --simulation-intersection-method R
+  "
+
+  for t in 11; do
+    echo "tank sac with t=$t"
+    FILE="logs/$TEST_NAME/$t.log"
+
+    ARGS="
+      $COMMON_ARGS 
+      --discretization-uniform-granularity 1.0 
+      --simulation-training-runs 5000 
+      --scheduler-histories DH ML 
+      --scheduler-scopes NP 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+    
+    ARGS="
+      $COMMON_ARGS 
+      --discretization-uniform-granularity 0.5  
+      --simulation-training-runs 20000 
+      --scheduler-histories ML 
+      --scheduler-scopes P 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+
+    ARGS="
+      $COMMON_ARGS 
+      --discretization-uniform-granularity 0.5  
+      --simulation-training-runs 1000000 
+      --scheduler-histories HD 
+      --scheduler-scopes P 
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+  done
+
+fi
+
 if should_run "tank-sac-full-power"; then
   TEST_NAME="tank-sac-full-power"
   RESULTS_DIR="saved-results/$TEST_NAME"
