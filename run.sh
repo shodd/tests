@@ -418,7 +418,7 @@ if should_run "synthetic-nondet"; then
       -b WATERTANK
       -m B 
       --simulation-training-runs 100000  
-      --q-learning-alpha 0.1 
+      --q-learning-alpha 0.02
       --q-learning-gamma 1 
       --discretization-uniform-granularity 0.5 
       --expirations [r1,0] [r2,0] 
