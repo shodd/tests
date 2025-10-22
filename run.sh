@@ -441,12 +441,12 @@ if should_run "synthetic-multi-trans"; then
 
   echo "test $TEST_NAME"
     ARGS="
-      -t 6  
+      -t 1  
       -l info 
       -b EVALUATION_THESIS_FELIX
       -m C 
       --simulation-training-runs 5000  
-      --q-learning-alpha 0.1 
+      --q-learning-alpha 0.5 
       --q-learning-gamma 1 
       --discretization-uniform-granularity 0.5 
       --expirations [r1,0] [r2,0] 
@@ -454,7 +454,7 @@ if should_run "synthetic-multi-trans"; then
       --scheduler-goals MAX 
       --scheduler-histories ML 
       --scheduler-scopes NP 
-      --simulation-executions 5  
+      --simulation-executions 25  
       --unroll-type V"
     ./realyst $ARGS > "logs/$TEST_NAME/$nondet.log"
 
