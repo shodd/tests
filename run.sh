@@ -73,7 +73,7 @@ if should_run "q-learning"; then
       ARGS="
         -t 10 
         -l info 
-        -b WATERTANK 
+        -b EVALUATION_THESIS_FELIX 
         -m A 
         --simulation-training-runs 5000 
         --q-learning-alpha $alpha
@@ -112,7 +112,7 @@ if should_run "granularity-prophetic"; then
       ARGS="
         -t 8   
         -l info 
-        -b WATERTANK 
+        -b EVALUATION_THESIS_FELIX 
         -m A 
         --simulation-training-runs $episodes 
         --q-learning-alpha 0.1 
@@ -126,7 +126,7 @@ if should_run "granularity-prophetic"; then
         --unroll-type V
         --simulation-executions 1
         --simulation-intersection-method R
-        --simulation-util-plot-first-decision-in-watertank
+        --simulation-util-plot-first-decision-in-EVALUATION_THESIS_FELIX
       "
       ./realyst $ARGS >> "logs/$TEST_NAME/g${granularity}_e${episodes}.log"
       file=$(ls results | head -n 1)
@@ -146,7 +146,7 @@ if should_run "tank-sac"; then
 
   COMMON_ARGS="
     -l info 
-    -b WATERTANK
+    -b EVALUATION_THESIS_FELIX
     -m A 
     --q-learning-alpha 0.1  
     --q-learning-gamma 1.0   
@@ -223,7 +223,7 @@ if should_run "tank-sac-init"; then
 
   COMMON_ARGS="
     -l info 
-    -b WATERTANK
+    -b EVALUATION_THESIS_FELIX
     -m D  
     --q-learning-alpha 0.1  
     --q-learning-gamma 1.0   
@@ -304,7 +304,7 @@ if should_run "tank-sac-full-power"; then
 
     ARGS="
       -l info 
-      -b WATERTANK
+      -b EVALUATION_THESIS_FELIX
       -m A 
       --q-learning-alpha 0.1  
       --q-learning-gamma 1.0   
@@ -336,7 +336,7 @@ if should_run "tank-tree"; then
 
   COMMON_ARGS="
     -l info 
-    -b WATERTANK
+    -b EVALUATION_THESIS_FELIX
     -m A 
     --q-learning-alpha 0.1 
     --q-learning-gamma 1.0   
@@ -415,7 +415,7 @@ if should_run "synthetic-nondet"; then
     ARGS="
       -t 6  
       -l info 
-      -b WATERTANK
+      -b EVALUATION_THESIS_FELIX
       -m B 
       --simulation-training-runs 100000  
       --q-learning-alpha 0.02
@@ -443,7 +443,7 @@ if should_run "synthetic-multi-trans"; then
     ARGS="
       -t 6  
       -l info 
-      -b WATERTANK
+      -b EVALUATION_THESIS_FELIX
       -m C 
       --simulation-training-runs 5000  
       --q-learning-alpha 0.1 
@@ -473,7 +473,7 @@ if should_run "jump-bound"; then
     ARGS="
       -t 6  
       -l info 
-      -b WATERTANK 
+      -b EVALUATION_THESIS_FELIX 
       -m A 
       --simulation-training-runs 1  
       --q-learning-alpha 0.1 
@@ -505,7 +505,7 @@ if should_run "time-variable"; then
 
     COMMON_ARGS=" 
       -l info
-      -b WATERTANK
+      -b EVALUATION_THESIS_FELIX
       -m A
       --simulation-training-runs 1000000
       --q-learning-alpha 0.1 
@@ -540,7 +540,7 @@ if should_run "intersection"; then
 
     COMMON_ARGS=" 
       -l info
-      -b WATERTANK
+      -b EVALUATION_THESIS_FELIX
       -m A
       --simulation-training-runs 1000000
       --q-learning-alpha 0.1 
