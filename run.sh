@@ -235,7 +235,7 @@ if should_run "tank-sac-init"; then
     --simulation-intersection-method R
   "
 
-  for t in 11; do
+  for t in 7 8 9 10 11; do
     echo "tank sac with t=$t"
     FILE="logs/$TEST_NAME/$t.log"
 
@@ -273,6 +273,22 @@ if should_run "tank-sac-init"; then
     save_results $RESULTS_DIR
   done
 
+  for t in 12 14 16 18 20; do
+    echo "tank sac with t=$t"
+    FILE="logs/$TEST_NAME/$t.log"
+
+    ARGS="
+      $COMMON_ARGS 
+      --discretization-uniform-granularity 0.5  
+      --simulation-training-runs 1000000 
+      --scheduler-histories ML
+      --scheduler-scopes P NP
+      -t $t 
+    "
+    ./realyst $ARGS >> $FILE
+    save_results $RESULTS_DIR
+
+  done
 fi
 
 if should_run "tank-sac-full-power"; then
@@ -387,6 +403,62 @@ if should_run "tank-tree"; then
     save_results $RESULTS_DIR
 
   done
+fi
+
+if should_run "synthetic-nondet"; then
+  TEST_NAME="synthetic-nondet"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p "saved-results/$TEST_NAME"
+
+  echo "test $TEST_NAME"
+    ARGS="
+      -t 6  
+      -l info 
+      -b WATERTANK
+      -m B 
+      --simulation-training-runs 100000  
+      --q-learning-alpha 0.1 
+      --q-learning-gamma 1 
+      --discretization-uniform-granularity 0.5 
+      --expirations [r1,0] [r2,0] 
+      --simulate 1 
+      --scheduler-goals MAX 
+      --scheduler-histories ML 
+      --scheduler-scopes NP 
+      --simulation-executions 25 
+      --unroll-type V"
+    ./realyst $ARGS > "logs/$TEST_NAME/$nondet.log"
+
+    save_results "saved-results/$TEST_NAME/$nondet"
+fi
+
+if should_run "synthetic-multi-trans"; then
+  TEST_NAME="synthetic-multi-trans"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p "saved-results/$TEST_NAME"
+
+  echo "test $TEST_NAME"
+    ARGS="
+      -t 6  
+      -l info 
+      -b WATERTANK
+      -m C 
+      --simulation-training-runs 5000  
+      --q-learning-alpha 0.1 
+      --q-learning-gamma 1 
+      --discretization-uniform-granularity 0.5 
+      --expirations [r1,0] [r2,0] 
+      --simulate 3 
+      --scheduler-goals MAX 
+      --scheduler-histories ML 
+      --scheduler-scopes NP 
+      --simulation-executions 5  
+      --unroll-type V"
+    ./realyst $ARGS > "logs/$TEST_NAME/$nondet.log"
+
+    save_results "saved-results/$TEST_NAME/$nondet"
 fi
 
 # === unroll-depth ===
