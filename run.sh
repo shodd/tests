@@ -126,7 +126,7 @@ if should_run "granularity-prophetic"; then
         --unroll-type V
         --simulation-executions 1
         --simulation-intersection-method R
-        --simulation-util-plot-first-decision-in-WATERTANK
+        --simulation-util-plot-first-decision-in-watertank
       "
       ./realyst $ARGS >> "logs/$TEST_NAME/g${granularity}_e${episodes}.log"
       file=$(ls results | head -n 1)
@@ -441,12 +441,12 @@ if should_run "synthetic-multi-trans"; then
 
   echo "test $TEST_NAME"
     ARGS="
-      -t 1  
+      -t 6  
       -l info 
       -b WATERTANK
       -m C 
       --simulation-training-runs 5000  
-      --q-learning-alpha 0.5 
+      --q-learning-alpha 0.1 
       --q-learning-gamma 1 
       --discretization-uniform-granularity 0.5 
       --expirations [r1,0] [r2,0] 
@@ -454,7 +454,7 @@ if should_run "synthetic-multi-trans"; then
       --scheduler-goals MAX 
       --scheduler-histories ML 
       --scheduler-scopes NP 
-      --simulation-executions 25  
+      --simulation-executions 5  
       --unroll-type V"
     ./realyst $ARGS > "logs/$TEST_NAME/$nondet.log"
 
