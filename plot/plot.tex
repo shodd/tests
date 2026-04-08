@@ -1,0 +1,69 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+
+\pgfplotsset{compat=1.18}
+
+\begin{filecontents}{data.csv}
+t,min,max
+7,0,0
+8,0.16700963933716018,0.47370647969052226
+9,0.4331307923648193,0.5432406170290295
+10,0.4583308042488619,0.5512914230019493
+11,0.5766310721560397,0.6673681352250357
+12,0.7042396180002894,0.7563368765331153
+14,0.7855801055550586,0.8214983043880383
+16,0.8817748229512935,0.9020812009553053
+18,0.9165189998031108,0.9294577205882353
+20,0.9496221662468514,0.9588100686498856
+\end{filecontents}
+
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[
+    width=12cm,
+    height=8cm,
+    xlabel={$t$},
+    ylabel={$p$},
+    grid=both,
+    grid style={dashed, gray!30},
+    major grid style={gray!50},
+    tick align=outside,
+    tick style={black},
+    symbolic x coords={7,8,9,10,11,12,14,16,18,20},
+    xtick={data},
+    ymin=0, ymax=1,
+    legend style={
+        at={(0.03,0.97)},
+        anchor=north west,
+        draw=none,
+        fill=none,
+        font=\small
+    }
+]
+
+
+\addplot[
+    thick,
+    red,
+    mark=square*,
+    mark size=2pt
+]
+table[x=t,y=max,col sep=comma] {data.csv};
+
+\addplot[
+    thick,
+    blue,
+    mark=*,
+    mark size=2pt
+]
+table[x=t,y=min,col sep=comma] {data.csv};
+
+\legend{Maximizing, Minimizing}
+
+\end{axis}
+
+\end{tikzpicture}
+\end{document}
