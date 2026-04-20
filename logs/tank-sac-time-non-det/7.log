@@ -158,3 +158,323 @@ Timers:
 2.0 Creating Unified Datastructure from SAC: 0
 2.1 Simulating on SAC: 13047
 
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 135, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_E, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 100000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2026-04-14 20:31:48.152] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2026-04-14 20:31:48.152] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2026-04-14 20:31:48.152] [info] 1 Model creation: 0
+[2026-04-14 20:31:48.152] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2026-04-14 20:31:48.413] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:48.674] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:48.932] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:49.191] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:49.448] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:49.706] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:49.961] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:50.220] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:50.476] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:50.732] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:50.991] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:51.247] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:51.506] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:51.761] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:52.019] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:52.275] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:52.530] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:52.786] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:53.042] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:53.303] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:53.560] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:53.820] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:54.078] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:54.339] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:54.595] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:54.598] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+259, 1, 0, 0, 0, 1000
+256, 1, 0, 0, 0, 1000
+252, 1, 0, 0, 0, 1000
+252, 1, 0, 0, 0, 1000
+251, 1, 0, 0, 0, 1000
+252, 1, 0, 0, 0, 1000
+250, 1, 0, 0, 0, 1000
+253, 1, 0, 0, 0, 1000
+250, 1, 0, 0, 0, 1000
+250, 1, 0, 0, 0, 1000
+253, 1, 0, 0, 0, 1000
+250, 1, 0, 0, 0, 1000
+253, 1, 0, 0, 0, 1000
+250, 1, 0, 0, 0, 1000
+252, 1, 0, 0, 0, 1000
+250, 1, 0, 0, 0, 1000
+250, 1, 0, 0, 0, 1000
+250, 1, 0, 0, 0, 1000
+251, 1, 0, 0, 0, 1000
+254, 1, 0, 0, 0, 1000
+251, 1, 0, 0, 0, 1000
+255, 1, 0, 0, 0, 1000
+252, 1, 0, 0, 0, 1000
+255, 1, 0, 0, 0, 1000
+250, 1, 0, 0, 0, 1000
+# timestamp 14.04.2026 20:31:48 (1776191508), datastructure SAC
+# timebound 7, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MINIMIZING, scope: SEMIPROPHETIC, history: DISCRETE_HISTORY
+# training runs 100000
+
+[2026-04-14 20:31:54.860] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:55.129] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:55.395] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:55.662] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:55.926] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:56.193] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:56.455] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:56.719] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:56.983] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:57.248] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:57.513] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:57.776] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:58.042] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:58.307] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:58.572] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:58.835] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:59.101] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:59.367] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:59.632] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:31:59.897] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:32:00.161] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:32:00.427] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:32:00.695] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:32:00.968] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:32:01.238] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 20:32:01.245] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+259, 2, 0, 0, 0, 1000
+263, 2, 0, 0, 0, 1000
+259, 2, 0, 0, 0, 1000
+260, 2, 0, 0, 0, 1000
+258, 2, 0, 0, 0, 1000
+259, 2, 0, 0, 0, 1000
+257, 2, 0, 0, 0, 1000
+258, 2, 0, 0, 0, 1000
+258, 2, 0, 0, 0, 1000
+258, 2, 0, 0, 0, 1000
+260, 2, 0, 0, 0, 1000
+256, 2, 0, 0, 0, 1000
+260, 2, 0, 0, 0, 1000
+259, 2, 0, 0, 0, 1000
+259, 2, 0, 0, 0, 1000
+257, 2, 0, 0, 0, 1000
+260, 2, 0, 0, 0, 1000
+259, 2, 0, 0, 0, 1000
+259, 2, 0, 0, 0, 1000
+260, 2, 0, 0, 0, 1000
+258, 2, 0, 0, 0, 1000
+259, 2, 0, 0, 0, 1000
+262, 2, 0, 0, 0, 1000
+265, 2, 0, 0, 0, 1000
+264, 2, 0, 0, 0, 1000
+# timestamp 14.04.2026 20:31:48 (1776191508), datastructure SAC
+# timebound 7, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: DISCRETE_HISTORY
+# training runs 100000
+
+[2026-04-14 20:32:01.245] [info] 2.1 Simulating on SAC: 13092
+[2026-04-14 20:32:01.245] [info] Analysis finished; the goal is not reachable.
+[2026-04-14 20:32:01.245] [info] Probability: 0.0
+[2026-04-14 20:32:01.245] [info] 2 Analysis: 13092
+[2026-04-14 20:32:01.245] [info] 0 Computation Time Complete: 13093
+[2026-04-14 20:32:01.245] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 13093
+1 Model creation: 0
+2 Analysis: 13092
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 13092
+
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 230, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_E, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2026-04-14 21:13:25.227] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2026-04-14 21:13:25.227] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2026-04-14 21:13:25.227] [info] 1 Model creation: 0
+[2026-04-14 21:13:25.227] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2026-04-14 21:13:27.587] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:29.890] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:32.211] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:34.524] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:36.836] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:39.141] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:41.428] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:43.753] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:46.039] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:48.367] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:50.639] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:52.927] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:55.207] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:57.533] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:13:59.794] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:02.083] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:04.390] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:06.698] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:09.023] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:11.294] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:13.594] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:15.871] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:18.188] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:20.479] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:22.779] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:22.782] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+2358, 1, 0, 0, 0, 1000
+2299, 1, 0, 0, 0, 1000
+2315, 1, 0, 0, 0, 1000
+2308, 1, 0, 0, 0, 1000
+2306, 1, 0, 0, 0, 1000
+2300, 1, 0, 0, 0, 1000
+2281, 1, 0, 0, 0, 1000
+2317, 1, 0, 0, 0, 1000
+2282, 1, 0, 0, 0, 1000
+2323, 1, 0, 0, 0, 1000
+2267, 1, 0, 0, 0, 1000
+2283, 1, 0, 0, 0, 1000
+2275, 1, 0, 0, 0, 1000
+2321, 1, 0, 0, 0, 1000
+2256, 1, 0, 0, 0, 1000
+2284, 1, 0, 0, 0, 1000
+2302, 1, 0, 0, 0, 1000
+2303, 1, 0, 0, 0, 1000
+2319, 1, 0, 0, 0, 1000
+2265, 1, 0, 0, 0, 1000
+2296, 1, 0, 0, 0, 1000
+2271, 1, 0, 0, 0, 1000
+2312, 1, 0, 0, 0, 1000
+2286, 1, 0, 0, 0, 1000
+2294, 1, 0, 0, 0, 1000
+# timestamp 14.04.2026 21:13:25 (1776194005), datastructure SAC
+# timebound 7, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MINIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2026-04-14 21:14:25.158] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:27.513] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:29.866] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:32.363] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:34.725] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:37.037] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:39.381] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:41.701] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:44.048] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:46.370] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:48.716] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:51.061] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:53.502] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:55.856] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:14:58.219] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:00.533] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:02.855] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:05.187] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:07.529] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:09.863] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:12.179] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:14.527] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:16.874] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:19.224] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:21.555] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-14 21:15:21.557] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+2373, 1, 0, 0, 0, 1000
+2350, 1, 0, 0, 0, 1000
+2348, 1, 0, 0, 0, 1000
+2491, 1, 0, 0, 0, 1000
+2357, 1, 0, 0, 0, 1000
+2307, 1, 0, 0, 0, 1000
+2339, 1, 0, 0, 0, 1000
+2315, 1, 0, 0, 0, 1000
+2342, 1, 0, 0, 0, 1000
+2318, 1, 0, 0, 0, 1000
+2341, 1, 0, 0, 0, 1000
+2340, 1, 0, 0, 0, 1000
+2436, 1, 0, 0, 0, 1000
+2349, 1, 0, 0, 0, 1000
+2358, 1, 0, 0, 0, 1000
+2308, 1, 0, 0, 0, 1000
+2317, 1, 0, 0, 0, 1000
+2327, 1, 0, 0, 0, 1000
+2336, 2, 0, 0, 0, 1000
+2327, 1, 0, 0, 0, 1000
+2311, 1, 0, 0, 0, 1000
+2343, 1, 0, 0, 0, 1000
+2343, 1, 0, 0, 0, 1000
+2345, 1, 0, 0, 0, 1000
+2325, 1, 0, 0, 0, 1000
+# timestamp 14.04.2026 21:13:25 (1776194005), datastructure SAC
+# timebound 7, expirations {"r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2026-04-14 21:15:21.557] [info] 2.1 Simulating on SAC: 116329
+[2026-04-14 21:15:21.557] [info] Analysis finished; the goal is not reachable.
+[2026-04-14 21:15:21.557] [info] Probability: 0.0
+[2026-04-14 21:15:21.557] [info] 2 Analysis: 116330
+[2026-04-14 21:15:21.557] [info] 0 Computation Time Complete: 116330
+[2026-04-14 21:15:21.557] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 116330
+1 Model creation: 0
+2 Analysis: 116330
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 116329
+

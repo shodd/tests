@@ -1,0 +1,301 @@
+timebound = 7, jump depth = 100, max expirations of random clocks = [{r: 0}, {r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 247, integration bound(s) = 7, integration samples = 500000, model = WATERTANK, model case = CASE_E, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2026-04-17 12:18:26.462] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2026-04-17 12:18:26.462] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2026-04-17 12:18:26.462] [info] 1 Model creation: 0
+[2026-04-17 12:18:26.462] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2026-04-17 12:18:28.406] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:30.353] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:32.307] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:34.158] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:36.040] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:37.973] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:39.869] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:41.803] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:43.745] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:45.689] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:47.623] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:49.534] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:51.471] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:53.386] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:55.302] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:57.229] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:18:59.137] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:01.050] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:02.949] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:04.787] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:06.618] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:08.449] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:10.281] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:12.112] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:13.943] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:13.943] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+1941, 1, 0, 0, 0, 1000
+1945, 1, 0, 0, 0, 1000
+1951, 1, 0, 0, 0, 1000
+1849, 1, 0, 0, 0, 1000
+1881, 1, 0, 0, 0, 1000
+1930, 1, 0, 0, 0, 1000
+1894, 1, 0, 0, 0, 1000
+1932, 1, 0, 0, 0, 1000
+1940, 1, 0, 0, 0, 1000
+1942, 1, 0, 0, 0, 1000
+1932, 1, 0, 0, 0, 1000
+1909, 1, 0, 0, 0, 1000
+1934, 1, 0, 0, 0, 1000
+1913, 1, 0, 0, 0, 1000
+1914, 1, 0, 0, 0, 1000
+1925, 1, 0, 0, 0, 1000
+1906, 1, 0, 0, 0, 1000
+1911, 1, 0, 0, 0, 1000
+1897, 1, 0, 0, 0, 1000
+1836, 1, 0, 0, 0, 1000
+1829, 1, 0, 0, 0, 1000
+1829, 1, 0, 0, 0, 1000
+1831, 1, 0, 0, 0, 1000
+1829, 1, 0, 0, 0, 1000
+1829, 1, 0, 0, 0, 1000
+# timestamp 17.04.2026 12:18:26 (1776421106), datastructure SAC
+# timebound 7, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2026-04-17 12:19:16.369] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:18.850] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:21.270] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:23.754] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:26.272] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:28.804] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:31.318] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:33.851] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:36.384] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:38.894] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:41.297] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:43.751] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:46.176] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:48.602] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:51.037] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:53.491] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:55.908] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:19:58.324] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:00.746] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:03.186] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:05.629] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:08.076] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:10.533] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:12.980] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:15.413] [info] runs 1000 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:15.416] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+2423, 1, 0, 0, 0, 1000
+2477, 1, 0, 0, 0, 1000
+2415, 1, 0, 0, 0, 1000
+2479, 2, 0, 0, 0, 1000
+2513, 2, 0, 0, 0, 1000
+2527, 2, 0, 0, 0, 1000
+2509, 2, 0, 0, 0, 1000
+2528, 1, 0, 0, 0, 1000
+2528, 2, 0, 0, 0, 1000
+2505, 1, 0, 0, 0, 1000
+2398, 2, 0, 0, 0, 1000
+2449, 2, 0, 0, 0, 1000
+2420, 1, 0, 0, 0, 1000
+2421, 1, 0, 0, 0, 1000
+2431, 1, 0, 0, 0, 1000
+2449, 1, 0, 0, 0, 1000
+2412, 1, 0, 0, 0, 1000
+2412, 2, 0, 0, 0, 1000
+2417, 1, 0, 0, 0, 1000
+2435, 2, 0, 0, 0, 1000
+2438, 2, 0, 0, 0, 1000
+2442, 2, 0, 0, 0, 1000
+2451, 1, 0, 0, 0, 1000
+2443, 2, 0, 0, 0, 1000
+2428, 2, 0, 0, 0, 1000
+# timestamp 17.04.2026 12:18:26 (1776421106), datastructure SAC
+# timebound 7, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2026-04-17 12:20:15.416] [info] 2.1 Simulating on SAC: 108953
+[2026-04-17 12:20:16.209] [info] 2.2 Reachability Analysis: 793
+[2026-04-17 12:20:16.209] [info] 2.3 Augment Reach Tree: 0
+[2026-04-17 12:20:16.209] [info] 2.4 Creating Unified Datastructure from Reach Tree: 0
+[2026-04-17 12:20:16.209] [info] 2.5 Simulating on full Reach Tree: 0
+[2026-04-17 12:20:16.231] [info] 2.6.0 Labeling Reach Tree Nodes: 22
+[2026-04-17 12:20:16.231] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
+[2026-04-17 12:20:16.231] [info] 2.6 Pre-checking and Reduction: 22
+[2026-04-17 12:20:16.231] [info] node count before and after reduction 44 0
+[2026-04-17 12:20:16.231] [info] reach tree compilation time in ms 793
+[2026-04-17 12:20:16.231] [info] reach tree node counts: full 44, reduced 0, goal 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.231] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+# timestamp 17.04.2026 12:18:26 (1776421106), datastructure TREE
+# timebound 7, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+# reach tree compilation time in ms 793
+# reach tree node counts: full 44, reduced 0, goal 0
+
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] runs 0 | prob 0 | low 0 | high 0
+[2026-04-17 12:20:16.232] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+# timestamp 17.04.2026 12:18:26 (1776421106), datastructure TREE
+# timebound 7, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+# reach tree compilation time in ms 793
+# reach tree node counts: full 44, reduced 0, goal 0
+
+[2026-04-17 12:20:16.232] [info] 2.7 Simulating on reduced Reach Tree: 0
+[2026-04-17 12:20:16.238] [info] Analysis finished; the goal is not reachable.
+[2026-04-17 12:20:16.238] [info] Probability: 0.0
+[2026-04-17 12:20:16.238] [info] 2 Analysis: 109775
+[2026-04-17 12:20:16.238] [info] 0 Computation Time Complete: 109776
+[2026-04-17 12:20:16.238] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 109776
+1 Model creation: 0
+2 Analysis: 109775
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 108953
+2.2 Reachability Analysis: 793
+2.3 Augment Reach Tree: 0
+2.4 Creating Unified Datastructure from Reach Tree: 0
+2.5 Simulating on full Reach Tree: 0
+2.6 Pre-checking and Reduction: 22
+2.6.0 Labeling Reach Tree Nodes: 22
+2.6.1 Removing Unfulfilling Subtrees: 0
+2.7 Simulating on reduced Reach Tree: 0
+

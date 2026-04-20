@@ -586,14 +586,51 @@ if should_run "tank-sac-time-non-det"; then
       --simulation-executions 25
       --simulation-intersection-method R 
       --discretization-uniform-granularity 0.5 
-      --simulation-training-runs 100000
-      --scheduler-histories DH
+      --simulation-training-runs 1000000
+      --scheduler-histories ML
       --scheduler-scopes P 
+      --no-time-variable
       -t $t 
     "
 
     ./realyst $ARGS >> $FILE
     save_results $RESULTS_DIR
+  done
+fi
+
+if should_run "paper-benchmarks"; then
+  TEST_NAME="paper-benchmarks"
+  RESULTS_DIR="saved-results/$TEST_NAME"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p $RESULTS_DIR
+
+  for benchmark in "C" "E"; do
+    for t in 7 8 9 10 11 12 14 16 18 20; do
+
+      echo "running benchmark $benchmark with t=$t"
+
+      ARGS="
+        -t $t  
+        -l info 
+        -b WATERTANK
+        -m $benchmark 
+        --simulation-training-runs 1000000  
+        --q-learning-alpha 0.1
+        --q-learning-gamma 1 
+        --discretization-uniform-granularity 0.5 
+        --expirations [r1,0] [r2,0] [r,0] 
+        --simulate 3 
+        --scheduler-goals MAX 
+        --scheduler-histories ML 
+        --scheduler-scopes NP P
+        --simulation-executions 25 
+        --unroll-type V"
+      ./realyst $ARGS > "logs/$TEST_NAME/$benchmark-$t.log"
+
+      save_results "saved-results/$TEST_NAME/$benchmark/$t/"
+
+    done
   done
 fi
 
