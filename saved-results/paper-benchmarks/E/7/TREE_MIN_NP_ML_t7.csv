@@ -1,0 +1,34 @@
+training_time, simulation_time, prob, low, high, runs
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+# timestamp 23.04.2026 11:44:49 (1776937489), datastructure TREE
+# timebound 7, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MINIMIZING, scope: NONPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+# reach tree compilation time in ms 854
+# reach tree node counts: full 44, reduced 0, goal 0
