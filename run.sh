@@ -635,7 +635,7 @@ if should_run "paper-benchmarks"; then
 fi
 
 if should_run "paper-benchmarks-2"; then
-  TEST_NAME="paper-benchmarks"
+  TEST_NAME="paper-benchmarks-watertank-time-non-deterministic"
   RESULTS_DIR="saved-results/$TEST_NAME"
 
   mkdir -p "logs/$TEST_NAME"
@@ -665,6 +665,42 @@ if should_run "paper-benchmarks-2"; then
       ./realyst $ARGS > "logs/$TEST_NAME/$benchmark-$t.log"
 
       save_results "saved-results/$TEST_NAME/$benchmark/$t/"
+
+    done
+  done
+fi
+
+if should_run "paper-benchmarks-3"; then
+  TEST_NAME="paper-benchmarks-watertank-time-non-deterministic"
+  RESULTS_DIR="saved-results/$TEST_NAME"
+
+  mkdir -p "logs/$TEST_NAME"
+  mkdir -p $RESULTS_DIR
+
+  for benchmark in "A" "E"; do
+    for t in 7 8 9 10 11 12 14 16 18 20; do
+
+      echo "running benchmark $benchmark with t=$t"
+
+      ARGS="
+        -t $t  
+        -l info 
+        -b WATERTANK
+        -m $benchmark 
+        --simulation-training-runs 1000000  
+        --q-learning-alpha 0.1
+        --q-learning-gamma 1 
+        --discretization-uniform-granularity 0.5 
+        --expirations [r1,0] [r2,0] [r,0] 
+        --simulate 1 
+        --scheduler-goals MIN MAX
+        --scheduler-histories ML 
+        --scheduler-scopes P
+        --simulation-executions 1 
+        --unroll-type V"
+      ./realyst $ARGS > "logs/$TEST_NAME/$benchmark-$t.log"
+
+      save_results "saved-results/$TEST_NAME/$benchmark"
 
     done
   done

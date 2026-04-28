@@ -1,0 +1,64 @@
+timebound = 12, jump depth = 100, max expirations of random clocks = [{r: 0}, {r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 181, integration bound(s) = 12, integration samples = 500000, model = WATERTANK, model case = CASE_A, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+simulating 0 runs after 1000000 training runs with parameters:
+learning rate                 0.1
+discount factor               1
+exploration rate              0.15
+uniform granularity           0.5
+adaptive compartments         5
+
+
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2026-04-28 12:36:17.219] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2026-04-28 12:36:17.219] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2026-04-28 12:36:17.219] [info] 1 Model creation: 0
+[2026-04-28 12:36:17.219] [info] 2.0 Creating Unified Datastructure from SAC: 0
+[2026-04-28 12:36:21.626] [info] runs 11670 | prob 0.7723221936589546 | low 0.762322883550482 | high 0.7823215037674273
+[2026-04-28 12:36:21.637] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+4369, 37, 0.7723221936589546, 0.762322883550482, 0.7823215037674273, 11670
+# timestamp 28.04.2026 12:36:17 (1777372577), datastructure SAC
+# timebound 12, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MINIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2026-04-28 12:36:25.445] [info] runs 7853 | prob 0.8628549598879409 | low 0.8528552589243494 | high 0.8728546608515324
+[2026-04-28 12:36:25.464] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+3772, 21, 0.8628549598879409, 0.8528552589243494, 0.8728546608515324, 7853
+# timestamp 28.04.2026 12:36:17 (1777372577), datastructure SAC
+# timebound 12, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+
+[2026-04-28 12:36:25.464] [info] 2.1 Simulating on SAC: 8245
+[2026-04-28 12:36:25.464] [info] Analysis finished; the goal is not reachable.
+[2026-04-28 12:36:25.464] [info] Probability: 0.0
+[2026-04-28 12:36:25.464] [info] 2 Analysis: 8245
+[2026-04-28 12:36:25.464] [info] 0 Computation Time Complete: 8245
+[2026-04-28 12:36:25.464] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 8245
+1 Model creation: 0
+2 Analysis: 8245
+2.0 Creating Unified Datastructure from SAC: 0
+2.1 Simulating on SAC: 8245
+

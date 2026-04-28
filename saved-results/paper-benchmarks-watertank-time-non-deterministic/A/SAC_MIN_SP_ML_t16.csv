@@ -1,0 +1,8 @@
+training_time, simulation_time, prob, low, high, runs
+4490, 12, 0.940495422724825, 0.9304959191672667, 0.9504949262823833, 3714
+# timestamp 28.04.2026 12:36:34 (1777372594), datastructure SAC
+# timebound 16, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MINIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
