@@ -692,7 +692,7 @@ if should_run "paper-benchmarks-3"; then
         --q-learning-gamma 1 
         --discretization-uniform-granularity 0.5 
         --expirations [r1,0] [r2,0] [r,0] 
-        --simulate 1 
+        --simulate 2 
         --scheduler-goals MIN MAX
         --scheduler-histories ML 
         --scheduler-scopes P

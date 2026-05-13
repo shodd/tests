@@ -1,0 +1,10 @@
+training_time, simulation_time, prob, low, high, runs
+4970, 3, 0.991, 0.9833068546001001, 0.9986931453998998, 1000
+# timestamp 13.05.2026 01:03:21 (1778627001), datastructure TREE
+# timebound 20, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+# reach tree compilation time in ms 24801988
+# reach tree node counts: full 1255945, reduced 306193, goal 44250

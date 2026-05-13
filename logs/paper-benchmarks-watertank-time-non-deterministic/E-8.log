@@ -1,4 +1,4 @@
-timebound = 8, jump depth = 100, max expirations of random clocks = [{r: 0}, {r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 186, integration bound(s) = 8, integration samples = 500000, model = WATERTANK, model case = CASE_E, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
+timebound = 8, jump depth = 100, max expirations of random clocks = [{r: 0}, {r1: 0}, {r2: 0}], combine absorbing locations in unrolling = 165, integration bound(s) = 8, integration samples = 500000, model = WATERTANK, model case = CASE_E, LTI analysis = rectangular analysis, scheduler = goal: MAXIMIZING, scope: SEMIPROPHETIC, history: HISTORY_DEPENDENT, multithreaded = 1, disableBackwardsRefinement = 0
 simulating 0 runs after 1000000 training runs with parameters:
 learning rate                 0.1
 discount factor               1
@@ -7,58 +7,77 @@ uniform granularity           0.5
 adaptive compartments         5
 
 
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
-[2026-04-28 12:37:06.680] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
-[2026-04-28 12:37:06.680] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
-[2026-04-28 12:37:06.680] [info] 1 Model creation: 0
-[2026-04-28 12:37:06.680] [info] 2.0 Creating Unified Datastructure from SAC: 0
-[2026-04-28 12:37:09.793] [info] runs 9380 | prob 0.17036247334754798 | low 0.16036303512011643 | high 0.18036191157497952
-[2026-04-28 12:37:09.797] [info] RESULT:
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c1 in location all_off - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c1 in location v2_on - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c1 in location v1_block - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c1 in location v2_block - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c1 in location v1_block_v2_on - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c1 in location block_safe - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c1 in location block_unsafe - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c2 in location all_off - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c2 in location v1_on - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c2 in location v1_block - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c2 in location v2_block - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c2 in location v2_block_v1_on - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c2 in location block_safe - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no flow specified for variable c2 in location block_unsafe - assuming flow of 0
+[2026-05-13 08:03:18.028] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
+[2026-05-13 08:03:18.028] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
+[2026-05-13 08:03:18.028] [info] 1 Model creation: 0
+[2026-05-13 08:03:19.554] [info] 2.2 Reachability Analysis: 1525
+[2026-05-13 08:03:19.554] [info] 2.3 Augment Reach Tree: 0
+[2026-05-13 08:03:19.554] [info] 2.4 Creating Unified Datastructure from Reach Tree: 0
+[2026-05-13 08:03:19.554] [info] 2.5 Simulating on full Reach Tree: 0
+[2026-05-13 08:03:19.583] [info] 2.6.0 Labeling Reach Tree Nodes: 29
+[2026-05-13 08:03:19.583] [info] 2.6.1 Removing Unfulfilling Subtrees: 0
+[2026-05-13 08:03:19.583] [info] 2.6 Pre-checking and Reduction: 29
+[2026-05-13 08:03:19.583] [info] node count before and after reduction 80 24
+[2026-05-13 08:03:19.583] [info] reach tree compilation time in ms 1525
+[2026-05-13 08:03:19.583] [info] reach tree node counts: full 80, reduced 24, goal 2
+[2026-05-13 08:03:21.704] [info] runs 9286 | prob 0.16821020891664873 | low 0.15821102659987246 | high 0.178209391233425
+[2026-05-13 08:03:21.705] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
-3090, 21, 0.17036247334754798, 0.16036303512011643, 0.18036191157497952, 9380
-# timestamp 28.04.2026 12:37:06 (1777372626), datastructure SAC
+2105, 14, 0.16821020891664873, 0.15821102659987246, 0.178209391233425, 9286
+# timestamp 13.05.2026 08:03:18 (1778652198), datastructure TREE
 # timebound 8, expirations {"r": 0, "r1": 0, "r2": 0}
 # alpha 0.1, gamma 1
 # fixed points 5, uniform granularity 0.5
 # scheduler goal: MINIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
 # training runs 1000000
+# reach tree compilation time in ms 1525
+# reach tree node counts: full 80, reduced 24, goal 2
 
-[2026-04-28 12:37:12.831] [info] runs 15864 | prob 0.6045763993948563 | low 0.5945764823760811 | high 0.6145763164136315
-[2026-04-28 12:37:12.836] [info] RESULT:
+[2026-05-13 08:03:23.869] [info] runs 15858 | prob 0.6050573842855341 | low 0.5950576851413555 | high 0.6150570834297128
+[2026-05-13 08:03:23.870] [info] RESULT:
 training_time, simulation_time, prob, low, high, runs
-2994, 37, 0.6045763993948563, 0.5945764823760811, 0.6145763164136315, 15864
-# timestamp 28.04.2026 12:37:06 (1777372626), datastructure SAC
+2136, 26, 0.6050573842855341, 0.5950576851413555, 0.6150570834297128, 15858
+# timestamp 13.05.2026 08:03:18 (1778652198), datastructure TREE
 # timebound 8, expirations {"r": 0, "r1": 0, "r2": 0}
 # alpha 0.1, gamma 1
 # fixed points 5, uniform granularity 0.5
 # scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
 # training runs 1000000
+# reach tree compilation time in ms 1525
+# reach tree node counts: full 80, reduced 24, goal 2
 
-[2026-04-28 12:37:12.837] [info] 2.1 Simulating on SAC: 6156
-[2026-04-28 12:37:12.837] [info] Analysis finished; the goal is not reachable.
-[2026-04-28 12:37:12.837] [info] Probability: 0.0
-[2026-04-28 12:37:12.837] [info] 2 Analysis: 6156
-[2026-04-28 12:37:12.837] [info] 0 Computation Time Complete: 6156
-[2026-04-28 12:37:12.837] [info] Counters and timers:
+[2026-05-13 08:03:23.870] [info] 2.7 Simulating on reduced Reach Tree: 4286
+[2026-05-13 08:03:23.871] [info] Analysis finished; the goal is not reachable.
+[2026-05-13 08:03:23.871] [info] Probability: 0.0
+[2026-05-13 08:03:23.871] [info] 2 Analysis: 5842
+[2026-05-13 08:03:23.871] [info] 0 Computation Time Complete: 5843
+[2026-05-13 08:03:23.871] [info] Counters and timers:
 Counters:
 
 Timers:
-0 Computation Time Complete: 6156
+0 Computation Time Complete: 5843
 1 Model creation: 0
-2 Analysis: 6156
-2.0 Creating Unified Datastructure from SAC: 0
-2.1 Simulating on SAC: 6156
+2 Analysis: 5842
+2.2 Reachability Analysis: 1525
+2.3 Augment Reach Tree: 0
+2.4 Creating Unified Datastructure from Reach Tree: 0
+2.5 Simulating on full Reach Tree: 0
+2.6 Pre-checking and Reduction: 29
+2.6.0 Labeling Reach Tree Nodes: 29
+2.6.1 Removing Unfulfilling Subtrees: 0
+2.7 Simulating on reduced Reach Tree: 4286
 
