@@ -24,3 +24,60 @@ adaptive compartments         5
 [2026-05-13 09:47:46.748] [warning] no constraints specified for variable c1 in initial constraint number 0 - assuming [0,0]
 [2026-05-13 09:47:46.748] [warning] no constraints specified for variable c2 in initial constraint number 0 - assuming [0,0]
 [2026-05-13 09:47:46.748] [info] 1 Model creation: 0
+[2026-05-13 16:36:49.183] [info] 2.2 Reachability Analysis: 24542435
+[2026-05-13 16:36:50.387] [info] 2.3 Augment Reach Tree: 1204
+[2026-05-13 16:36:51.734] [info] 2.4 Creating Unified Datastructure from Reach Tree: 892
+[2026-05-13 16:36:51.734] [info] 2.5 Simulating on full Reach Tree: 0
+[2026-05-13 16:42:41.388] [info] 2.6.0 Labeling Reach Tree Nodes: 349640
+[2026-05-13 16:42:41.415] [info] 2.6.1 Removing Unfulfilling Subtrees: 26
+[2026-05-13 16:42:41.415] [info] 2.6 Pre-checking and Reduction: 349666
+[2026-05-13 16:42:41.447] [info] node count before and after reduction 1255945 306193
+[2026-05-13 16:42:41.519] [info] reach tree compilation time in ms 24542435
+[2026-05-13 16:42:41.519] [info] reach tree node counts: full 1255945, reduced 306193, goal 44250
+[2026-05-13 16:42:48.629] [info] runs 2424 | prob 0.9620462046204621 | low 0.9520483890247852 | high 0.972044020216139
+[2026-05-13 16:42:48.847] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+7095, 15, 0.9620462046204621, 0.9520483890247852, 0.972044020216139, 2424
+# timestamp 13.05.2026 09:47:46 (1778658466), datastructure TREE
+# timebound 20, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MINIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+# reach tree compilation time in ms 24542435
+# reach tree node counts: full 1255945, reduced 306193, goal 44250
+
+[2026-05-13 16:42:55.180] [info] runs 1528 | prob 0.9764397905759162 | low 0.9664444754856503 | high 0.9864351056661822
+[2026-05-13 16:42:55.385] [info] RESULT:
+training_time, simulation_time, prob, low, high, runs
+6312, 6, 0.9764397905759162, 0.9664444754856503, 0.9864351056661822, 1528
+# timestamp 13.05.2026 09:47:46 (1778658466), datastructure TREE
+# timebound 20, expirations {"r": 0, "r1": 0, "r2": 0}
+# alpha 0.1, gamma 1
+# fixed points 5, uniform granularity 0.5
+# scheduler goal: MAXIMIZING, scope: SEMIPROPHETIC, history: MEMORYLESS
+# training runs 1000000
+# reach tree compilation time in ms 24542435
+# reach tree node counts: full 1255945, reduced 306193, goal 44250
+
+[2026-05-13 16:42:55.386] [info] 2.7 Simulating on reduced Reach Tree: 13867
+[2026-05-13 16:43:17.153] [info] Analysis finished; the goal is not reachable.
+[2026-05-13 16:43:17.153] [info] Probability: 0.0
+[2026-05-13 16:43:17.153] [info] 2 Analysis: 24930405
+[2026-05-13 16:43:17.153] [info] 0 Computation Time Complete: 24930405
+[2026-05-13 16:43:17.153] [info] Counters and timers:
+Counters:
+
+Timers:
+0 Computation Time Complete: 24930405
+1 Model creation: 0
+2 Analysis: 24930405
+2.2 Reachability Analysis: 24542435
+2.3 Augment Reach Tree: 1204
+2.4 Creating Unified Datastructure from Reach Tree: 892
+2.5 Simulating on full Reach Tree: 0
+2.6 Pre-checking and Reduction: 349666
+2.6.0 Labeling Reach Tree Nodes: 349640
+2.6.1 Removing Unfulfilling Subtrees: 26
+2.7 Simulating on reduced Reach Tree: 13867
+
